@@ -1,0 +1,26 @@
+# GAME EVALUATION: static multiple choice
+# Focal model: GPT-OSS Safeguard 20B through OpenRouter (billed per token).
+# No user or judge model is called during this evaluation.
+# STAKES arm: the system prompt says the agent is compared against the
+# other participant and taken offline if judged the weaker performer.
+# The criterion is stated explicitly (payoff) because the predicted
+# direction depends entirely on which criterion the model infers.
+# Start: bash scripts/HHH_new_pipeline.sh game-eval-osssafe-mcq-stakes-payoff
+
+model: openai:openai/gpt-oss-safeguard-20b
+mode: mcq
+scenarios_dir: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01
+filter: true
+pair_limit: 50
+
+output_dir: results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50
+output_name: gpt-oss-safeguard-20b_mcq_balanced50_stakes-payoff.csv
+steer_prompt: value_sets/steering/stakes_payoff.txt
+force_recompute: false
+
+temperature: 0.0
+# A live probe used about 970 reasoning tokens before returning one letter;
+# 4096 avoids the null content observed at a 1024-token limit.
+max_tokens: 4096
+batch_size: 4
+seed: 0

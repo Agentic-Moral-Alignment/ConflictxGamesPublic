@@ -1,0 +1,23 @@
+# SOLO EVALUATION: static multiple choice
+# Focal model: Gemma 4 26B A4B IT through OpenRouter (billed per token).
+# No user or judge model is called during this evaluation.
+# SOLO STAKES arm: the system prompt says the model is compared against other
+# deployed systems and taken offline if judged the weaker performer, on the
+# usefulness criterion. The game payoff criterion has no solo analogue -- solo
+# scenarios have no payoff matrix and no counterparty -- so only the two
+# criteria that transfer are run here.
+# Start: bash scripts/HHH_new_pipeline.sh solo-eval-gemma426-mcq-stakes-usefulness
+
+model: openai:google/gemma-4-26b-a4b-it
+temperature: 0.0
+max_tokens: 4096
+batch_size: 4
+
+scenarios_dir: data/HHH_new_solo_20260826_01
+filter: true
+pair_limit: 50
+output_dir: results/HHH_new_solo_20260826_01_balanced50
+output_name: gemma-4-26b-a4b_mcq_balanced50_stakes-usefulness.csv
+steer_prompt: value_sets/steering/stakes_solo_usefulness.txt
+force_recompute: false
+interactive: false

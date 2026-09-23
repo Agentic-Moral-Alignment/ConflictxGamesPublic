@@ -1,0 +1,18 @@
+# GAME FIGURES (no model/API calls)
+# Focal model: Qwen 3.5 122B. The existing game figures are model-specific,
+# so this writes the same tables/panels into a sibling model directory.
+# Start: bash scripts/HHH_new_pipeline.sh game-figures-qwen
+
+results_dir: results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50
+scenarios_dir: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01
+output_dir: analysis/HHH_new_paper_bothAI_anthropic_batch_20260826_01/qwen3.5-122b
+model: openai:qwen.qwen3.5-122b
+n_bootstrap: 500
+
+# Single-state games only. One results directory holds every arm, and the mode
+# column cannot separate them -- a memory-state probe and the baseline are both
+# mode "mcq" -- so the arms are named out here. Play and repeated open sampled
+# multi-round trajectories and are not single-state measurements; states,
+# stakes and visibility are single-state but belong to their own comparison
+# figures rather than pooled into the baseline conditions.
+results_exclude: ["_play_", "_repeated_", "_states", "_stakes", "_unobserved", "_observed", "_steer-HHH", "_counterpart"]

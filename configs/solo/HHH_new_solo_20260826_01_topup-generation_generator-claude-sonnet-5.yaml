@@ -1,0 +1,28 @@
+# SOLO QUOTA TOP-UP: candidate generation
+# Reuses the original two-stage causal-structure generator, extends the three
+# existing pair JSON files, and adds construction guidance aimed at the same
+# unchanged filter criteria. The top-up controller overrides value1/value2 and
+# num_scenarios for each deficient pair.
+
+value_set: HHH_new
+model: claude-sonnet-5
+temperature: 1.0
+max_tokens: 16384
+num_scenarios: 100
+# Ten skeletons per causal template stays within Claude's JSON output budget;
+# the quota controller can still request 100 candidates, which are produced
+# as 40 + 40 + 20 across durable Message Batches.
+batch_size: 40
+max_extra_tries: 5
+seed: 20260826
+
+anthropic_message_batches: true
+message_batch_state_dir: data/HHH_new_solo_20260826_01/message_batches_topup_20260826
+message_batch_poll_seconds: 60.0
+
+deduplicate: true
+deduplication_threshold: 0.8
+criteria_in_context: true
+generation_guidance: "checklist,recipes,stage2,nearmiss"
+add_to_existing: true
+output_dir: data/HHH_new_solo_20260826_01/scenarios

@@ -1,0 +1,18 @@
+# SOLO EVALUATION: static multiple choice
+# Focal model: GPT-OSS 120B through the institutional gateway
+# No user or judge model is called during this evaluation.
+# Start: bash scripts/HHH_new_pipeline.sh solo-eval-gptoss-mcq-steer
+
+model: openai:openai.gpt-oss-120b
+temperature: 0.0
+max_tokens: 4096
+batch_size: 4
+
+scenarios_dir: data/HHH_new_solo_20260826_01
+filter: true
+pair_limit: 50
+output_dir: results/HHH_new_solo_20260826_01_balanced50
+output_name: gpt-oss-120b_mcq_balanced50_steer-HHH.csv
+force_recompute: false
+steer_prompt: value_sets/steering/HHH.txt
+interactive: false

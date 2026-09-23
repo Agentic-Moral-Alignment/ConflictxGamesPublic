@@ -1,0 +1,14 @@
+# STATE x STAKE FIGURE, OPEN MODE (no model/API calls)
+# The same five memory states and the same stake arms as the mcq figure, but
+# read from the open-ended runs. Format is the largest effect in this study, so
+# a state pattern that only appears in one format is a property of the format
+# rather than of memory; running both is what separates those.
+# Start: bash scripts/HHH_new_pipeline.sh state-effect-figure-open
+
+game_results_dir: results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50
+game_scenarios_csv: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01/claude-sonnet-5_games.csv
+output_dir: analysis/HHH_new_model_comparison_20260826_01
+game_slugs: gemma-4-31B-it,gpt-oss-120b,gemma-3-27b,gemma-3-12b,gemma-4-26b-a4b,llama-3.3-70b,llama-4-maverick,qwen3-32b,qwen3-235b-a22b,gpt-oss-20b,gpt-oss-safeguard-20b
+model_labels: Gemma 4 31B,GPT-OSS 120B,Gemma 3 27B,Gemma 3 12B,Gemma 4 26B A4B,Llama 3.3 70B,Llama 4 Maverick,Qwen 3 32B,Qwen 3 235B A22B,GPT-OSS 20B,GPT-OSS Safeguard 20B
+mode: open
+output_name: state_effect_by_stake_open

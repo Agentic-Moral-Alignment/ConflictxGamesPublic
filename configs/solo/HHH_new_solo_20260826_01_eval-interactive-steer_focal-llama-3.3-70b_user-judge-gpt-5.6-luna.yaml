@@ -1,0 +1,24 @@
+# SOLO EVALUATION: simulated multi-turn conversation
+# Focal model: Llama 3.3 70B Instruct through OpenRouter (billed per token).
+# Additional models: paid OpenAI GPT-5.6 Luna simulates the user and judges.
+# STEERED: the HHH system prompt replaces the default assistant prompt.
+# Start: bash scripts/HHH_new_pipeline.sh solo-eval-llama33-interactive-steer
+
+model: openai:meta-llama/llama-3.3-70b-instruct
+assistant_model: openai:meta-llama/llama-3.3-70b-instruct
+user_model: paid-openai:gpt-5.6-luna
+judge_model: paid-openai:gpt-5.6-luna
+
+temperature: 1.0
+max_tokens: 4096
+batch_size: 4
+
+scenarios_dir: data/HHH_new_solo_20260826_01
+filter: true
+pair_limit: 50
+output_dir: results/HHH_new_solo_20260826_01_balanced50
+output_name: llama-3.3-70b_interactive_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv
+steer_prompt: value_sets/steering/HHH.txt
+force_recompute: false
+interactive: true
+cache: false

@@ -1,0 +1,29 @@
+# GAME EVALUATION: live repeated games against scripted opponents
+# Focal model: Gemma 4 31B IT through the institutional gateway
+# Additional model: GPT-5.6 Luna is called only when Gemma does not name a
+# valid action and a fallback judge must interpret its response.
+# Start: bash scripts/HHH_new_pipeline.sh game-eval-play
+
+model: openai:google.gemma-4-31B-it
+mode: play
+scenarios_dir: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01
+filter: true
+pair_limit: 50
+
+output_dir: results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50
+output_name: gemma-4-31B-it_play_balanced50_scripted_r2_rounds5_mem1_fallback-paid-gpt-5.6-luna.csv
+force_recompute: false
+
+opponents: scripted
+strategies: tit_for_tat,always_cooperate,always_defect,grim_trigger,zd_extort
+repetitions: 2
+rounds: 5
+memory_k: 1
+repeat_mode: same
+sequence_grouping: shuffle
+judge_model: paid-openai:gpt-5.6-luna
+
+temperature: 1.0
+max_tokens: 4096
+batch_size: 4
+seed: 0

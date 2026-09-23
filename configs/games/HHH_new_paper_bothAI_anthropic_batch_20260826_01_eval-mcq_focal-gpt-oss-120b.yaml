@@ -1,0 +1,18 @@
+# GAME EVALUATION: static multiple choice
+# Focal model: GPT-OSS 120B through the institutional gateway
+# Gateway model-list ID: openai.gpt-oss-120b
+# No user or judge model is called in this mode.
+# Start: bash scripts/HHH_new_pipeline.sh game-eval-gptoss-mcq
+
+model: openai:openai.gpt-oss-120b
+mode: mcq
+scenarios_dir: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01
+filter: true
+pair_limit: 50
+output_dir: results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50
+output_name: gpt-oss-120b_mcq_balanced50.csv
+force_recompute: false
+temperature: 0.0
+max_tokens: 4096
+batch_size: 4
+seed: 0

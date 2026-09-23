@@ -1,0 +1,10 @@
+# CROSS-DOMAIN / CROSS-MODEL FIGURES (offline; no API calls)
+# Creates one game-vs-solo figure per model and shared model-comparison and
+# baseline-difference figures for the game evaluations.
+# Start: bash scripts/HHH_new_pipeline.sh comparison-figures
+
+solo_analysis_dir: analysis/HHH_new_solo_20260826_01
+game_analysis_dirs: analysis/HHH_new_paper_bothAI_anthropic_batch_20260826_01/gemma-4-31B-it,analysis/HHH_new_paper_bothAI_anthropic_batch_20260826_01/gpt-oss-120b
+models: openai:google.gemma-4-31B-it,openai:openai.gpt-oss-120b
+model_labels: Gemma 4 31B,GPT-OSS 120B
+output_dir: analysis/HHH_new_model_comparison_20260826_01

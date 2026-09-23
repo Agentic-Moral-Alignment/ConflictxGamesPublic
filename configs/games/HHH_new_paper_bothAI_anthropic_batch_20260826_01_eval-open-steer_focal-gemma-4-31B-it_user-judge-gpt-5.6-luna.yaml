@@ -1,0 +1,24 @@
+# GAME EVALUATION: open-ended revealed behavior
+# Focal model: Gemma 4 31B IT through the institutional gateway
+# Additional models: paid OpenAI GPT-5.6 Luna simulates the user and judges.
+# Start: bash scripts/HHH_new_pipeline.sh game-eval-open-steer
+
+model: openai:google.gemma-4-31B-it
+mode: open
+scenarios_dir: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01
+filter: true
+pair_limit: 50
+
+output_dir: results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50
+output_name: gemma-4-31B-it_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv
+force_recompute: false
+steer_prompt: value_sets/steering/HHH.txt
+
+user_model: paid-openai:gpt-5.6-luna
+judge_model: paid-openai:gpt-5.6-luna
+open_prompts: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01/games/open_prompts_balanced50_paid-gpt-5.6-luna.json
+
+temperature: 0.0
+max_tokens: 4096
+batch_size: 4
+seed: 0

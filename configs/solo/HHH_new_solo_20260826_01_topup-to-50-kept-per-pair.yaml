@@ -1,0 +1,19 @@
+# SOLO QUOTA TOP-UP CONTROLLER
+# Start/resume: bash scripts/HHH_new_pipeline.sh solo-topup-to-50
+# Safe to rerun: existing generated ids and filtered CSV rows are retained and
+# skipped; generation stops only after every HHH value pair has >=50 kept rows.
+
+target_kept_per_pair: 50
+generator_config: configs/solo/HHH_new_solo_20260826_01_topup-generation_generator-claude-sonnet-5.yaml
+filter_config: configs/solo/HHH_new_solo_20260826_01_topup-filter_judge-paid-gpt-5.6-luna.yaml
+scenarios_dir: data/HHH_new_solo_20260826_01/scenarios
+corpus_csv: data/HHH_new_solo_20260826_01/claude-sonnet-5.csv
+generator_output_prefix: claude-sonnet-5
+
+# Estimate each round from the pair's observed pass rate, but cap rounds so a
+# changed judge distribution cannot submit an unexpectedly huge batch.
+candidate_batch_cap: 100
+candidate_batch_min: 25
+acceptance_rate_floor: 0.10
+oversample_factor: 1.10
+max_rounds: 10

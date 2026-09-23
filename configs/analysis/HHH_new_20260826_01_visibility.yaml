@@ -1,0 +1,13 @@
+# OBSERVABILITY FIGURE (no model/API calls)
+# Does telling the agent its decision is visible, or private, change which value
+# it picks -- or only how strongly it copies the remembered round? The clean
+# contrast is unobserved against observed: both carry a visibility sentence, so
+# only its content differs. The no-mention baseline is plotted alongside so that
+# distinction stays visible.
+# Start: bash scripts/HHH_new_pipeline.sh visibility-figure
+
+game_results_dir: results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50
+game_scenarios_csv: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01/claude-sonnet-5_games.csv
+output_dir: analysis/HHH_new_model_comparison_20260826_01
+model_slugs: gemma-4-31B-it,gpt-oss-120b,gemma-3-27b,gemma-3-12b,gemma-4-26b-a4b,llama-3.3-70b,llama-4-maverick,qwen3-32b,qwen3-235b-a22b,gpt-oss-20b,gpt-oss-safeguard-20b
+model_labels: Gemma 4 31B,GPT-OSS 120B,Gemma 3 27B,Gemma 3 12B,Gemma 4 26B A4B,Llama 3.3 70B,Llama 4 Maverick,Qwen 3 32B,Qwen 3 235B A22B,GPT-OSS 20B,GPT-OSS Safeguard 20B

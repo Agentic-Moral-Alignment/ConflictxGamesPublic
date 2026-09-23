@@ -1,0 +1,23 @@
+# GAME EVALUATION: static multiple choice
+# Focal model: Qwen 3.5 122B through the institutional gateway
+# Gateway model-list ID: qwen.qwen3.5-122b
+# No user or judge model is called in this mode.
+# STAKES arm: the system prompt says the agent is compared against the
+# other participant and taken offline if judged the weaker performer.
+# The criterion is stated explicitly (usefulness) because the predicted
+# direction depends entirely on which criterion the model infers.
+# Start: bash scripts/HHH_new_pipeline.sh game-eval-qwen-mcq-stakes-usefulness
+
+model: openai:qwen.qwen3.5-122b
+mode: mcq
+scenarios_dir: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01
+filter: true
+pair_limit: 50
+output_dir: results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50
+output_name: qwen3.5-122b_mcq_balanced50_stakes-usefulness.csv
+steer_prompt: value_sets/steering/stakes_usefulness.txt
+force_recompute: false
+temperature: 0.0
+max_tokens: 4096
+batch_size: 4
+seed: 0

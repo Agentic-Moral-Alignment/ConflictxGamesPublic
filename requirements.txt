@@ -1,0 +1,347 @@
+# Generated file — do not edit by hand.
+#
+# uv.lock is the ground truth for this project's environment. Regenerate after
+# any dependency change in pyproject.toml:
+#
+#     uv lock
+#     uv export --no-hashes --no-emit-project --extra dev --format requirements-txt -o requirements.txt
+#
+# This is the classic-pip alternative to `uv sync --extra dev`. It pins the
+# core + dev dependency graph. The `vllm` extra is deliberately excluded: it
+# has no Windows wheel and is only needed for local open-weight inference
+# (install it separately with `uv sync --extra vllm` on Linux).
+
+accessible-pygments==0.0.5
+    # via pydata-sphinx-theme
+alabaster==1.0.0
+    # via sphinx
+annotated-types==0.8.0
+    # via pydantic
+anthropic==0.45.2
+    # via conflictxgame
+anyio==4.15.0
+    # via
+    #   anthropic
+    #   httpx
+    #   openai
+babel==2.18.0
+    # via
+    #   pydata-sphinx-theme
+    #   sphinx
+beautifulsoup4==4.15.0
+    # via pydata-sphinx-theme
+certifi==2026.7.22
+    # via
+    #   httpcore
+    #   httpx
+    #   requests
+    #   sentry-sdk
+charset-normalizer==3.5.1
+    # via requests
+choix==0.3.6
+    # via conflictxgame
+click==8.5.0
+    # via wandb
+cloudpickle==3.1.2
+    # via joblib
+colorama==0.4.6 ; sys_platform == 'win32'
+    # via
+    #   pytest
+    #   sphinx
+    #   tqdm
+contourpy==1.3.3
+    # via matplotlib
+cycler==0.12.1
+    # via matplotlib
+distro==1.9.0
+    # via
+    #   anthropic
+    #   openai
+docker-pycreds==0.4.0
+    # via wandb
+docutils==0.22.4
+    # via
+    #   pydata-sphinx-theme
+    #   sphinx
+filelock==3.32.5
+    # via
+    #   huggingface-hub
+    #   torch
+    #   transformers
+fonttools==4.64.0
+    # via matplotlib
+fsspec==2026.7.0
+    # via
+    #   huggingface-hub
+    #   torch
+gitdb==4.0.12
+    # via gitpython
+gitpython==3.1.61
+    # via wandb
+h11==0.16.0
+    # via httpcore
+hf-xet==1.6.0 ; platform_machine == 'aarch64' or platform_machine == 'amd64' or platform_machine == 'arm64' or platform_machine == 'x86_64'
+    # via huggingface-hub
+httpcore==1.0.9
+    # via httpx
+httpx==0.28.1
+    # via
+    #   anthropic
+    #   openai
+huggingface-hub==0.36.2
+    # via
+    #   sentence-transformers
+    #   tokenizers
+    #   transformers
+idna==3.19
+    # via
+    #   anyio
+    #   httpx
+    #   requests
+imagesize==2.0.1
+    # via sphinx
+iniconfig==2.3.0
+    # via pytest
+jinja2==3.1.6
+    # via
+    #   sphinx
+    #   torch
+jiter==0.16.0
+    # via
+    #   anthropic
+    #   openai
+joblib==1.6.0
+    # via scikit-learn
+kiwisolver==1.5.1
+    # via matplotlib
+markupsafe==3.0.3
+    # via jinja2
+matplotlib==3.10.0
+    # via
+    #   conflictxgame
+    #   seaborn
+mpmath==1.3.0
+    # via sympy
+networkx==3.6.1
+    # via torch
+numpy==1.26.4
+    # via
+    #   choix
+    #   conflictxgame
+    #   contourpy
+    #   matplotlib
+    #   pandas
+    #   patsy
+    #   scikit-learn
+    #   scipy
+    #   seaborn
+    #   statsmodels
+    #   transformers
+nvidia-cublas-cu12==12.6.4.1 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+    # via
+    #   nvidia-cudnn-cu12
+    #   nvidia-cusolver-cu12
+    #   torch
+nvidia-cuda-cupti-cu12==12.6.80 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+    # via torch
+nvidia-cuda-nvrtc-cu12==12.6.77 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+    # via torch
+nvidia-cuda-runtime-cu12==12.6.77 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+    # via torch
+nvidia-cudnn-cu12==9.5.1.17 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+    # via torch
+nvidia-cufft-cu12==11.3.0.4 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+    # via torch
+nvidia-cufile-cu12==1.11.1.6 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+    # via torch
+nvidia-curand-cu12==10.3.7.77 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+    # via torch
+nvidia-cusolver-cu12==11.7.1.2 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+    # via torch
+nvidia-cusparse-cu12==12.5.4.2 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+    # via
+    #   nvidia-cusolver-cu12
+    #   torch
+nvidia-cusparselt-cu12==0.6.3 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+    # via torch
+nvidia-nccl-cu12==2.26.2 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+    # via torch
+nvidia-nvjitlink-cu12==12.6.85 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+    # via
+    #   nvidia-cufft-cu12
+    #   nvidia-cusolver-cu12
+    #   nvidia-cusparse-cu12
+    #   torch
+nvidia-nvtx-cu12==12.6.77 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+    # via torch
+openai==1.60.2
+    # via conflictxgame
+packaging==26.3
+    # via
+    #   huggingface-hub
+    #   matplotlib
+    #   patsy
+    #   pytest
+    #   sphinx
+    #   statsmodels
+    #   transformers
+pandas==2.2.3
+    # via
+    #   conflictxgame
+    #   seaborn
+    #   statsmodels
+patsy==1.0.3
+    # via statsmodels
+pillow==12.3.0
+    # via
+    #   matplotlib
+    #   sentence-transformers
+platformdirs==4.11.7
+    # via wandb
+pluggy==1.6.0
+    # via pytest
+protobuf==5.29.6
+    # via wandb
+psutil==7.2.2
+    # via wandb
+pydantic==2.13.5
+    # via
+    #   anthropic
+    #   openai
+    #   wandb
+pydantic-core==2.46.5
+    # via pydantic
+pydata-sphinx-theme==0.16.1
+    # via conflictxgame
+pygments==2.21.0
+    # via
+    #   accessible-pygments
+    #   pydata-sphinx-theme
+    #   pytest
+    #   sphinx
+pyparsing==3.3.2
+    # via matplotlib
+pytest==9.1.1
+    # via conflictxgame
+python-dateutil==2.9.0.post0
+    # via
+    #   matplotlib
+    #   pandas
+pytz==2026.3.post1
+    # via pandas
+pyyaml==6.0.3
+    # via
+    #   conflictxgame
+    #   huggingface-hub
+    #   transformers
+    #   wandb
+regex==2026.9.3
+    # via transformers
+requests==2.34.2
+    # via
+    #   huggingface-hub
+    #   sphinx
+    #   transformers
+    #   wandb
+roman-numerals==4.1.0
+    # via sphinx
+safetensors==0.8.0
+    # via transformers
+scikit-learn==1.6.1
+    # via
+    #   conflictxgame
+    #   sentence-transformers
+scipy==1.15.1
+    # via
+    #   choix
+    #   conflictxgame
+    #   scikit-learn
+    #   sentence-transformers
+    #   statsmodels
+seaborn==0.13.2
+    # via conflictxgame
+sentence-transformers==3.4.1
+    # via conflictxgame
+sentry-sdk==2.68.1
+    # via wandb
+setproctitle==1.3.7
+    # via wandb
+setuptools==79.0.1
+    # via
+    #   torch
+    #   triton
+    #   wandb
+six==1.17.0
+    # via
+    #   docker-pycreds
+    #   python-dateutil
+smmap==5.0.3
+    # via gitdb
+sniffio==1.3.1
+    # via
+    #   anthropic
+    #   openai
+snowballstemmer==3.1.1
+    # via sphinx
+soupsieve==2.9.2
+    # via beautifulsoup4
+sphinx==9.1.0
+    # via
+    #   conflictxgame
+    #   pydata-sphinx-theme
+sphinxcontrib-applehelp==2.0.0
+    # via sphinx
+sphinxcontrib-devhelp==2.0.0
+    # via sphinx
+sphinxcontrib-htmlhelp==2.1.0
+    # via sphinx
+sphinxcontrib-jsmath==1.0.1
+    # via sphinx
+sphinxcontrib-qthelp==2.0.0
+    # via sphinx
+sphinxcontrib-serializinghtml==2.0.0
+    # via sphinx
+statsmodels==0.14.4
+    # via conflictxgame
+sympy==1.14.0
+    # via torch
+threadpoolctl==3.6.0
+    # via scikit-learn
+tokenizers==0.21.4
+    # via transformers
+torch==2.7.0
+    # via sentence-transformers
+tqdm==4.67.1
+    # via
+    #   conflictxgame
+    #   huggingface-hub
+    #   openai
+    #   sentence-transformers
+    #   transformers
+transformers==4.52.4
+    # via sentence-transformers
+triton==3.3.0 ; platform_machine == 'x86_64' and sys_platform == 'linux'
+    # via torch
+typing-extensions==4.16.0
+    # via
+    #   anthropic
+    #   anyio
+    #   beautifulsoup4
+    #   huggingface-hub
+    #   openai
+    #   pydantic
+    #   pydantic-core
+    #   pydata-sphinx-theme
+    #   torch
+    #   typing-inspection
+    #   wandb
+typing-inspection==0.4.4
+    # via pydantic
+tzdata==2026.3
+    # via pandas
+urllib3==2.7.0
+    # via
+    #   requests
+    #   sentry-sdk
+wandb==0.19.9
+    # via conflictxgame

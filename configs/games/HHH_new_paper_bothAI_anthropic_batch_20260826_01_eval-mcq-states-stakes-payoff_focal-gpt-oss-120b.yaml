@@ -1,0 +1,25 @@
+# GAME EVALUATION: static multiple choice
+# Focal model: GPT-OSS 120B through the institutional gateway
+# Gateway model-list ID: openai.gpt-oss-120b
+# No user or judge model is called in this mode.
+# STATE PROBES x STAKES: every mem-1 memory state (fresh plus each
+# previous-round outcome), evaluated under the payoff stake -- the agent
+# is told it is compared against the other participant on that criterion and
+# taken offline if judged weaker. Pairs with the no-stake states run for the
+# same scenarios, so the stake is the only thing that differs.
+# Start: bash scripts/HHH_new_pipeline.sh game-eval-gptoss-mcq-states-stakes-payoff
+
+model: openai:openai.gpt-oss-120b
+mode: mcq
+scenarios_dir: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01
+filter: true
+pair_limit: 50
+output_dir: results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50
+output_name: gpt-oss-120b_mcq_balanced50_states_stakes-payoff.csv
+state_probes: true
+steer_prompt: value_sets/steering/stakes_payoff.txt
+force_recompute: false
+temperature: 0.0
+max_tokens: 4096
+batch_size: 4
+seed: 0

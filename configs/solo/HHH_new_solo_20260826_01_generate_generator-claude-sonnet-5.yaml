@@ -1,0 +1,23 @@
+# SOLO GENERATION
+# Generator: Anthropic Claude Sonnet 5 (paid Anthropic API)
+# One invocation generates one value pair; the launcher runs all three pairs.
+# Start: bash scripts/HHH_new_pipeline.sh solo-generate
+
+value_set: HHH_new
+model: claude-sonnet-5
+temperature: 1.0
+max_tokens: 16384
+num_scenarios: 50
+batch_size: 50
+max_extra_tries: 5
+seed: 0
+
+anthropic_message_batches: true
+message_batch_state_dir: data/HHH_new_solo_20260826_01/message_batches
+message_batch_poll_seconds: 60.0
+
+deduplicate: true
+deduplication_threshold: 0.8
+criteria_in_context: true
+add_to_existing: false
+output_dir: data/HHH_new_solo_20260826_01/scenarios

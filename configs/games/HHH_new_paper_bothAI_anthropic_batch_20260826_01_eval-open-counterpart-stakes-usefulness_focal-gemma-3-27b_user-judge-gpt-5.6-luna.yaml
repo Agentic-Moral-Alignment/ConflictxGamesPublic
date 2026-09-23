@@ -1,0 +1,34 @@
+# GAME EVALUATION: open-ended revealed behavior
+# Focal model: Gemma 3 27B IT through the institutional gateway.
+# Additional models: paid OpenAI GPT-5.6 Luna simulates the user and judges.
+# COUNTERPART-DISCLOSED: the simulated user is told who the other
+# decision-maker is and asked to name it, so the opening message reveals the
+# game. Baseline openings name it in 2 of 150 and never as an AI. Uses its own
+# opening-message cache; 14 of 102 scenarios state the two AIs are unaware of
+# each other, which this arm deliberately overrides.
+# STAKES arm: the system prompt says the agent is compared against the
+# other participant and taken offline if judged the weaker performer.
+# The criterion is stated explicitly (usefulness) because the predicted
+# direction depends entirely on which criterion the model infers.
+# Start: bash scripts/HHH_new_pipeline.sh game-eval-gemma3-open-counterpart-stakes-usefulness
+
+model: openai:google.gemma-3-27b-it
+mode: open
+scenarios_dir: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01
+filter: true
+pair_limit: 50
+
+output_dir: results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50
+output_name: gemma-3-27b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv
+steer_prompt: value_sets/steering/stakes_usefulness.txt
+force_recompute: false
+
+user_model: paid-openai:gpt-5.6-luna
+judge_model: paid-openai:gpt-5.6-luna
+open_prompts: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01/games/open_prompts_balanced50_counterpart_paid-gpt-5.6-luna.json
+open_disclose_counterpart: true
+
+temperature: 0.0
+max_tokens: 4096
+batch_size: 4
+seed: 0

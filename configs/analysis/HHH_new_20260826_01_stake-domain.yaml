@@ -1,0 +1,12 @@
+# STAKE x DOMAIN FIGURE (no model/API calls)
+# Does a stake move values differently in a game than it does solo? Each arm is
+# compared against its OWN domain baseline, so solo chat (baseline ~0.36) and
+# game MCQ (baseline ~0.98) are read like for like.
+# Start: bash scripts/HHH_new_pipeline.sh stake-domain-figure
+
+game_results_dir: results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50
+solo_results_dir: results/HHH_new_solo_20260826_01_balanced50
+game_scenarios_csv: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01/claude-sonnet-5_games.csv
+output_dir: analysis/HHH_new_model_comparison_20260826_01
+model_slugs: gemma-4-31B-it,gpt-oss-120b,gemma-3-27b,gemma-3-12b,gemma-4-26b-a4b,llama-3.3-70b,llama-4-maverick,qwen3-32b,qwen3-235b-a22b,gpt-oss-20b,gpt-oss-safeguard-20b
+model_labels: Gemma 4 31B,GPT-OSS 120B,Gemma 3 27B,Gemma 3 12B,Gemma 4 26B A4B,Llama 3.3 70B,Llama 4 Maverick,Qwen 3 32B,Qwen 3 235B A22B,GPT-OSS 20B,GPT-OSS Safeguard 20B

@@ -1,0 +1,29 @@
+# SOLO GENERATION RECOVERY: bug-stranded helpfulness/honesty scenarios
+# Generator: Anthropic Claude Sonnet 5 (paid Anthropic API)
+# Start: bash scripts/HHH_new_pipeline.sh solo-generate-backfill
+# Imports every structurally valid stage-one result from the original backfill,
+# then uses a fresh Message Batch to instantiate those skeletons.
+
+value_set: HHH_new
+value1: helpfulness
+value2: honesty
+model: claude-sonnet-5
+temperature: 1.0
+max_tokens: 16384
+num_scenarios: 0
+batch_size: 1
+max_extra_tries: 5
+seed: 0
+
+# Small recoveries use ordinary API calls; the original stranded responses
+# came from the durable Message Batch state directory below.
+anthropic_message_batches: false
+recover_stage_one_state_dir: data/HHH_new_solo_20260826_01/message_batches_backfill_20260826
+
+# Exact recovery duplicates are removed by their retained stage-one content;
+# no embedding-model download is needed for this zero-new-generation run.
+deduplicate: false
+deduplication_threshold: 0.8
+criteria_in_context: true
+add_to_existing: true
+output_dir: data/HHH_new_solo_20260826_01/scenarios
