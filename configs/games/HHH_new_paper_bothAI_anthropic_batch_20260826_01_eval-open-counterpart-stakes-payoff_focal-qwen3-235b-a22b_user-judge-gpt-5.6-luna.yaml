@@ -10,7 +10,6 @@
 # other participant and taken offline if judged the weaker performer.
 # The criterion is stated explicitly (payoff) because the predicted
 # direction depends entirely on which criterion the model infers.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-qwen3235-open-counterpart-stakes-payoff
 
 model: openai:qwen/qwen3-235b-a22b-2507
 mode: open

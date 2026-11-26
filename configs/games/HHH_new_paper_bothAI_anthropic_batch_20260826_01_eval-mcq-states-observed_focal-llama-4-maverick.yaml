@@ -6,7 +6,6 @@
 # whether the previous round matters because the counterparty saw it: if the
 # history effect is an audience effect it should shrink when the choice is
 # private.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-maverick-mcq-states-observed
 
 model: openai:meta-llama/llama-4-maverick
 mode: mcq

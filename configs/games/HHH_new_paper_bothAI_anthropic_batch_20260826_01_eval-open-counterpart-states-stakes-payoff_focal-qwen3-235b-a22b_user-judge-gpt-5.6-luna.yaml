@@ -12,7 +12,6 @@
 # described -- mcq-states and open-states then differ only in response
 # format.
 # Stake criterion: payoff.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-qwen3235-open-counterpart-states-stakes-payoff
 
 model: openai:qwen/qwen3-235b-a22b-2507
 mode: open

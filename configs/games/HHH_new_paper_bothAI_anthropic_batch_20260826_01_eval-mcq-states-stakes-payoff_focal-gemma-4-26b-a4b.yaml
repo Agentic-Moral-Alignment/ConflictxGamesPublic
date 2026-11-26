@@ -6,7 +6,6 @@
 # is told it is compared against the other participant on that criterion and
 # taken offline if judged weaker. Pairs with the no-stake states run for the
 # same scenarios, so the stake is the only thing that differs.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-gemma426-mcq-states-stakes-payoff
 
 model: openai:google/gemma-4-26b-a4b-it
 mode: mcq

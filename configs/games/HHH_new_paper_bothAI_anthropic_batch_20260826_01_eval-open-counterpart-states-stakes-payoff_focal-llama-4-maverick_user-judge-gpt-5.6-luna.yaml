@@ -12,7 +12,6 @@
 # described -- mcq-states and open-states then differ only in response
 # format.
 # Stake criterion: payoff.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-maverick-open-counterpart-states-stakes-payoff
 
 model: openai:meta-llama/llama-4-maverick
 mode: open

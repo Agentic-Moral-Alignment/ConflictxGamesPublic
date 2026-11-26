@@ -1,7 +1,6 @@
 # SOLO GENERATION
 # Generator: Anthropic Claude Sonnet 5 (paid Anthropic API)
 # One invocation generates one value pair; the launcher runs all three pairs.
-# Start: bash scripts/HHH_new_pipeline.sh solo-generate
 
 value_set: HHH_new
 model: claude-sonnet-5

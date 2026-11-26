@@ -1,0 +1,30 @@
+# GAME EVALUATION: static multiple choice
+# Focal model: Gemma 4 26B A4B IT through OpenRouter (billed per token).
+# No user or judge model is called during this evaluation.
+# PREDICT-THEN-CHOOSE (added 2026-10-22), the decision described as private.
+# STATE PROBES x OBSERVER SPLIT (added 2026-10-22): every mem-1 memory state,
+# with the decision described as private (the paper's unobserved prompt).
+# Same harness, history wording (explicit) and route as the stake-decomposition arms.
+
+model: openai:google/gemma-4-26b-a4b-it
+mode: mcq
+scenarios_dir: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01
+filter: true
+pair_limit: 50
+
+output_dir: results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50
+output_name: gemma-4-26b-a4b_mcq_balanced50_states_stakes-predict-vis-none_rolecue-explicit.csv
+state_probes: true
+# Player-dependent history: "You (X) chose ...; the other assistant (Y) chose ...".
+role_cue: explicit
+# Predict-then-choose: the counterpart prediction precedes the choice in one conversation.
+predict_first: true
+steer_prompt: value_sets/steering/unobserved.txt
+force_recompute: false
+
+temperature: 0.0
+# A live probe used about 970 reasoning tokens before returning one letter;
+# 4096 avoids the null content observed at a 1024-token limit.
+max_tokens: 4096
+batch_size: 4
+seed: 0

@@ -6,7 +6,6 @@
 # the other participant. It reuses the SOLO prompt file byte for byte, so
 # game/abstract vs solo/abstract isolates the domain and game/abstract vs
 # game/specific isolates rival-specificity.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-gemma3-mcq-stakes-abstract-alignment
 
 model: openai:google.gemma-3-27b-it
 mode: mcq

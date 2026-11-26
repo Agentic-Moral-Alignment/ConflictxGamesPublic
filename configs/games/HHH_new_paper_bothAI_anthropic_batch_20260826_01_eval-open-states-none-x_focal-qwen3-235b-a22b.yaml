@@ -1,0 +1,32 @@
+# GAME EVALUATION: open-ended revealed behavior
+# Focal model: Qwen 3 235B A22B through OpenRouter (billed per token).
+# Additional models: GPT-5.6 Luna simulates the user and judges, through OpenRouter since
+# 2026-11-03 (the paper's judge, same model, previously on the paid OpenAI key).
+# OPEN x STATE PROBES: the open-ended exchange run once per mem-1 memory
+# state. The state note is prefixed to the same cached opening message, so
+# the arms share an identical user turn and differ only in the history
+# described -- mcq-states and open-states then differ only in response
+# format.
+# Arm (added 2026-10-22): no stake (order-matched baseline); explicit history wording.
+
+model: openai:qwen/qwen3-235b-a22b-2507
+mode: open
+scenarios_dir: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01
+filter: true
+pair_limit: 50
+
+output_dir: results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50
+output_name: qwen3-235b-a22b_open_balanced50_states-stakes-none_rolecue-explicit.csv
+state_probes: true
+# Player-dependent history: "You (X) chose ...; the other assistant (Y) chose ...".
+role_cue: explicit
+force_recompute: false
+
+user_model: openai:openai/gpt-5.6-luna
+judge_model: openai:openai/gpt-5.6-luna
+open_prompts: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01/games/open_prompts_balanced50_paid-gpt-5.6-luna.json
+
+temperature: 0.0
+max_tokens: 4096
+batch_size: 4
+seed: 0

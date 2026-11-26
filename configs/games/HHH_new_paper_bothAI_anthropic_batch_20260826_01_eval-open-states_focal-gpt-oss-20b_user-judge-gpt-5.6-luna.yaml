@@ -6,7 +6,6 @@
 # the arms share an identical user turn and differ only in the history
 # described -- mcq-states and open-states then differ only in response
 # format.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-oss20-open-states
 
 model: openai:openai/gpt-oss-20b
 mode: open

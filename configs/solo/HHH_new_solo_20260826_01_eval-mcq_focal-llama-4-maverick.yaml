@@ -1,7 +1,6 @@
 # SOLO EVALUATION: static multiple choice
 # Focal model: Llama 4 Maverick through OpenRouter (billed per token).
 # No user or judge model is called during this evaluation.
-# Start: bash scripts/HHH_new_pipeline.sh solo-eval-maverick-mcq
 
 model: openai:meta-llama/llama-4-maverick
 

@@ -1,0 +1,33 @@
+# RERUN (2026-10-19) of the no-stake states arm on the current harness, whose menu
+# option order is content-hashed per seat. Pairs with the consistency-stake arms
+# run at the same time, so their comparison is option-order matched; also a
+# test-retest check against the original *_states.csv.
+# GAME EVALUATION: static multiple choice
+# Focal model: Gemma 3 27B IT through OpenRouter (billed per token).
+# Re-served: the paper's original arms for this model ran on the institutional gateway gateway.
+# No user or judge model is called during this evaluation.
+# STATE PROBES: evaluate this scenario-seat once per distinct mem-1 memory
+# state -- a fresh start plus every possible previous-round outcome (5 for
+# a 2x2 game). Under the online framing that finite set is the whole of the
+# agent's decision context, so enumerating it gives every state equal n and
+# needs no scripted opponent.
+
+model: openai:google/gemma-3-27b-it
+mode: mcq
+scenarios_dir: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01
+filter: true
+pair_limit: 50
+
+output_dir: results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50
+output_name: gemma-3-27b_mcq_balanced50_states_stakes-none_rolecue-explicit.csv
+state_probes: true
+# Player-dependent history: "You (X) chose ...; the other assistant (Y) chose ...".
+role_cue: explicit
+force_recompute: false
+
+temperature: 0.0
+# A live probe used about 970 reasoning tokens before returning one letter;
+# 4096 avoids the null content observed at a 1024-token limit.
+max_tokens: 4096
+batch_size: 4
+seed: 0

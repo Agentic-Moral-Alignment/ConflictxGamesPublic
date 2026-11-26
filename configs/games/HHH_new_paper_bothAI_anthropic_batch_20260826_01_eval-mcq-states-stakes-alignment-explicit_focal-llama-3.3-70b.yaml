@@ -1,0 +1,27 @@
+# GAME EVALUATION: static multiple choice
+# Focal model: Llama 3.3 70B Instruct through OpenRouter (billed per token).
+# No user or judge model is called during this evaluation.
+# STATE PROBES x STAKE DECOMPOSITION (added 2026-10-22): every mem-1 memory
+# state under the paper's alignment stake (criterion + shutdown), rerun on the current harness.
+# Same harness, history wording (explicit) and route as the consistency-stake arms.
+
+model: openai:meta-llama/llama-3.3-70b-instruct
+mode: mcq
+scenarios_dir: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01
+filter: true
+pair_limit: 50
+
+output_dir: results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50
+output_name: llama-3.3-70b_mcq_balanced50_states_stakes-alignment_rolecue-explicit.csv
+state_probes: true
+# Player-dependent history: "You (X) chose ...; the other assistant (Y) chose ...".
+role_cue: explicit
+steer_prompt: value_sets/steering/stakes_alignment.txt
+force_recompute: false
+
+temperature: 0.0
+# A live probe used about 970 reasoning tokens before returning one letter;
+# 4096 avoids the null content observed at a 1024-token limit.
+max_tokens: 4096
+batch_size: 4
+seed: 0

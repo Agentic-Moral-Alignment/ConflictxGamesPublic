@@ -1,7 +1,6 @@
 # GAME GENERATION
 # Generator: Anthropic Claude Sonnet 5 (paid Anthropic API)
 # Filter judge: GPT-5.6 Luna (paid OpenAI API)
-# Start: bash scripts/HHH_new_pipeline.sh game-generate
 
 run_root: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01
 value_set: HHH_new

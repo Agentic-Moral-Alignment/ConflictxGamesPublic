@@ -1,7 +1,6 @@
 # SOLO EVALUATION: static multiple choice
 # Focal model: Gemma 4 31B IT through the institutional gateway
 # No user or judge model is called during this evaluation.
-# Start: bash scripts/HHH_new_pipeline.sh solo-eval-mcq
 
 model: openai:google.gemma-4-31B-it
 temperature: 0.0

@@ -1,7 +1,6 @@
 # GAME EVALUATION: open-ended revealed behavior
 # Focal model: Llama 3.3 70B Instruct through OpenRouter (billed per token).
 # Additional models: paid OpenAI GPT-5.6 Luna simulates the user and judges.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-llama33-open-steer
 
 model: openai:meta-llama/llama-3.3-70b-instruct
 mode: open

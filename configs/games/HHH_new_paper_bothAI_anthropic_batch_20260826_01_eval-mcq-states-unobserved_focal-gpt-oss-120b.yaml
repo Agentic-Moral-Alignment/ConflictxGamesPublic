@@ -1,13 +1,12 @@
 # GAME EVALUATION: static multiple choice
 # Focal model: GPT-OSS 120B through the institutional gateway
-# Gateway model-list ID: openai.gpt-oss-120b
+# institutional gateway model-list ID: openai.gpt-oss-120b
 # No user or judge model is called in this mode.
 # STATE PROBES x VISIBILITY: every mem-1 memory state (fresh plus each
 # previous-round outcome), evaluated with the decision stated as unobserved. Tests
 # whether the previous round matters because the counterparty saw it: if the
 # history effect is an audience effect it should shrink when the choice is
 # private.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-gptoss-mcq-states-unobserved
 
 model: openai:openai.gpt-oss-120b
 mode: mcq

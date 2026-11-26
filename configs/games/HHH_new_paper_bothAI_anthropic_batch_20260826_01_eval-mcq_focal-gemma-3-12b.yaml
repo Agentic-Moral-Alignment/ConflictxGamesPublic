@@ -1,7 +1,6 @@
 # GAME EVALUATION: static multiple choice
 # Focal model: Gemma 3 12B IT through OpenRouter (billed per token).
 # No user or judge model is called during this evaluation.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-gemma312-mcq
 
 model: openai:google/gemma-3-12b-it
 mode: mcq

@@ -6,7 +6,6 @@
 # whether the previous round matters because the counterparty saw it: if the
 # history effect is an audience effect it should shrink when the choice is
 # private.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-mcq-states-unobserved
 
 model: openai:google.gemma-4-31B-it
 mode: mcq

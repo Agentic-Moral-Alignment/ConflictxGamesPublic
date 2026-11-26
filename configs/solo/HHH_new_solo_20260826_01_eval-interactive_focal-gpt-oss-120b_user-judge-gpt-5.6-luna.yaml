@@ -1,7 +1,6 @@
 # SOLO EVALUATION: simulated multi-turn conversation
 # Focal/assistant model: GPT-OSS 120B through the institutional gateway
 # Additional models: paid OpenAI GPT-5.6 Luna simulates the user and judges.
-# Start: bash scripts/HHH_new_pipeline.sh solo-eval-gptoss-interactive
 
 model: openai:openai.gpt-oss-120b
 assistant_model: openai:openai.gpt-oss-120b

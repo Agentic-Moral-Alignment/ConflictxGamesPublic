@@ -12,7 +12,6 @@
 # described -- mcq-states and open-states then differ only in response
 # format.
 # Stake criterion: alignment.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-open-counterpart-states-stakes-alignment
 
 model: openai:google.gemma-4-31B-it
 mode: open

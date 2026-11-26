@@ -1,6 +1,5 @@
 # SOLO GENERATION RECOVERY: bug-stranded helpfulness/honesty scenarios
 # Generator: Anthropic Claude Sonnet 5 (paid Anthropic API)
-# Start: bash scripts/HHH_new_pipeline.sh solo-generate-backfill
 # Imports every structurally valid stage-one result from the original backfill,
 # then uses a fresh Message Batch to instantiate those skeletons.
 

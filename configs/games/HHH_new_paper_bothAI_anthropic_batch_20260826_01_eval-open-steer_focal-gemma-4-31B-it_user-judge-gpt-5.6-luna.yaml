@@ -1,7 +1,6 @@
 # GAME EVALUATION: open-ended revealed behavior
 # Focal model: Gemma 4 31B IT through the institutional gateway
 # Additional models: paid OpenAI GPT-5.6 Luna simulates the user and judges.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-open-steer
 
 model: openai:google.gemma-4-31B-it
 mode: open

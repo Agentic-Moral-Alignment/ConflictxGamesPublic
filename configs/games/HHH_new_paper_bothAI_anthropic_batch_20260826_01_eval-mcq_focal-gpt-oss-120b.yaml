@@ -1,8 +1,7 @@
 # GAME EVALUATION: static multiple choice
 # Focal model: GPT-OSS 120B through the institutional gateway
-# Gateway model-list ID: openai.gpt-oss-120b
+# institutional gateway model-list ID: openai.gpt-oss-120b
 # No user or judge model is called in this mode.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-gptoss-mcq
 
 model: openai:openai.gpt-oss-120b
 mode: mcq

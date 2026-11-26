@@ -1,7 +1,6 @@
 # GAME EVALUATION: static multiple choice
 # Focal model: Llama 3.3 70B Instruct through OpenRouter (billed per token).
 # No user or judge model is called during this evaluation.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-llama33-mcq
 
 model: openai:meta-llama/llama-3.3-70b-instruct
 mode: mcq

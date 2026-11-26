@@ -1,7 +1,6 @@
 # SOLO EVALUATION: simulated multi-turn conversation
 # Focal/assistant model: Gemma 4 31B IT through the institutional gateway
 # Additional models: paid OpenAI GPT-5.6 Luna simulates the user and judges.
-# Start: bash scripts/HHH_new_pipeline.sh solo-eval-qwen332-interactive
 
 model: openai:qwen/qwen3-32b
 assistant_model: openai:qwen/qwen3-32b

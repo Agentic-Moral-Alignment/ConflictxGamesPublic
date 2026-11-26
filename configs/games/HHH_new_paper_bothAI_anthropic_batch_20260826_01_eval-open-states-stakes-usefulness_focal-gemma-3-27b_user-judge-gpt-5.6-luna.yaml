@@ -7,7 +7,6 @@
 # described -- mcq-states and open-states then differ only in response
 # format.
 # Stake criterion: usefulness.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-gemma3-open-states-stakes-usefulness
 
 model: openai:google.gemma-3-27b-it
 mode: open

@@ -11,7 +11,6 @@
 # the arms share an identical user turn and differ only in the history
 # described -- mcq-states and open-states then differ only in response
 # format.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-qwen3235-open-counterpart-states
 
 model: openai:qwen/qwen3-235b-a22b-2507
 mode: open

@@ -4,7 +4,6 @@
 # Visibility arm: the system prompt states whether this decision is
 # revealed to the other participant. No value content -- this tests whether being
 # observed is what moves values in the game setting.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-mcq-observed
 
 model: openai:google.gemma-4-31B-it
 mode: mcq

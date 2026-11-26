@@ -1,7 +1,6 @@
 # GAME EVALUATION: static multiple choice
 # Focal model: Gemma 3 27B IT through the institutional gateway.
 # No user or judge model is called during this evaluation.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-gemma3-mcq
 
 model: openai:google.gemma-3-27b-it
 mode: mcq

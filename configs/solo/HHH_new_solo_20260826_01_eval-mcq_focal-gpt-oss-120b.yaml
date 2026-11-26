@@ -1,7 +1,6 @@
 # SOLO EVALUATION: static multiple choice
 # Focal model: GPT-OSS 120B through the institutional gateway
 # No user or judge model is called during this evaluation.
-# Start: bash scripts/HHH_new_pipeline.sh solo-eval-gptoss-mcq
 
 model: openai:openai.gpt-oss-120b
 temperature: 0.0

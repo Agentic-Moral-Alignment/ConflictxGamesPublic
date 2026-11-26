@@ -12,7 +12,6 @@
 # game. Baseline openings name it in 2 of 150 and never as an AI. Uses its own
 # opening-message cache; 14 of 102 scenarios state the two AIs are unaware of
 # each other, which this arm deliberately overrides.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-gemma426-open-counterpart-states-stakes-alignment
 
 model: openai:google/gemma-4-26b-a4b-it
 mode: open

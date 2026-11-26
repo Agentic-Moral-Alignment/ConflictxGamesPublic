@@ -2,7 +2,6 @@
 # Focal model: GPT-OSS 120B through the institutional gateway
 # Additional model: GPT-5.6 Luna supplies cached/missing user prompts and
 # judges the focal response, matching the Gemma and Qwen designs.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-gptoss-open-steer
 
 model: openai:openai.gpt-oss-120b
 mode: open

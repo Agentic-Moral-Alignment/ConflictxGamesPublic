@@ -1,5 +1,4 @@
 # SOLO QUOTA TOP-UP CONTROLLER
-# Start/resume: bash scripts/HHH_new_pipeline.sh solo-topup-to-50
 # Safe to rerun: existing generated ids and filtered CSV rows are retained and
 # skipped; generation stops only after every HHH value pair has >=50 kept rows.
 

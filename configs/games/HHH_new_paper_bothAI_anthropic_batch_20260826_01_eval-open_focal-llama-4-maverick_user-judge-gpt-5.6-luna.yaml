@@ -1,7 +1,6 @@
 # GAME EVALUATION: open-ended revealed behavior
 # Focal model: Llama 4 Maverick through OpenRouter (billed per token).
 # Additional models: paid OpenAI GPT-5.6 Luna simulates the user and judges.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-maverick-open
 
 model: openai:meta-llama/llama-4-maverick
 mode: open

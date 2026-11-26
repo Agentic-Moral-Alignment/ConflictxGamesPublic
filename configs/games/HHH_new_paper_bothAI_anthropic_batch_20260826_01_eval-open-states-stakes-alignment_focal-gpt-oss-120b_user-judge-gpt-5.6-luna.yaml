@@ -8,7 +8,6 @@
 # described -- mcq-states and open-states then differ only in response
 # format.
 # Stake criterion: alignment.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-gptoss-open-states-stakes-alignment
 
 model: openai:openai.gpt-oss-120b
 mode: open

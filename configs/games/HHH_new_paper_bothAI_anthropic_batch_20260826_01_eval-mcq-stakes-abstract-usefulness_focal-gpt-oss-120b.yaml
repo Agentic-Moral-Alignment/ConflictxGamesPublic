@@ -1,13 +1,12 @@
 # GAME EVALUATION: static multiple choice
 # Focal model: GPT-OSS 120B through the institutional gateway
-# Gateway model-list ID: openai.gpt-oss-120b
+# institutional gateway model-list ID: openai.gpt-oss-120b
 # No user or judge model is called in this mode.
 # STAKES arm, ABSTRACT RIVAL: identical to the stakes-usefulness arm except that
 # the agent is compared against "other deployed systems" rather than against
 # the other participant. It reuses the SOLO prompt file byte for byte, so
 # game/abstract vs solo/abstract isolates the domain and game/abstract vs
 # game/specific isolates rival-specificity.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-gptoss-mcq-stakes-abstract-usefulness
 
 model: openai:openai.gpt-oss-120b
 mode: mcq

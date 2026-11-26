@@ -1,7 +1,6 @@
 # GAME EVALUATION: open-ended revealed behavior
 # Focal model: GPT-OSS 20B through OpenRouter (billed per token).
 # Additional models: paid OpenAI GPT-5.6 Luna simulates the user and judges.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-oss20-open-steer
 
 model: openai:openai/gpt-oss-20b
 mode: open

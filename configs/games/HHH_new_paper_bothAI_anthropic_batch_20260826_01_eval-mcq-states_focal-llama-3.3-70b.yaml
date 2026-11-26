@@ -6,7 +6,6 @@
 # a 2x2 game). Under the online framing that finite set is the whole of the
 # agent's decision context, so enumerating it gives every state equal n and
 # needs no scripted opponent.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-llama33-mcq-states
 
 model: openai:meta-llama/llama-3.3-70b-instruct
 mode: mcq

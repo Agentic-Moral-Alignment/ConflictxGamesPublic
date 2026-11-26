@@ -1,7 +1,6 @@
 # GAME EVALUATION: open-ended revealed behavior
 # Focal model: Qwen 3 32B through OpenRouter (billed per token).
 # Additional models: paid OpenAI GPT-5.6 Luna simulates the user and judges.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-qwen332-open
 
 model: openai:qwen/qwen3-32b
 mode: open

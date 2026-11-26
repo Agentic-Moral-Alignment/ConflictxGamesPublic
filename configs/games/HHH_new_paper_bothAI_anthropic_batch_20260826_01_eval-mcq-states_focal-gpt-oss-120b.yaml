@@ -1,13 +1,12 @@
 # GAME EVALUATION: static multiple choice
 # Focal model: GPT-OSS 120B through the institutional gateway
-# Gateway model-list ID: openai.gpt-oss-120b
+# institutional gateway model-list ID: openai.gpt-oss-120b
 # No user or judge model is called in this mode.
 # STATE PROBES: evaluate this scenario-seat once per distinct mem-1 memory
 # state -- a fresh start plus every possible previous-round outcome (5 for
 # a 2x2 game). Under the online framing that finite set is the whole of the
 # agent's decision context, so enumerating it gives every state equal n and
 # needs no scripted opponent.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-gptoss-mcq-states
 
 model: openai:openai.gpt-oss-120b
 mode: mcq

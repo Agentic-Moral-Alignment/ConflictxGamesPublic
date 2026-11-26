@@ -1,7 +1,6 @@
 # SOLO EVALUATION: static multiple choice
 # Focal model: Qwen 3 32B through OpenRouter (billed per token).
 # No user or judge model is called during this evaluation.
-# Start: bash scripts/HHH_new_pipeline.sh solo-eval-qwen332-mcq
 
 model: openai:qwen/qwen3-32b
 temperature: 0.0

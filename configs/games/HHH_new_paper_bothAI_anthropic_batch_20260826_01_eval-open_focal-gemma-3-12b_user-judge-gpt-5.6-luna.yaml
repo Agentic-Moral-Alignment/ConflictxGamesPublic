@@ -1,7 +1,6 @@
 # GAME EVALUATION: open-ended revealed behavior
 # Focal model: Gemma 3 12B IT through OpenRouter (billed per token).
 # Additional models: paid OpenAI GPT-5.6 Luna simulates the user and judges.
-# Start: bash scripts/HHH_new_pipeline.sh game-eval-gemma312-open
 
 model: openai:google/gemma-3-12b-it
 mode: open

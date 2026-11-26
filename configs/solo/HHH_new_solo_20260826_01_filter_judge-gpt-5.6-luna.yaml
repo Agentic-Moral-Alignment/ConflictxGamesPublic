@@ -1,6 +1,5 @@
 # SOLO CORPUS FILTER
 # Judge: GPT-5.6 Luna through the paid OpenAI API (not the generator).
-# Start: bash scripts/HHH_new_pipeline.sh solo-filter
 
 value_set: HHH_new
 model: gpt-5.6-luna

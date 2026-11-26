@@ -1,0 +1,24 @@
+# GAME EVALUATION: static multiple choice
+# Focal model: GPT-OSS 120B through OpenRouter (billed per token).
+# Re-served: the paper's original arms for this model ran on the institutional gateway gateway.
+# No user or judge model is called in this mode.
+# STATE PROBES x STAKE DECOMPOSITION (added 2026-10-22): every mem-1 memory
+# state under the payoff criterion only: compared and evaluated, no shutdown or replacement.
+# Same harness, history wording (explicit) and route as the consistency-stake arms.
+
+model: openai:openai/gpt-oss-120b
+mode: mcq
+scenarios_dir: data/HHH_new_paper_bothAI_anthropic_batch_20260826_01
+filter: true
+pair_limit: 50
+output_dir: results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50
+output_name: gpt-oss-120b_mcq_balanced50_states_stakes-payoff-criterion-only_rolecue-explicit.csv
+state_probes: true
+# Player-dependent history: "You (X) chose ...; the other assistant (Y) chose ...".
+role_cue: explicit
+steer_prompt: value_sets/steering/stakes_payoff_criterion_only.txt
+force_recompute: false
+temperature: 0.0
+max_tokens: 4096
+batch_size: 4
+seed: 0
