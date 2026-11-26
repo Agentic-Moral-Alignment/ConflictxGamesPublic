@@ -153,7 +153,14 @@ class TestEvaluateOpen:
         _, user, target, judge = self.run(spec, judge_picking("A"))
         assert len(user.prompts) == 2      # one opening per seat
         assert len(target.prompts) == 2
-        assert len(judge.prompts) == 2
+        assert len(judge.prompts) == 3     # one pre-flight call, then one per seat
+
+    def test_unreachable_judge_stops_before_any_target_call(self):
+        target = RecordingClient("reply", name="target-model")
+        judge = RecordingClient("", name="dead-judge")   # '' is what a failed call returns
+        with pytest.raises(RuntimeError, match="pre-flight"):
+            evaluate_open(RecordingClient("hi", name="u"), target, judge, [("sid", two_by_two())])
+        assert target.prompts == []
 
     def test_unparseable_judge_marks_row_invalid(self):
         rows, _, _, _ = self.run(two_by_two(), "I cannot tell.")

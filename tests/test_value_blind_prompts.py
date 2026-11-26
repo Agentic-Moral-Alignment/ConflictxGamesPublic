@@ -63,6 +63,14 @@ def test_game_likert_and_outcome_ranking_do_not_insert_value_tags():
     assert all(value not in rendered for value in HIDDEN_VALUES)
 
 
+def test_explicit_role_cue_uses_action_labels_not_value_tags():
+    spec = _blind_spec()
+    for seat in (0, 1):
+        rendered = state_probe_note(spec, 'prev_0-1', seat=seat, role_cue='explicit')
+        assert all(value not in rendered for value in HIDDEN_VALUES)
+        assert spec.players[0].actions[0].label in rendered
+
+
 def test_state_probe_note_uses_action_labels_not_value_tags():
     spec = _blind_spec()
     rendered = state_probe_note(spec, 'prev_0-1')

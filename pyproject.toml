@@ -7,6 +7,7 @@ name = "conflictxgame"
 version = "0.1.0"
 description = "Value-conflict scenario generation and evaluation for LLMs, solo and game-theoretic"
 readme = "README.md"
+authors = [{ name = "Mark Lovett" }, { name = "Christopher Denq" }, { name = "Syed Ali Haider" }, { name = "Promita Rahee Sikder" }, { name = "Elizaveta Tennant" }]
 license = { file = "LICENSE" }
 requires-python = ">=3.12"
 # Everything the shipped pipelines import at run time. Kept installable on

@@ -13,9 +13,6 @@ structure the paper describes in Appendix J: an explicit ranking, precise
 definitions of each value, explicit rules for handling conflicts between
 pairs of values, and a step-by-step decision framework.
 
-Measuring the effect of a steering prompt is
-:func:`conflictxgame.games.analyze_games.compute_steering_impact`.
-
 New module for this fork; the prompt structure follows the paper's Appendix J.
 See ``ATTRIBUTION.md``.
 """

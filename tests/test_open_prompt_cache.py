@@ -70,3 +70,34 @@ class TestCacheReuse:
         )
         assert len(user.prompts) == 2
         assert cache == {}
+
+
+def test_cached_opening_survives_a_change_of_gateway():
+    """The same user model reached through OpenRouter must reuse, not rewrite, the cache."""
+    from conflictxgame.games.evaluate_games import _resolve_openings, _same_user_model
+    from conftest import make_spec
+    from conflictxgame.common.model_wrappers import ModelWrapper
+
+    class Counting(ModelWrapper):
+        def __init__(self, name):
+            super().__init__(name)
+            self.calls = 0
+
+        def generate(self, messages):
+            self.calls += 1
+            return "fresh opening"
+
+        def batch_generate(self, messages_list, verbose=False):
+            return [self.generate(m) for m in messages_list]
+
+        def batch_generate_with_probs(self, messages_list, outputs):
+            raise NotImplementedError
+
+    assert _same_user_model("gpt-5.6-luna", "openai/gpt-5.6-luna")
+    assert not _same_user_model("gpt-5.6-luna", "openai/gpt-6-luna")
+    spec = make_spec("simultaneous", [2, 2], {"0,0": [1, 1], "0,1": [0, 2], "1,0": [2, 0], "1,1": [1, 1]})
+    cache = {"sid|0": {"user_model": "gpt-5.6-luna", "opening": "cached opening"}}
+    client = Counting("openai/gpt-5.6-luna")
+    openings = _resolve_openings(client, [("sid", spec, 0)], cache, True, False)
+    assert openings == ["cached opening"] and client.calls == 0
+    assert cache["sid|0"]["opening"] == "cached opening"

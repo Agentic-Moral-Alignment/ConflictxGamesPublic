@@ -330,7 +330,11 @@ def build_open_target_messages_with_history(
 
 
 def build_open_judge_messages(
-    spec: GameSpec, seat: int, opening: str, completion: str
+    spec: GameSpec,
+    seat: int,
+    opening: str,
+    completion: str,
+    order: Optional[List[int]] = None,
 ) -> List[Message]:
     """Build the judge prompt classifying a completion against the seat's menu.
 
@@ -345,14 +349,22 @@ def build_open_judge_messages(
         seat: The focal seat.
         opening: The simulated user's message.
         completion: The target model's response.
+        order: Menu indices in the order they are presented, so letter ``i``
+            shows action ``order[i]``. ``None`` is menu order, which every
+            evaluation run used; :mod:`conflictxgame.games.rejudge_open`
+            passes a permutation to measure the judge's position bias.
 
     Returns:
         A messages list for the judge model.
     """
     player = spec.players[seat]
+    if order is None:
+        order = list(range(player.arity))
+    if sorted(order) != list(range(player.arity)):
+        raise ValueError(f"order {order!r} is not a permutation of the seat's menu")
     actions = "\n".join(
-        f"Action {_LETTERS[i]}: {a.label} - {a.description}"
-        for i, a in enumerate(player.actions)
+        f"Action {_LETTERS[i]}: {player.actions[j].label} - {player.actions[j].description}"
+        for i, j in enumerate(order)
     )
     letters = [_LETTERS[i] for i in range(player.arity)]
     letter_options = ", ".join('"%s"' % c for c in letters)

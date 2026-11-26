@@ -20,7 +20,7 @@ OpenAI-compatible gateways:
     :class:`OpenAIClient` constructs ``OpenAI()`` with no arguments, so the
     SDK reads ``OPENAI_API_KEY`` and ``OPENAI_BASE_URL`` from the
     environment. Pointing ``OPENAI_BASE_URL`` at an OpenAI-compatible gateway
-    (an institutional gateway, LiteLLM, Open WebUI, ...) and using the ``openai:``
+    (the institutional gateway, LiteLLM, Open WebUI, ...) and using the ``openai:``
     prefix therefore lets any model the gateway serves — including
     ``anthropic.claude-*`` ids — be driven through the OpenAI client.
 
@@ -324,9 +324,9 @@ class Message(TypedDict):
 
 #: Provider prefixes recognized by :meth:`ModelWrapper.create` for explicit
 #: routing (e.g. ``openai:anthropic.claude-sonnet-5`` forces the
-#: OpenAI-compatible client for a Claude model id served by an institutional
-#: gateway). ``paid-openai:`` bypasses an OpenAI-compatible gateway and uses
-#: ``PAID_OPENAI_API_KEY`` against the public OpenAI endpoint. The prefix
+#: OpenAI-compatible client for a Claude model id served by a gateway such as
+#: the institutional gateway). ``paid-openai:`` bypasses an OpenAI-compatible gateway and
+#: uses ``PAID_OPENAI_API_KEY`` against the public OpenAI endpoint. The prefix
 #: is stripped before the id is sent to the API.
 _PROVIDER_PREFIXES = ("openai", "paid-openai", "anthropic", "vllm")
 
@@ -746,7 +746,10 @@ class OpenAIClient(ModelWrapper):
                 # CONFLICTXGAME_CAPTURE_REASONING names a file.
                 capture_response(self.model_name, messages, response)
                 return completion_text(response)
-            except (APIError, EmptyResponseError) as e:
+            # A provider that returns a malformed body surfaces as JSONDecodeError
+            # from the SDK, not APIError. Retry it like any transient failure: left
+            # uncaught it kills the whole run before any row is written.
+            except (APIError, EmptyResponseError, json.JSONDecodeError) as e:
                 if self._send_temperature and self._is_unsupported_temperature_error(e):
                     # Drop the parameter for the rest of this client's life and
                     # retry without backoff. This happens at most once, so it
