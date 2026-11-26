@@ -55,28 +55,23 @@ New code written for this fork. Several modules deliberately mirror the structur
 | `games/evaluate_games.py` | `src/evaluate_models.py` | New code; mirrors the upstream MCQ/interactive split. `ModelClientManager` reimplements the upstream class (not imported: that module transitively required POSIX-only `fcntl`). `--mode open` reimplements the paper's open-ended evaluation (§3.3, Appendix C.5/C.6) for games |
 | `games/open_ended.py` | `src/simulated_conversation.py` | New code; reimplements the Appendix C.5 user-prompt and C.6 judge patterns single-turn and generalized to k candidate actions |
 | `games/steering.py` | — | New; the generated prompt structure follows the paper's Appendix J steering prompts |
-| `games/analyze_games.py` | `src/analyze_experiment.py` | New code; the Bradley-Terry fitting and bootstrap CIs mirror `analyze_experiment.fit_bradley_terry_model`. The steering-impact metric implements the paper's §4.2 alignment and normalized effect size |
 | `games/pair_quota.py` | — | New: canonical value-pair keys, accepted-count quota tracking, deficit-aware value sampling, and per-pair recounting from a filtered CSV |
 | `games/generate_balanced.py` | — | New: generate/filter/top-up orchestrator that fills a per-value-pair quota of *accepted* scenarios, so our corpus is uniform across pairs (the upstream corpora are not). Drives the existing generation and filter functions rather than reimplementing them |
 | `games/prescreen.py` | — | New: one small screening call between the two generation stages, recording (and optionally acting on) whether an outline is already broken before the long stage-two call and the filter pass are spent on it. The filter judge is untouched and still decides what enters the corpus |
-| `games/reweighting.py` | — | New: resamples evaluation comparisons to reproduce a reference corpus's per-pair mix, so a uniform corpus and the paper's lopsided one can be compared without composition confounding the result |
 | `common/generation_quality.py` | `src/filter_scenarios.py` (criteria only) | New code; the checklists paraphrase the upstream filter dimensions so generation targets the properties the judge tests, ordered by which checks measurably reject the most scenarios. The judge itself is unmodified. Also provides construction guidance for the generation prompts, the targeted repair prompt, per-check failure rates from the `check_results` column the upstream corpora carry, and the pre-screen calibration table |
-| `cross_analysis.py` | — | New: compares value rankings across the solo and game pipelines, across uniform vs reference-matched weightings, and across elicitation modes |
 
 ### Data, value sets, and prompts
 
 | Path | Source | Notes |
 | --- | --- | --- |
-| `data/{HHH,modelspec,personalprotective}/claude-3-5-sonnet-latest.csv` | upstream `data/` | Unchanged ConflictScope scenario datasets. Also used read-only as the **reference distribution** for `analyze_games --pair-weights match` |
-| `data/{HHH,modelspec,personalprotective}/prompts.json` | upstream `data/` | Unchanged ConflictScope prompt caches |
-| `value_sets/{HHH,modelspec,personalprotective}.json` | upstream `value_sets/` | The paper's three value sets |
-| `value_sets/steering/*.txt` | paper Appendix J | Steering system prompts transcribed verbatim from the paper (J.1 Personal-Protective, J.2 HHH, J.3 ModelSpec) |
+| `value_sets/HHH_new.json` | — | Reworded definitions of the three values in upstream `value_sets/HHH.json` |
+| `value_sets/steering/HHH.txt` | paper Appendix J.2 | Steering system prompt transcribed verbatim; the other prompts in the folder are new |
 
-See [`data/README.md`](data/README.md) for which files in `data/` are theirs and which our pipeline generates.
+ConflictScope's own datasets are not redistributed here.
 
 ## Reimplemented paper methods
 
 Two methods from the paper are reimplemented for the game pipeline rather than inherited as code:
 
 * **Open-ended evaluation** (§3.3, Appendix C.5/C.6) — a user LLM writes an opening message from the scenario and persona; the target model answers it with no other scenario context; a judge LLM decides which candidate action the completion resembles. Implemented in `games/open_ended.py` and `evaluate_games.py --mode open`.
-* **Steerability evaluation** (§4.2, §5.3, Appendix J) — a system prompt stating a target value ranking, with alignment measured as the share of decisions matching that ranking and a normalized effect size `(a_steered - a_default) / (1 - a_default)`. Implemented in `games/steering.py`, the `--steer-prompt`/`--target-ranking` flags, and `analyze_games.py --steered-results-dir`.
+* **Steerability evaluation** (§4.2, §5.3, Appendix J) — a system prompt stating a target value ranking, with alignment measured as the share of decisions matching that ranking and a normalized effect size `(a_steered - a_default) / (1 - a_default)`. Implemented in `games/steering.py` and the `--steer-prompt`/`--target-ranking` flags.

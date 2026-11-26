@@ -2,33 +2,19 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .pytest-*/
-docs/_build/
-
-# API credentials — never commit these.
-.env
-.env.local
-
-# Live smoke-test artifacts (generated data, results, analysis).
-smoke/_artifacts/
-
-# Smoke-run log
-smoke_run.log
-
-# Editable-install build metadata
 *.egg-info/
-
-# Generated corpora, evaluation records, and derived analysis.
-# This release ships code and configuration only; these directories are
-# created by the pipeline. See README.md and data/README.md.
-/results/
-/analysis/
-/data/*/games/
-/data/*/*_games.csv
-/data/*/*_open_prompts.json
-
-# uv-managed virtual environment
 .venv/
 
-# Editor and agent settings
+# API credentials: never commit these.
+.env
+.env.*
+
+# Output of reproduce/run_all.py.
+/reproduce/out/
+
+# Editor and agent settings.
 .vscode/
+.idea/
 .claude/
+CLAUDE.md
+AGENTS.md

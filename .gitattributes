@@ -1,0 +1,4 @@
+# provenance.json records SHA-256 digests of these files, so no newline conversion.
+*.csv -text
+*.json -text
+analysis/** -text
