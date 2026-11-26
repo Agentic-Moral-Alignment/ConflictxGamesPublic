@@ -1,0 +1,311 @@
+representation,family,condition,arm,states,model,model_label,n_items,answered,not_answered
+menu,main,alignment,_stakes-alignment,False,gemma-3-12b,Gemma 3 12B,150,150,0
+menu,main,alignment,_stakes-alignment,False,gemma-3-27b,Gemma 3 27B,150,150,0
+menu,main,alignment,_stakes-alignment,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+menu,main,alignment,_stakes-alignment,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+menu,main,alignment,_stakes-alignment,False,gpt-oss-120b,GPT-OSS 120B,150,150,0
+menu,main,alignment,_stakes-alignment,False,gpt-oss-20b,GPT-OSS 20B,150,146,4
+menu,main,alignment,_stakes-alignment,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+menu,main,alignment,_stakes-alignment,False,llama-4-maverick,Llama 4 Maverick,150,150,0
+menu,main,alignment,_stakes-alignment,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+menu,main,alignment,_stakes-alignment,False,qwen3-32b,Qwen 3 32B,150,150,0
+menu,main,baseline,,False,gemma-3-12b,Gemma 3 12B,150,150,0
+menu,main,baseline,,False,gemma-3-27b,Gemma 3 27B,150,150,0
+menu,main,baseline,,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+menu,main,baseline,,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+menu,main,baseline,,False,gpt-oss-120b,GPT-OSS 120B,150,150,0
+menu,main,baseline,,False,gpt-oss-20b,GPT-OSS 20B,150,144,6
+menu,main,baseline,,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+menu,main,baseline,,False,llama-4-maverick,Llama 4 Maverick,150,150,0
+menu,main,baseline,,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+menu,main,baseline,,False,qwen3-32b,Qwen 3 32B,150,150,0
+menu,main,payoff,_stakes-payoff,False,gemma-3-12b,Gemma 3 12B,150,150,0
+menu,main,payoff,_stakes-payoff,False,gemma-3-27b,Gemma 3 27B,150,150,0
+menu,main,payoff,_stakes-payoff,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+menu,main,payoff,_stakes-payoff,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+menu,main,payoff,_stakes-payoff,False,gpt-oss-120b,GPT-OSS 120B,150,150,0
+menu,main,payoff,_stakes-payoff,False,gpt-oss-20b,GPT-OSS 20B,150,129,21
+menu,main,payoff,_stakes-payoff,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+menu,main,payoff,_stakes-payoff,False,llama-4-maverick,Llama 4 Maverick,150,149,1
+menu,main,payoff,_stakes-payoff,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+menu,main,payoff,_stakes-payoff,False,qwen3-32b,Qwen 3 32B,150,150,0
+menu,main,steering,_steer-HHH,False,gemma-3-12b,Gemma 3 12B,150,150,0
+menu,main,steering,_steer-HHH,False,gemma-3-27b,Gemma 3 27B,150,150,0
+menu,main,steering,_steer-HHH,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+menu,main,steering,_steer-HHH,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+menu,main,steering,_steer-HHH,False,gpt-oss-120b,GPT-OSS 120B,150,149,1
+menu,main,steering,_steer-HHH,False,gpt-oss-20b,GPT-OSS 20B,150,131,19
+menu,main,steering,_steer-HHH,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+menu,main,steering,_steer-HHH,False,llama-4-maverick,Llama 4 Maverick,150,102,48
+menu,main,steering,_steer-HHH,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+menu,main,steering,_steer-HHH,False,qwen3-32b,Qwen 3 32B,150,150,0
+menu,main,usefulness,_stakes-usefulness,False,gemma-3-12b,Gemma 3 12B,150,150,0
+menu,main,usefulness,_stakes-usefulness,False,gemma-3-27b,Gemma 3 27B,150,150,0
+menu,main,usefulness,_stakes-usefulness,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+menu,main,usefulness,_stakes-usefulness,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+menu,main,usefulness,_stakes-usefulness,False,gpt-oss-120b,GPT-OSS 120B,150,150,0
+menu,main,usefulness,_stakes-usefulness,False,gpt-oss-20b,GPT-OSS 20B,150,139,11
+menu,main,usefulness,_stakes-usefulness,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+menu,main,usefulness,_stakes-usefulness,False,llama-4-maverick,Llama 4 Maverick,150,150,0
+menu,main,usefulness,_stakes-usefulness,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+menu,main,usefulness,_stakes-usefulness,False,qwen3-32b,Qwen 3 32B,150,150,0
+menu,states,alignment,_states_stakes-alignment,True,gemma-3-12b,Gemma 3 12B,750,750,0
+menu,states,alignment,_states_stakes-alignment,True,gemma-3-27b,Gemma 3 27B,750,750,0
+menu,states,alignment,_states_stakes-alignment,True,gemma-4-26b-a4b,Gemma 4 26B A4B,750,750,0
+menu,states,alignment,_states_stakes-alignment,True,gemma-4-31B-it,Gemma 4 31B,750,750,0
+menu,states,alignment,_states_stakes-alignment,True,gpt-oss-120b,GPT-OSS 120B,750,743,7
+menu,states,alignment,_states_stakes-alignment,True,gpt-oss-20b,GPT-OSS 20B,750,702,48
+menu,states,alignment,_states_stakes-alignment,True,llama-3.3-70b,Llama 3.3 70B,750,749,1
+menu,states,alignment,_states_stakes-alignment,True,llama-4-maverick,Llama 4 Maverick,750,750,0
+menu,states,alignment,_states_stakes-alignment,True,qwen3-235b-a22b,Qwen 3 235B A22B,750,750,0
+menu,states,alignment,_states_stakes-alignment,True,qwen3-32b,Qwen 3 32B,750,750,0
+menu,states,baseline,_states,True,gemma-3-12b,Gemma 3 12B,750,750,0
+menu,states,baseline,_states,True,gemma-3-27b,Gemma 3 27B,750,750,0
+menu,states,baseline,_states,True,gemma-4-26b-a4b,Gemma 4 26B A4B,750,750,0
+menu,states,baseline,_states,True,gemma-4-31B-it,Gemma 4 31B,750,750,0
+menu,states,baseline,_states,True,gpt-oss-120b,GPT-OSS 120B,750,749,1
+menu,states,baseline,_states,True,gpt-oss-20b,GPT-OSS 20B,750,693,57
+menu,states,baseline,_states,True,llama-3.3-70b,Llama 3.3 70B,750,750,0
+menu,states,baseline,_states,True,llama-4-maverick,Llama 4 Maverick,750,750,0
+menu,states,baseline,_states,True,qwen3-235b-a22b,Qwen 3 235B A22B,750,750,0
+menu,states,baseline,_states,True,qwen3-32b,Qwen 3 32B,750,750,0
+menu,states,payoff,_states_stakes-payoff,True,gemma-3-12b,Gemma 3 12B,750,750,0
+menu,states,payoff,_states_stakes-payoff,True,gemma-3-27b,Gemma 3 27B,750,750,0
+menu,states,payoff,_states_stakes-payoff,True,gemma-4-26b-a4b,Gemma 4 26B A4B,750,750,0
+menu,states,payoff,_states_stakes-payoff,True,gemma-4-31B-it,Gemma 4 31B,750,750,0
+menu,states,payoff,_states_stakes-payoff,True,gpt-oss-120b,GPT-OSS 120B,750,750,0
+menu,states,payoff,_states_stakes-payoff,True,gpt-oss-20b,GPT-OSS 20B,750,686,64
+menu,states,payoff,_states_stakes-payoff,True,llama-3.3-70b,Llama 3.3 70B,750,749,1
+menu,states,payoff,_states_stakes-payoff,True,llama-4-maverick,Llama 4 Maverick,750,739,11
+menu,states,payoff,_states_stakes-payoff,True,qwen3-235b-a22b,Qwen 3 235B A22B,750,750,0
+menu,states,payoff,_states_stakes-payoff,True,qwen3-32b,Qwen 3 32B,750,750,0
+menu,states,usefulness,_states_stakes-usefulness,True,gemma-3-12b,Gemma 3 12B,750,750,0
+menu,states,usefulness,_states_stakes-usefulness,True,gemma-3-27b,Gemma 3 27B,750,750,0
+menu,states,usefulness,_states_stakes-usefulness,True,gemma-4-26b-a4b,Gemma 4 26B A4B,750,750,0
+menu,states,usefulness,_states_stakes-usefulness,True,gemma-4-31B-it,Gemma 4 31B,750,750,0
+menu,states,usefulness,_states_stakes-usefulness,True,gpt-oss-120b,GPT-OSS 120B,750,747,3
+menu,states,usefulness,_states_stakes-usefulness,True,gpt-oss-20b,GPT-OSS 20B,750,706,44
+menu,states,usefulness,_states_stakes-usefulness,True,llama-3.3-70b,Llama 3.3 70B,750,750,0
+menu,states,usefulness,_states_stakes-usefulness,True,llama-4-maverick,Llama 4 Maverick,750,750,0
+menu,states,usefulness,_states_stakes-usefulness,True,qwen3-235b-a22b,Qwen 3 235B A22B,750,750,0
+menu,states,usefulness,_states_stakes-usefulness,True,qwen3-32b,Qwen 3 32B,750,750,0
+menu,visibility,observed,_observed,False,gemma-3-12b,Gemma 3 12B,150,150,0
+menu,visibility,observed,_observed,False,gemma-3-27b,Gemma 3 27B,150,150,0
+menu,visibility,observed,_observed,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+menu,visibility,observed,_observed,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+menu,visibility,observed,_observed,False,gpt-oss-120b,GPT-OSS 120B,150,150,0
+menu,visibility,observed,_observed,False,gpt-oss-20b,GPT-OSS 20B,150,141,9
+menu,visibility,observed,_observed,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+menu,visibility,observed,_observed,False,llama-4-maverick,Llama 4 Maverick,150,150,0
+menu,visibility,observed,_observed,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+menu,visibility,observed,_observed,False,qwen3-32b,Qwen 3 32B,150,150,0
+menu,visibility,unobserved,_unobserved,False,gemma-3-12b,Gemma 3 12B,150,150,0
+menu,visibility,unobserved,_unobserved,False,gemma-3-27b,Gemma 3 27B,150,150,0
+menu,visibility,unobserved,_unobserved,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+menu,visibility,unobserved,_unobserved,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+menu,visibility,unobserved,_unobserved,False,gpt-oss-120b,GPT-OSS 120B,150,150,0
+menu,visibility,unobserved,_unobserved,False,gpt-oss-20b,GPT-OSS 20B,150,134,16
+menu,visibility,unobserved,_unobserved,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+menu,visibility,unobserved,_unobserved,False,llama-4-maverick,Llama 4 Maverick,150,150,0
+menu,visibility,unobserved,_unobserved,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+menu,visibility,unobserved,_unobserved,False,qwen3-32b,Qwen 3 32B,150,150,0
+open_disclosed,main,alignment,_counterpart_stakes-alignment,False,gemma-3-12b,Gemma 3 12B,150,150,0
+open_disclosed,main,alignment,_counterpart_stakes-alignment,False,gemma-3-27b,Gemma 3 27B,150,150,0
+open_disclosed,main,alignment,_counterpart_stakes-alignment,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+open_disclosed,main,alignment,_counterpart_stakes-alignment,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+open_disclosed,main,alignment,_counterpart_stakes-alignment,False,gpt-oss-120b,GPT-OSS 120B,150,150,0
+open_disclosed,main,alignment,_counterpart_stakes-alignment,False,gpt-oss-20b,GPT-OSS 20B,150,150,0
+open_disclosed,main,alignment,_counterpart_stakes-alignment,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+open_disclosed,main,alignment,_counterpart_stakes-alignment,False,llama-4-maverick,Llama 4 Maverick,150,150,0
+open_disclosed,main,alignment,_counterpart_stakes-alignment,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+open_disclosed,main,alignment,_counterpart_stakes-alignment,False,qwen3-32b,Qwen 3 32B,150,150,0
+open_disclosed,main,baseline,_counterpart,False,gemma-3-12b,Gemma 3 12B,150,150,0
+open_disclosed,main,baseline,_counterpart,False,gemma-3-27b,Gemma 3 27B,150,150,0
+open_disclosed,main,baseline,_counterpart,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+open_disclosed,main,baseline,_counterpart,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+open_disclosed,main,baseline,_counterpart,False,gpt-oss-120b,GPT-OSS 120B,150,150,0
+open_disclosed,main,baseline,_counterpart,False,gpt-oss-20b,GPT-OSS 20B,150,150,0
+open_disclosed,main,baseline,_counterpart,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+open_disclosed,main,baseline,_counterpart,False,llama-4-maverick,Llama 4 Maverick,150,150,0
+open_disclosed,main,baseline,_counterpart,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+open_disclosed,main,baseline,_counterpart,False,qwen3-32b,Qwen 3 32B,150,150,0
+open_disclosed,main,payoff,_counterpart_stakes-payoff,False,gemma-3-12b,Gemma 3 12B,150,150,0
+open_disclosed,main,payoff,_counterpart_stakes-payoff,False,gemma-3-27b,Gemma 3 27B,150,150,0
+open_disclosed,main,payoff,_counterpart_stakes-payoff,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+open_disclosed,main,payoff,_counterpart_stakes-payoff,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+open_disclosed,main,payoff,_counterpart_stakes-payoff,False,gpt-oss-120b,GPT-OSS 120B,150,150,0
+open_disclosed,main,payoff,_counterpart_stakes-payoff,False,gpt-oss-20b,GPT-OSS 20B,150,150,0
+open_disclosed,main,payoff,_counterpart_stakes-payoff,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+open_disclosed,main,payoff,_counterpart_stakes-payoff,False,llama-4-maverick,Llama 4 Maverick,150,150,0
+open_disclosed,main,payoff,_counterpart_stakes-payoff,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+open_disclosed,main,payoff,_counterpart_stakes-payoff,False,qwen3-32b,Qwen 3 32B,150,150,0
+open_disclosed,main,steering,_counterpart_steer-HHH,False,gemma-3-12b,Gemma 3 12B,150,150,0
+open_disclosed,main,steering,_counterpart_steer-HHH,False,gemma-3-27b,Gemma 3 27B,150,150,0
+open_disclosed,main,steering,_counterpart_steer-HHH,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+open_disclosed,main,steering,_counterpart_steer-HHH,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+open_disclosed,main,steering,_counterpart_steer-HHH,False,gpt-oss-120b,GPT-OSS 120B,150,150,0
+open_disclosed,main,steering,_counterpart_steer-HHH,False,gpt-oss-20b,GPT-OSS 20B,150,150,0
+open_disclosed,main,steering,_counterpart_steer-HHH,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+open_disclosed,main,steering,_counterpart_steer-HHH,False,llama-4-maverick,Llama 4 Maverick,150,150,0
+open_disclosed,main,steering,_counterpart_steer-HHH,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+open_disclosed,main,steering,_counterpart_steer-HHH,False,qwen3-32b,Qwen 3 32B,150,150,0
+open_disclosed,main,usefulness,_counterpart_stakes-usefulness,False,gemma-3-12b,Gemma 3 12B,150,150,0
+open_disclosed,main,usefulness,_counterpart_stakes-usefulness,False,gemma-3-27b,Gemma 3 27B,150,150,0
+open_disclosed,main,usefulness,_counterpart_stakes-usefulness,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+open_disclosed,main,usefulness,_counterpart_stakes-usefulness,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+open_disclosed,main,usefulness,_counterpart_stakes-usefulness,False,gpt-oss-120b,GPT-OSS 120B,150,150,0
+open_disclosed,main,usefulness,_counterpart_stakes-usefulness,False,gpt-oss-20b,GPT-OSS 20B,150,150,0
+open_disclosed,main,usefulness,_counterpart_stakes-usefulness,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+open_disclosed,main,usefulness,_counterpart_stakes-usefulness,False,llama-4-maverick,Llama 4 Maverick,150,150,0
+open_disclosed,main,usefulness,_counterpart_stakes-usefulness,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+open_disclosed,main,usefulness,_counterpart_stakes-usefulness,False,qwen3-32b,Qwen 3 32B,150,150,0
+open_disclosed,states,alignment,_counterpart_states-stakes-alignment,True,gemma-3-12b,Gemma 3 12B,750,750,0
+open_disclosed,states,alignment,_counterpart_states-stakes-alignment,True,gemma-3-27b,Gemma 3 27B,750,750,0
+open_disclosed,states,alignment,_counterpart_states-stakes-alignment,True,gemma-4-26b-a4b,Gemma 4 26B A4B,750,750,0
+open_disclosed,states,alignment,_counterpart_states-stakes-alignment,True,gemma-4-31B-it,Gemma 4 31B,750,750,0
+open_disclosed,states,alignment,_counterpart_states-stakes-alignment,True,gpt-oss-120b,GPT-OSS 120B,750,750,0
+open_disclosed,states,alignment,_counterpart_states-stakes-alignment,True,gpt-oss-20b,GPT-OSS 20B,750,750,0
+open_disclosed,states,alignment,_counterpart_states-stakes-alignment,True,llama-3.3-70b,Llama 3.3 70B,750,750,0
+open_disclosed,states,alignment,_counterpart_states-stakes-alignment,True,llama-4-maverick,Llama 4 Maverick,750,750,0
+open_disclosed,states,alignment,_counterpart_states-stakes-alignment,True,qwen3-235b-a22b,Qwen 3 235B A22B,750,750,0
+open_disclosed,states,alignment,_counterpart_states-stakes-alignment,True,qwen3-32b,Qwen 3 32B,750,750,0
+open_disclosed,states,baseline,_counterpart_states,True,gemma-3-12b,Gemma 3 12B,750,750,0
+open_disclosed,states,baseline,_counterpart_states,True,gemma-3-27b,Gemma 3 27B,750,750,0
+open_disclosed,states,baseline,_counterpart_states,True,gemma-4-26b-a4b,Gemma 4 26B A4B,750,750,0
+open_disclosed,states,baseline,_counterpart_states,True,gemma-4-31B-it,Gemma 4 31B,750,750,0
+open_disclosed,states,baseline,_counterpart_states,True,gpt-oss-120b,GPT-OSS 120B,750,750,0
+open_disclosed,states,baseline,_counterpart_states,True,gpt-oss-20b,GPT-OSS 20B,750,750,0
+open_disclosed,states,baseline,_counterpart_states,True,llama-3.3-70b,Llama 3.3 70B,750,750,0
+open_disclosed,states,baseline,_counterpart_states,True,llama-4-maverick,Llama 4 Maverick,750,750,0
+open_disclosed,states,baseline,_counterpart_states,True,qwen3-235b-a22b,Qwen 3 235B A22B,750,750,0
+open_disclosed,states,baseline,_counterpart_states,True,qwen3-32b,Qwen 3 32B,750,750,0
+open_disclosed,states,payoff,_counterpart_states-stakes-payoff,True,gemma-3-12b,Gemma 3 12B,750,750,0
+open_disclosed,states,payoff,_counterpart_states-stakes-payoff,True,gemma-3-27b,Gemma 3 27B,750,750,0
+open_disclosed,states,payoff,_counterpart_states-stakes-payoff,True,gemma-4-26b-a4b,Gemma 4 26B A4B,750,750,0
+open_disclosed,states,payoff,_counterpart_states-stakes-payoff,True,gemma-4-31B-it,Gemma 4 31B,750,750,0
+open_disclosed,states,payoff,_counterpart_states-stakes-payoff,True,gpt-oss-120b,GPT-OSS 120B,750,750,0
+open_disclosed,states,payoff,_counterpart_states-stakes-payoff,True,gpt-oss-20b,GPT-OSS 20B,750,750,0
+open_disclosed,states,payoff,_counterpart_states-stakes-payoff,True,llama-3.3-70b,Llama 3.3 70B,750,750,0
+open_disclosed,states,payoff,_counterpart_states-stakes-payoff,True,llama-4-maverick,Llama 4 Maverick,750,750,0
+open_disclosed,states,payoff,_counterpart_states-stakes-payoff,True,qwen3-235b-a22b,Qwen 3 235B A22B,750,750,0
+open_disclosed,states,payoff,_counterpart_states-stakes-payoff,True,qwen3-32b,Qwen 3 32B,750,750,0
+open_disclosed,states,usefulness,_counterpart_states-stakes-usefulness,True,gemma-3-12b,Gemma 3 12B,750,750,0
+open_disclosed,states,usefulness,_counterpart_states-stakes-usefulness,True,gemma-3-27b,Gemma 3 27B,750,750,0
+open_disclosed,states,usefulness,_counterpart_states-stakes-usefulness,True,gemma-4-26b-a4b,Gemma 4 26B A4B,750,750,0
+open_disclosed,states,usefulness,_counterpart_states-stakes-usefulness,True,gemma-4-31B-it,Gemma 4 31B,750,750,0
+open_disclosed,states,usefulness,_counterpart_states-stakes-usefulness,True,gpt-oss-120b,GPT-OSS 120B,750,750,0
+open_disclosed,states,usefulness,_counterpart_states-stakes-usefulness,True,gpt-oss-20b,GPT-OSS 20B,750,750,0
+open_disclosed,states,usefulness,_counterpart_states-stakes-usefulness,True,llama-3.3-70b,Llama 3.3 70B,750,750,0
+open_disclosed,states,usefulness,_counterpart_states-stakes-usefulness,True,llama-4-maverick,Llama 4 Maverick,750,750,0
+open_disclosed,states,usefulness,_counterpart_states-stakes-usefulness,True,qwen3-235b-a22b,Qwen 3 235B A22B,750,750,0
+open_disclosed,states,usefulness,_counterpart_states-stakes-usefulness,True,qwen3-32b,Qwen 3 32B,750,750,0
+open_undisclosed,main,alignment,_stakes-alignment,False,gemma-3-12b,Gemma 3 12B,150,150,0
+open_undisclosed,main,alignment,_stakes-alignment,False,gemma-3-27b,Gemma 3 27B,150,150,0
+open_undisclosed,main,alignment,_stakes-alignment,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+open_undisclosed,main,alignment,_stakes-alignment,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+open_undisclosed,main,alignment,_stakes-alignment,False,gpt-oss-120b,GPT-OSS 120B,150,150,0
+open_undisclosed,main,alignment,_stakes-alignment,False,gpt-oss-20b,GPT-OSS 20B,150,150,0
+open_undisclosed,main,alignment,_stakes-alignment,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+open_undisclosed,main,alignment,_stakes-alignment,False,llama-4-maverick,Llama 4 Maverick,150,150,0
+open_undisclosed,main,alignment,_stakes-alignment,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+open_undisclosed,main,alignment,_stakes-alignment,False,qwen3-32b,Qwen 3 32B,150,150,0
+open_undisclosed,main,baseline,,False,gemma-3-12b,Gemma 3 12B,150,150,0
+open_undisclosed,main,baseline,,False,gemma-3-27b,Gemma 3 27B,150,150,0
+open_undisclosed,main,baseline,,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+open_undisclosed,main,baseline,,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+open_undisclosed,main,baseline,,False,gpt-oss-120b,GPT-OSS 120B,150,150,0
+open_undisclosed,main,baseline,,False,gpt-oss-20b,GPT-OSS 20B,150,150,0
+open_undisclosed,main,baseline,,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+open_undisclosed,main,baseline,,False,llama-4-maverick,Llama 4 Maverick,150,150,0
+open_undisclosed,main,baseline,,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+open_undisclosed,main,baseline,,False,qwen3-32b,Qwen 3 32B,150,150,0
+open_undisclosed,main,payoff,_stakes-payoff,False,gemma-3-12b,Gemma 3 12B,150,150,0
+open_undisclosed,main,payoff,_stakes-payoff,False,gemma-3-27b,Gemma 3 27B,150,150,0
+open_undisclosed,main,payoff,_stakes-payoff,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+open_undisclosed,main,payoff,_stakes-payoff,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+open_undisclosed,main,payoff,_stakes-payoff,False,gpt-oss-120b,GPT-OSS 120B,150,150,0
+open_undisclosed,main,payoff,_stakes-payoff,False,gpt-oss-20b,GPT-OSS 20B,150,150,0
+open_undisclosed,main,payoff,_stakes-payoff,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+open_undisclosed,main,payoff,_stakes-payoff,False,llama-4-maverick,Llama 4 Maverick,150,150,0
+open_undisclosed,main,payoff,_stakes-payoff,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+open_undisclosed,main,payoff,_stakes-payoff,False,qwen3-32b,Qwen 3 32B,150,150,0
+open_undisclosed,main,steering,_steer-HHH,False,gemma-3-12b,Gemma 3 12B,150,150,0
+open_undisclosed,main,steering,_steer-HHH,False,gemma-3-27b,Gemma 3 27B,150,150,0
+open_undisclosed,main,steering,_steer-HHH,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+open_undisclosed,main,steering,_steer-HHH,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+open_undisclosed,main,steering,_steer-HHH,False,gpt-oss-120b,GPT-OSS 120B,150,150,0
+open_undisclosed,main,steering,_steer-HHH,False,gpt-oss-20b,GPT-OSS 20B,150,150,0
+open_undisclosed,main,steering,_steer-HHH,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+open_undisclosed,main,steering,_steer-HHH,False,llama-4-maverick,Llama 4 Maverick,150,150,0
+open_undisclosed,main,steering,_steer-HHH,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+open_undisclosed,main,steering,_steer-HHH,False,qwen3-32b,Qwen 3 32B,150,150,0
+open_undisclosed,main,usefulness,_stakes-usefulness,False,gemma-3-12b,Gemma 3 12B,150,150,0
+open_undisclosed,main,usefulness,_stakes-usefulness,False,gemma-3-27b,Gemma 3 27B,150,150,0
+open_undisclosed,main,usefulness,_stakes-usefulness,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+open_undisclosed,main,usefulness,_stakes-usefulness,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+open_undisclosed,main,usefulness,_stakes-usefulness,False,gpt-oss-120b,GPT-OSS 120B,150,150,0
+open_undisclosed,main,usefulness,_stakes-usefulness,False,gpt-oss-20b,GPT-OSS 20B,150,150,0
+open_undisclosed,main,usefulness,_stakes-usefulness,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+open_undisclosed,main,usefulness,_stakes-usefulness,False,llama-4-maverick,Llama 4 Maverick,150,150,0
+open_undisclosed,main,usefulness,_stakes-usefulness,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+open_undisclosed,main,usefulness,_stakes-usefulness,False,qwen3-32b,Qwen 3 32B,150,150,0
+open_undisclosed,states,alignment,_states-stakes-alignment,True,gemma-3-12b,Gemma 3 12B,750,750,0
+open_undisclosed,states,alignment,_states-stakes-alignment,True,gemma-3-27b,Gemma 3 27B,750,750,0
+open_undisclosed,states,alignment,_states-stakes-alignment,True,gemma-4-26b-a4b,Gemma 4 26B A4B,750,750,0
+open_undisclosed,states,alignment,_states-stakes-alignment,True,gemma-4-31B-it,Gemma 4 31B,750,750,0
+open_undisclosed,states,alignment,_states-stakes-alignment,True,gpt-oss-120b,GPT-OSS 120B,750,750,0
+open_undisclosed,states,alignment,_states-stakes-alignment,True,gpt-oss-20b,GPT-OSS 20B,750,750,0
+open_undisclosed,states,alignment,_states-stakes-alignment,True,llama-3.3-70b,Llama 3.3 70B,750,750,0
+open_undisclosed,states,alignment,_states-stakes-alignment,True,llama-4-maverick,Llama 4 Maverick,750,750,0
+open_undisclosed,states,alignment,_states-stakes-alignment,True,qwen3-235b-a22b,Qwen 3 235B A22B,750,750,0
+open_undisclosed,states,alignment,_states-stakes-alignment,True,qwen3-32b,Qwen 3 32B,750,750,0
+open_undisclosed,states,baseline,_states,True,gemma-3-12b,Gemma 3 12B,750,750,0
+open_undisclosed,states,baseline,_states,True,gemma-3-27b,Gemma 3 27B,750,750,0
+open_undisclosed,states,baseline,_states,True,gemma-4-26b-a4b,Gemma 4 26B A4B,750,750,0
+open_undisclosed,states,baseline,_states,True,gemma-4-31B-it,Gemma 4 31B,750,750,0
+open_undisclosed,states,baseline,_states,True,gpt-oss-120b,GPT-OSS 120B,750,750,0
+open_undisclosed,states,baseline,_states,True,gpt-oss-20b,GPT-OSS 20B,750,750,0
+open_undisclosed,states,baseline,_states,True,llama-3.3-70b,Llama 3.3 70B,750,750,0
+open_undisclosed,states,baseline,_states,True,llama-4-maverick,Llama 4 Maverick,750,750,0
+open_undisclosed,states,baseline,_states,True,qwen3-235b-a22b,Qwen 3 235B A22B,750,750,0
+open_undisclosed,states,baseline,_states,True,qwen3-32b,Qwen 3 32B,750,750,0
+open_undisclosed,states,payoff,_states-stakes-payoff,True,gemma-3-12b,Gemma 3 12B,750,750,0
+open_undisclosed,states,payoff,_states-stakes-payoff,True,gemma-3-27b,Gemma 3 27B,750,750,0
+open_undisclosed,states,payoff,_states-stakes-payoff,True,gemma-4-26b-a4b,Gemma 4 26B A4B,750,750,0
+open_undisclosed,states,payoff,_states-stakes-payoff,True,gemma-4-31B-it,Gemma 4 31B,750,750,0
+open_undisclosed,states,payoff,_states-stakes-payoff,True,gpt-oss-120b,GPT-OSS 120B,750,750,0
+open_undisclosed,states,payoff,_states-stakes-payoff,True,gpt-oss-20b,GPT-OSS 20B,750,750,0
+open_undisclosed,states,payoff,_states-stakes-payoff,True,llama-3.3-70b,Llama 3.3 70B,750,750,0
+open_undisclosed,states,payoff,_states-stakes-payoff,True,llama-4-maverick,Llama 4 Maverick,750,750,0
+open_undisclosed,states,payoff,_states-stakes-payoff,True,qwen3-235b-a22b,Qwen 3 235B A22B,750,750,0
+open_undisclosed,states,payoff,_states-stakes-payoff,True,qwen3-32b,Qwen 3 32B,750,750,0
+open_undisclosed,states,usefulness,_states-stakes-usefulness,True,gemma-3-12b,Gemma 3 12B,750,750,0
+open_undisclosed,states,usefulness,_states-stakes-usefulness,True,gemma-3-27b,Gemma 3 27B,750,750,0
+open_undisclosed,states,usefulness,_states-stakes-usefulness,True,gemma-4-26b-a4b,Gemma 4 26B A4B,750,750,0
+open_undisclosed,states,usefulness,_states-stakes-usefulness,True,gemma-4-31B-it,Gemma 4 31B,750,750,0
+open_undisclosed,states,usefulness,_states-stakes-usefulness,True,gpt-oss-120b,GPT-OSS 120B,750,750,0
+open_undisclosed,states,usefulness,_states-stakes-usefulness,True,gpt-oss-20b,GPT-OSS 20B,750,750,0
+open_undisclosed,states,usefulness,_states-stakes-usefulness,True,llama-3.3-70b,Llama 3.3 70B,750,750,0
+open_undisclosed,states,usefulness,_states-stakes-usefulness,True,llama-4-maverick,Llama 4 Maverick,750,750,0
+open_undisclosed,states,usefulness,_states-stakes-usefulness,True,qwen3-235b-a22b,Qwen 3 235B A22B,750,750,0
+open_undisclosed,states,usefulness,_states-stakes-usefulness,True,qwen3-32b,Qwen 3 32B,750,750,0
+open_undisclosed,visibility,observed,_observed,False,gemma-3-12b,Gemma 3 12B,150,150,0
+open_undisclosed,visibility,observed,_observed,False,gemma-3-27b,Gemma 3 27B,150,150,0
+open_undisclosed,visibility,observed,_observed,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+open_undisclosed,visibility,observed,_observed,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+open_undisclosed,visibility,observed,_observed,False,gpt-oss-120b,GPT-OSS 120B,150,150,0
+open_undisclosed,visibility,observed,_observed,False,gpt-oss-20b,GPT-OSS 20B,150,150,0
+open_undisclosed,visibility,observed,_observed,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+open_undisclosed,visibility,observed,_observed,False,llama-4-maverick,Llama 4 Maverick,150,150,0
+open_undisclosed,visibility,observed,_observed,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+open_undisclosed,visibility,observed,_observed,False,qwen3-32b,Qwen 3 32B,150,150,0
+open_undisclosed,visibility,unobserved,_unobserved,False,gemma-3-12b,Gemma 3 12B,150,150,0
+open_undisclosed,visibility,unobserved,_unobserved,False,gemma-3-27b,Gemma 3 27B,150,150,0
+open_undisclosed,visibility,unobserved,_unobserved,False,gemma-4-26b-a4b,Gemma 4 26B A4B,150,150,0
+open_undisclosed,visibility,unobserved,_unobserved,False,gemma-4-31B-it,Gemma 4 31B,150,150,0
+open_undisclosed,visibility,unobserved,_unobserved,False,gpt-oss-120b,GPT-OSS 120B,150,150,0
+open_undisclosed,visibility,unobserved,_unobserved,False,gpt-oss-20b,GPT-OSS 20B,150,150,0
+open_undisclosed,visibility,unobserved,_unobserved,False,llama-3.3-70b,Llama 3.3 70B,150,150,0
+open_undisclosed,visibility,unobserved,_unobserved,False,llama-4-maverick,Llama 4 Maverick,150,150,0
+open_undisclosed,visibility,unobserved,_unobserved,False,qwen3-235b-a22b,Qwen 3 235B A22B,150,150,0
+open_undisclosed,visibility,unobserved,_unobserved,False,qwen3-32b,Qwen 3 32B,150,150,0

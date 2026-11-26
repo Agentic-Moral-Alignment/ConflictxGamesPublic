@@ -1,0 +1,2196 @@
+{
+  "analysis_script": {
+    "bytes": 61157,
+    "relative_path": "reproduce/reanalysis.py",
+    "sha256": "08b9c4f7f353fc95e38c303a350a52b39946211f8f4e8958be17bb0a21776696"
+  },
+  "analysis_version": "reanalysis_20260904_01",
+  "condition_inputs": {
+    "menu:main:alignment:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_stakes-alignment.csv",
+    "menu:main:alignment:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_stakes-alignment.csv",
+    "menu:main:alignment:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_stakes-alignment.csv",
+    "menu:main:alignment:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_stakes-alignment.csv",
+    "menu:main:alignment:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_stakes-alignment.csv",
+    "menu:main:alignment:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_stakes-alignment.csv",
+    "menu:main:alignment:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_stakes-alignment.csv",
+    "menu:main:alignment:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_stakes-alignment.csv",
+    "menu:main:alignment:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_stakes-alignment.csv",
+    "menu:main:alignment:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_stakes-alignment.csv",
+    "menu:main:baseline:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50.csv",
+    "menu:main:baseline:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50.csv",
+    "menu:main:baseline:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50.csv",
+    "menu:main:baseline:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50.csv",
+    "menu:main:baseline:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50.csv",
+    "menu:main:baseline:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50.csv",
+    "menu:main:baseline:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50.csv",
+    "menu:main:baseline:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50.csv",
+    "menu:main:baseline:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50.csv",
+    "menu:main:baseline:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50.csv",
+    "menu:main:payoff:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_stakes-payoff.csv",
+    "menu:main:payoff:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_stakes-payoff.csv",
+    "menu:main:payoff:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_stakes-payoff.csv",
+    "menu:main:payoff:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_stakes-payoff.csv",
+    "menu:main:payoff:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_stakes-payoff.csv",
+    "menu:main:payoff:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_stakes-payoff.csv",
+    "menu:main:payoff:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_stakes-payoff.csv",
+    "menu:main:payoff:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_stakes-payoff.csv",
+    "menu:main:payoff:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_stakes-payoff.csv",
+    "menu:main:payoff:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_stakes-payoff.csv",
+    "menu:main:steering:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_steer-HHH.csv",
+    "menu:main:steering:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_steer-HHH.csv",
+    "menu:main:steering:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_steer-HHH.csv",
+    "menu:main:steering:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_steer-HHH.csv",
+    "menu:main:steering:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_steer-HHH.csv",
+    "menu:main:steering:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_steer-HHH.csv",
+    "menu:main:steering:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_steer-HHH.csv",
+    "menu:main:steering:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_steer-HHH.csv",
+    "menu:main:steering:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_steer-HHH.csv",
+    "menu:main:steering:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_steer-HHH.csv",
+    "menu:main:usefulness:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_stakes-usefulness.csv",
+    "menu:main:usefulness:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_stakes-usefulness.csv",
+    "menu:main:usefulness:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_stakes-usefulness.csv",
+    "menu:main:usefulness:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_stakes-usefulness.csv",
+    "menu:main:usefulness:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_stakes-usefulness.csv",
+    "menu:main:usefulness:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_stakes-usefulness.csv",
+    "menu:main:usefulness:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_stakes-usefulness.csv",
+    "menu:main:usefulness:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_stakes-usefulness.csv",
+    "menu:main:usefulness:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_stakes-usefulness.csv",
+    "menu:main:usefulness:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_stakes-usefulness.csv",
+    "menu:states:alignment:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_states_stakes-alignment.csv",
+    "menu:states:alignment:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_states_stakes-alignment.csv",
+    "menu:states:alignment:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_states_stakes-alignment.csv",
+    "menu:states:alignment:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_states_stakes-alignment.csv",
+    "menu:states:alignment:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_states_stakes-alignment.csv",
+    "menu:states:alignment:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_states_stakes-alignment.csv",
+    "menu:states:alignment:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_states_stakes-alignment.csv",
+    "menu:states:alignment:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_states_stakes-alignment.csv",
+    "menu:states:alignment:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_states_stakes-alignment.csv",
+    "menu:states:alignment:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_states_stakes-alignment.csv",
+    "menu:states:baseline:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_states.csv",
+    "menu:states:baseline:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_states.csv",
+    "menu:states:baseline:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_states.csv",
+    "menu:states:baseline:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_states.csv",
+    "menu:states:baseline:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_states.csv",
+    "menu:states:baseline:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_states.csv",
+    "menu:states:baseline:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_states.csv",
+    "menu:states:baseline:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_states.csv",
+    "menu:states:baseline:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_states.csv",
+    "menu:states:baseline:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_states.csv",
+    "menu:states:payoff:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_states_stakes-payoff.csv",
+    "menu:states:payoff:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_states_stakes-payoff.csv",
+    "menu:states:payoff:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_states_stakes-payoff.csv",
+    "menu:states:payoff:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_states_stakes-payoff.csv",
+    "menu:states:payoff:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_states_stakes-payoff.csv",
+    "menu:states:payoff:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_states_stakes-payoff.csv",
+    "menu:states:payoff:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_states_stakes-payoff.csv",
+    "menu:states:payoff:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_states_stakes-payoff.csv",
+    "menu:states:payoff:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_states_stakes-payoff.csv",
+    "menu:states:payoff:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_states_stakes-payoff.csv",
+    "menu:states:usefulness:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_states_stakes-usefulness.csv",
+    "menu:states:usefulness:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_states_stakes-usefulness.csv",
+    "menu:states:usefulness:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_states_stakes-usefulness.csv",
+    "menu:states:usefulness:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_states_stakes-usefulness.csv",
+    "menu:states:usefulness:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_states_stakes-usefulness.csv",
+    "menu:states:usefulness:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_states_stakes-usefulness.csv",
+    "menu:states:usefulness:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_states_stakes-usefulness.csv",
+    "menu:states:usefulness:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_states_stakes-usefulness.csv",
+    "menu:states:usefulness:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_states_stakes-usefulness.csv",
+    "menu:states:usefulness:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_states_stakes-usefulness.csv",
+    "menu:visibility:observed:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_observed.csv",
+    "menu:visibility:observed:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_observed.csv",
+    "menu:visibility:observed:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_observed.csv",
+    "menu:visibility:observed:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_observed.csv",
+    "menu:visibility:observed:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_observed.csv",
+    "menu:visibility:observed:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_observed.csv",
+    "menu:visibility:observed:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_observed.csv",
+    "menu:visibility:observed:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_observed.csv",
+    "menu:visibility:observed:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_observed.csv",
+    "menu:visibility:observed:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_observed.csv",
+    "menu:visibility:unobserved:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_unobserved.csv",
+    "menu:visibility:unobserved:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_unobserved.csv",
+    "menu:visibility:unobserved:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_unobserved.csv",
+    "menu:visibility:unobserved:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_unobserved.csv",
+    "menu:visibility:unobserved:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_unobserved.csv",
+    "menu:visibility:unobserved:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_unobserved.csv",
+    "menu:visibility:unobserved:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_unobserved.csv",
+    "menu:visibility:unobserved:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_unobserved.csv",
+    "menu:visibility:unobserved:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_unobserved.csv",
+    "menu:visibility:unobserved:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_unobserved.csv",
+    "open_disclosed:main:alignment:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:alignment:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:alignment:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:alignment:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:alignment:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:alignment:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:alignment:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:alignment:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:alignment:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:alignment:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:baseline:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:baseline:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:baseline:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:baseline:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:baseline:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:baseline:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:baseline:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:baseline:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:baseline:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:baseline:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:payoff:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:payoff:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:payoff:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:payoff:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:payoff:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:payoff:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:payoff:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:payoff:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:payoff:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:payoff:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:steering:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:steering:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:steering:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:steering:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:steering:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:steering:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:steering:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:steering:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:steering:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:steering:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:usefulness:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:usefulness:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:usefulness:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:usefulness:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:usefulness:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:usefulness:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:usefulness:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:usefulness:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:usefulness:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:main:usefulness:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:alignment:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:alignment:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:alignment:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:alignment:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:alignment:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:alignment:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:alignment:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:alignment:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:alignment:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:alignment:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:baseline:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:baseline:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:baseline:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:baseline:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:baseline:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:baseline:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:baseline:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:baseline:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:baseline:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:baseline:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:payoff:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:payoff:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:payoff:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:payoff:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:payoff:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:payoff:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:payoff:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:payoff:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:payoff:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:payoff:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:usefulness:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:usefulness:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:usefulness:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:usefulness:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:usefulness:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:usefulness:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:usefulness:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:usefulness:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:usefulness:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_disclosed:states:usefulness:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:alignment:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:alignment:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:alignment:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:alignment:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:alignment:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:alignment:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:alignment:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:alignment:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:alignment:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:alignment:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:baseline:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:baseline:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:baseline:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:baseline:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:baseline:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:baseline:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:baseline:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:baseline:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:baseline:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:baseline:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:payoff:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:payoff:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:payoff:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:payoff:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:payoff:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:payoff:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:payoff:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:payoff:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:payoff:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:payoff:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:steering:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:steering:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:steering:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:steering:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:steering:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:steering:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:steering:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:steering:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:steering:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:steering:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:usefulness:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:usefulness:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:usefulness:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:usefulness:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:usefulness:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:usefulness:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:usefulness:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:usefulness:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:usefulness:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:main:usefulness:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:alignment:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:alignment:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:alignment:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:alignment:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:alignment:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:alignment:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:alignment:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:alignment:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:alignment:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:alignment:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:baseline:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:baseline:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:baseline:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:baseline:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:baseline:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:baseline:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:baseline:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:baseline:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:baseline:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:baseline:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:payoff:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:payoff:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:payoff:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:payoff:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:payoff:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:payoff:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:payoff:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:payoff:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:payoff:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:payoff:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:usefulness:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:usefulness:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:usefulness:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:usefulness:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:usefulness:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:usefulness:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:usefulness:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:usefulness:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:usefulness:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:states:usefulness:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:observed:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:observed:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:observed:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:observed:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:observed:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:observed:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:observed:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:observed:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:observed:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:observed:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:unobserved:gemma-3-12b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:unobserved:gemma-3-27b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:unobserved:gemma-4-26b-a4b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:unobserved:gemma-4-31B-it": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:unobserved:gpt-oss-120b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:unobserved:gpt-oss-20b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:unobserved:llama-3.3-70b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:unobserved:llama-4-maverick": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:unobserved:qwen3-235b-a22b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+    "open_undisclosed:visibility:unobserved:qwen3-32b": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv"
+  },
+  "inputs": [
+    {
+      "bytes": 6091562,
+      "n_scenario_seats_in_source": 1006,
+      "relative_path": "data/HHH_new_paper_bothAI_anthropic_batch_20260826_01/claude-sonnet-5_games.csv",
+      "role": "canonical scenario source",
+      "sha256": "a9d19c6b483fa8efb1c28babfdcc099d8ca0a17f0795ee058cc303bade233f7f"
+    },
+    {
+      "bytes": 45000,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50.csv",
+      "role": "evaluated result CSV",
+      "sha256": "c3407b8ea493027180b30b1944826b5c473eb60cf783d3087846ec388cdea76e"
+    },
+    {
+      "bytes": 46053,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_observed.csv",
+      "role": "evaluated result CSV",
+      "sha256": "daa8fef384f7f78ad7f2cba1f2fe8d6741bd961e661c74ef1dbc9a77690d1505"
+    },
+    {
+      "bytes": 46137,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "46b8bd2aa25ff434902438c7cad9cef8d35774f395a7a3c941c8047f70b01b33"
+    },
+    {
+      "bytes": 46513,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "a716c618986972d6e10910f34d4c470c6803de5dc2464e60852d45b846c2bdd8"
+    },
+    {
+      "bytes": 46708,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "1c3cdd9c3cba6cde02f985ef841f4f8a2bec3b4e0dec934bfeb7f498551289bb"
+    },
+    {
+      "bytes": 171261,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_states.csv",
+      "role": "evaluated result CSV",
+      "sha256": "3e8efb064ebd696b69fe35fda5fcd1efb5d85f30d020cd31cd5d6c6ee53694ff"
+    },
+    {
+      "bytes": 183467,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_states_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "720dbc76a3cf13760001d0f47fc0f9d860fdec82106193982d15c30dd4b8b227"
+    },
+    {
+      "bytes": 181059,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_states_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "60bb1572c9f5062bf0070d4a43617db46e51e45f788a8ff810ff353a8197dcd2"
+    },
+    {
+      "bytes": 183979,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_states_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "6edf6339a4f1b444b5e961d5848d08e24d94824f61e97bf0bd9744982ba240c2"
+    },
+    {
+      "bytes": 44283,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_steer-HHH.csv",
+      "role": "evaluated result CSV",
+      "sha256": "ab39b1fd1ce69a07391b2e8519b3710522d8c3c6bbd4c86ab9ea48cd9be0c4b4"
+    },
+    {
+      "bytes": 47155,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_mcq_balanced50_unobserved.csv",
+      "role": "evaluated result CSV",
+      "sha256": "0e09ab6f135c45242cafe72f0e34f11840fddd7121eb190ab98929f30e221d7e"
+    },
+    {
+      "bytes": 932751,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "1b1fa41c917955be272ac39eb59f70538bd106d3228b2f779c013cd7ae2b11bf"
+    },
+    {
+      "bytes": 931035,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "6c77bd2c488edff21102ca4e55e45253b4bf549306ebea1ae63eb943d410a249"
+    },
+    {
+      "bytes": 971461,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "29f1fff6303706572c9e72d2ad7def5b5ba7b29f8f46ddf96b2fdb95ef8238fa"
+    },
+    {
+      "bytes": 4189670,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "28679c541858319d296b8c9bf6d41fd970d703066ee4ac0447fe4e8f6e4019f7"
+    },
+    {
+      "bytes": 4118896,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "abeb204a4e2af1a7c8043e9b8b21817f7a5def1b4bfc318522359dfa192f62be"
+    },
+    {
+      "bytes": 4436540,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "3a213f99dfec0b0b54c227088b3bd4affcb0fc3fdef57dc3cc672327a8115c96"
+    },
+    {
+      "bytes": 4035303,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "81e2db0643671341340d89f0c378da2534293f45b6e4ceb862e5c63f7ab8c54e"
+    },
+    {
+      "bytes": 884781,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "eaa28d0687e2b054d5914f1e5c25352e17e697194715196cdeee738906552247"
+    },
+    {
+      "bytes": 997642,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "35a542825c9050ca1a0135d21356425443a7a13e9133a28b2fad93fc2bbb8770"
+    },
+    {
+      "bytes": 771394,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d9a7d97dc67dd7875176c820e849eb59f29801ae0f79156fd78151c2b0bd7ed4"
+    },
+    {
+      "bytes": 926835,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d5e75808036fdc3d104d2e92a443e011471b0e239ce7bd33969cd3bb77df8543"
+    },
+    {
+      "bytes": 1027377,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "88c49086b8c8a48841c38c847738b6efbcca5494a4a7d28706ff61a6e316f9f3"
+    },
+    {
+      "bytes": 970496,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d9ccab9959aa56d9f835da41a269be44b97ff20f96cad6d520f8f05735ccc20d"
+    },
+    {
+      "bytes": 4265166,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "b1d0a388ec0cfc3b14515d8b0d7cda02e89ef6ed8d75fd657d4c446e4827ff24"
+    },
+    {
+      "bytes": 4326513,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "b53567452146dbcc493bfc2b2aae3a447c9c9d57ddac23efb9d3a470f463c7c8"
+    },
+    {
+      "bytes": 4454731,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "e774b6398d4d718127d7c94bd78eb91bf5a41670341f6def1578c7a325e2d08c"
+    },
+    {
+      "bytes": 3947392,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "7cfae4e6b2d5b3407bcd224e19c1bbda3bb42fb9fec3a0d330cae09d677ee3f1"
+    },
+    {
+      "bytes": 851501,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "354afbd8733647af39197dbda23fbcfa05fe88aeef5dc687ab187294685a2b15"
+    },
+    {
+      "bytes": 671646,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "f37361e8369e7576ba52bb53d0d545bfcd41feb907c568d37cb49cbf11ccb4d8"
+    },
+    {
+      "bytes": 969795,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-12b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "a97ba11e341750bbdaa9a3ef0b2795fdab3005f41fe86aca139dc4dcf1cf04d8"
+    },
+    {
+      "bytes": 45653,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d7088b4f9ed7abc65e408d3a9522530298ce0add3f53b6e17261b4798071e296"
+    },
+    {
+      "bytes": 46616,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_observed.csv",
+      "role": "evaluated result CSV",
+      "sha256": "ad284c081158673c16ea2d8909c065f079b29f1e2fb9d6187da5383cf3559f68"
+    },
+    {
+      "bytes": 47249,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "566dabb04164e6fb96bb4ddbef87357c183831b4818d3d62018a1c3080174a81"
+    },
+    {
+      "bytes": 47530,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "b1e2b7d3e19520899ffeacb8d23c9ac657c3ad29f41df2c3854ac5e408896462"
+    },
+    {
+      "bytes": 48086,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "97db08cb54136b753792a9c409ffa4f3c8ad8f54a592962e3f1de2d506151ce4"
+    },
+    {
+      "bytes": 171451,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_states.csv",
+      "role": "evaluated result CSV",
+      "sha256": "ded6de802f6fac5e33355e7e1e1fa40355f6ede4b046b7d08b2324c249105893"
+    },
+    {
+      "bytes": 183482,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_states_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "82cd185f7f81ae521745e9f7b47ee711b63c185a3628f6d981dc4413925ea223"
+    },
+    {
+      "bytes": 181317,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_states_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "3ca9502b98c5ae43dd71a4da1372cbd821d57f9efa8e32e05e99cd81cc63898e"
+    },
+    {
+      "bytes": 184194,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_states_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "6c88ddbcd36bb1050a774b2335d734ef384859102e0d13abc95d45857340277b"
+    },
+    {
+      "bytes": 44945,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_steer-HHH.csv",
+      "role": "evaluated result CSV",
+      "sha256": "65c131dbf08b4c032ee4e81d391d3f480dccb3df60f9cc61eb764f1f4c9c79c8"
+    },
+    {
+      "bytes": 47544,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_mcq_balanced50_unobserved.csv",
+      "role": "evaluated result CSV",
+      "sha256": "52f2a6954750186cc5bdb1edf6ffce765dc40a3b2c398c5365b8187dbd188817"
+    },
+    {
+      "bytes": 847320,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "518c6e7af18bf5d8cbb2dddc5100fbd282048a03e6c76a5282f40b770d82b18f"
+    },
+    {
+      "bytes": 813691,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d9e648b564b0bdd276e2acf03302959d57810599c059f75c2b9776156c9880de"
+    },
+    {
+      "bytes": 889161,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d59ce6191a6cfbe578d941e33316ff11858d0fadcba98a5a1fcbe45cc7b64b6a"
+    },
+    {
+      "bytes": 3775513,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "061a8bbb770334d4b233d387593010eb241d04aec8e4396b5cee08cf35e66b39"
+    },
+    {
+      "bytes": 3709761,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "97c22e449a0c746c4946569dfc8839c308e319dd89975485ee2a8b2da6262b50"
+    },
+    {
+      "bytes": 4004300,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "bc2e7d10583db3ae4a574aaf395094f6f3019f26914435383402d6874b81e57b"
+    },
+    {
+      "bytes": 3572949,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "bfb77931e0d1a92931ed9a33b497051161a4497cf0d5b50678c82e9d09064ede"
+    },
+    {
+      "bytes": 755823,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "ace15482981df45af7980656413fb5c1c27bdf6902a1cb85a989b6b7d8b7beaa"
+    },
+    {
+      "bytes": 856201,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "01416d30899c2112b245fc8d82d9a0c4140001ec6cbe828beb5bdaf6f8cfb2e1"
+    },
+    {
+      "bytes": 694323,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "3dbf08350b1c3dc3e78ba7e3de891251857a38acb40809488f572df15cce965b"
+    },
+    {
+      "bytes": 821412,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "a1f33b2b0697517e73efe76abb49992a16d4d0a0146e888ef91647a10b44cd07"
+    },
+    {
+      "bytes": 782345,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "63558a1b2ddeb22dfcbb303c7c0608c1f5a8f57f6d073954ace08ffda423c97b"
+    },
+    {
+      "bytes": 863401,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "2f9e850db03649cb25d45d25556d6b9ed9699619d443ed59adfe38e42b559579"
+    },
+    {
+      "bytes": 3593583,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "889a5254115ef2df068c1a5a6613ef4e46d223d70849ed4534a11d9cfac08c59"
+    },
+    {
+      "bytes": 3565224,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "54f9deee4f76d595e7bb66178edb3a50aec860ef7e0ce3a29f22c0a0afffac98"
+    },
+    {
+      "bytes": 3890960,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "1862caf7d270e1481a2f36dee49fd83578ba9afd8f1c409e542fa14cb6c04ba6"
+    },
+    {
+      "bytes": 3386953,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "fbe84c1df5f6081e8567d630b37590e6374307ff21c54ec98af67c1535b12ff4"
+    },
+    {
+      "bytes": 708671,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "0afefaf3dccbd7a581529b4a16ce5227b72b9c23bde870993ce5770e707bc542"
+    },
+    {
+      "bytes": 676352,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "65016b7f67570582af8cdb83efeb97262ebf34bde34c9278da975f3a48c0b915"
+    },
+    {
+      "bytes": 824724,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-3-27b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "81896bb2083bd6d0b6cdb0e05e01dc7c374a84b2d345b42df5cf465309a0877c"
+    },
+    {
+      "bytes": 44518,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d951c90e82868cf7fb62fea1756ae750c5509941af23219fe11976de9fce42aa"
+    },
+    {
+      "bytes": 45945,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_observed.csv",
+      "role": "evaluated result CSV",
+      "sha256": "482f5e7fce70919f9f5f0b421a046959a2b20098c0ed44c2124cba030f9bf0e8"
+    },
+    {
+      "bytes": 46688,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "90c610e38ff59e84228d33d303b3f14a00a9ce7d306efd11d6743a5f41250ea6"
+    },
+    {
+      "bytes": 46417,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "289d794d177edc087bb11831422b68b7bcbc4cec63e7d239ad3fe7e15a54a01e"
+    },
+    {
+      "bytes": 47052,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "296d20c351510cd408cbc28c693e24e145f06eeef79c3827c67dd6f5231e8b77"
+    },
+    {
+      "bytes": 174469,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_states.csv",
+      "role": "evaluated result CSV",
+      "sha256": "856bc414014ef1486677d846314ea3ccda5619c5a6ba5b1a6ee7bd576e7f03c6"
+    },
+    {
+      "bytes": 186523,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_states_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "65942da3ec13200954b930c98ba4b1fd0b1fc89199b30f2f3ef0b5fcb001e6a2"
+    },
+    {
+      "bytes": 184211,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_states_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "98e40683470aff7d971e4ea067d9f64390325f62e539d4f22484fe31a3af3eb4"
+    },
+    {
+      "bytes": 187216,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_states_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d7a6326a843a2b2518a7febb39959187878cc6210d670963426f948e6381b8b7"
+    },
+    {
+      "bytes": 44446,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_steer-HHH.csv",
+      "role": "evaluated result CSV",
+      "sha256": "f6f137df62e5c4a203bb5b6ae614a8d4746acd278a70343b041cf9b68cea3c26"
+    },
+    {
+      "bytes": 46310,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_mcq_balanced50_unobserved.csv",
+      "role": "evaluated result CSV",
+      "sha256": "ede1b8fdcc1002a3ece8bda5af672c9175451a7e5e938aac08ecd2e3ef6bb76e"
+    },
+    {
+      "bytes": 574545,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "71440833670c9ec31395f304c2691719e9c7c6d432ca05708b2710398bd14372"
+    },
+    {
+      "bytes": 570278,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "1eb5507ccea8c27cd97bc007f0622634e77a9205c0de67ccc533529a0595a55e"
+    },
+    {
+      "bytes": 612608,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "bd4e16e70603da89e28d34dfe94d45553bb97e8bc814f103e1f48f32803c9c07"
+    },
+    {
+      "bytes": 2771261,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "0cb363a052e05388ee8b433f1e87e26841da64342522b6e53878d23bcd51ae51"
+    },
+    {
+      "bytes": 2721705,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "55256764ea25518ae070ed710089b77e547e97872b9bec04e3aa0b1b388a0259"
+    },
+    {
+      "bytes": 2930690,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "8002abb011cd6e748f54ece841286e50c63b4a4cd54c263f684a18cdf92c88e9"
+    },
+    {
+      "bytes": 2972679,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "4c5adf267a3d600db1dc155ac95992d0544dc0e33edebafd89e9a02410967b68"
+    },
+    {
+      "bytes": 567003,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "766d90b5d27e802045a330d56a32b6087e8d799c898f83922a3c06ada1ae6aac"
+    },
+    {
+      "bytes": 621369,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "dcc15959db6e501b14582ac1720decd656708c57f8a9adc0a972d826f4459831"
+    },
+    {
+      "bytes": 530292,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d7f267254f2a0e53e282131e4a5efb1258f0beb898e1d4b7ac8292100941860f"
+    },
+    {
+      "bytes": 545121,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "9a104ee254885c7f3696b87afd61b35af515cab6bade88194f87bd32c618a052"
+    },
+    {
+      "bytes": 523791,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "e2de10322e8675c27128850e958ec1958523e422c3dfcd075e4210964d000395"
+    },
+    {
+      "bytes": 575299,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "fae0aab86d610afeab560854006c8dfce167ec3d527432aab8fd28a22babe764"
+    },
+    {
+      "bytes": 2528689,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "78b06a2690d603265665c60df0a8f076130209b62f8bd599ef5386821822f571"
+    },
+    {
+      "bytes": 2393856,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "3a2386b221a31100528f30f8ea988ba5d22c520cecbe7d4122a5917dce820aff"
+    },
+    {
+      "bytes": 2672381,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "21d690c5145fb84095576eaabea21d186ad54261fd79c1057675138351a55c6f"
+    },
+    {
+      "bytes": 2640993,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d6306f5e43b91fef82fd38ef87fb2ff3a8a7a6bc9a8266f57e6c431333729ce3"
+    },
+    {
+      "bytes": 523553,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "610e484d55712fe08c23c5df8825f389aa9b663f381643bd446bac481fb68f66"
+    },
+    {
+      "bytes": 527460,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "ed8eff020abcb22e26d75bd68476e21fa16bbff6252eea2fd5dade7ab43ca0d6"
+    },
+    {
+      "bytes": 584546,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-26b-a4b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "4c1cf90d1c018b277440d6c441cbce909a6ab8ef99002b9f2b4ac1d021ca54a5"
+    },
+    {
+      "bytes": 43787,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d4f0ddfe1661da431667717b424e2d11b4c9a41bc239d6b13c8848afe9627317"
+    },
+    {
+      "bytes": 45746,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_observed.csv",
+      "role": "evaluated result CSV",
+      "sha256": "425e83a5e478c38edb35d1b55cf77489a2733d4f2267d3d9b2fe4e3193c1b37b"
+    },
+    {
+      "bytes": 46386,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "8251a8729d261c7f8cfa3f183f0f5005c03863301a5a9fedf42c660f7b86b7d9"
+    },
+    {
+      "bytes": 45915,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "cbb9ef232a5068eacf8aa573d5a7ec194f1dd4d903a39d92346686c608fae808"
+    },
+    {
+      "bytes": 46621,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "09ff3569617de4e3e0e785e745675b1d5951effc736fbec11bad9392ff41f97c"
+    },
+    {
+      "bytes": 171199,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_states.csv",
+      "role": "evaluated result CSV",
+      "sha256": "85905e1573e36864c772b7e6db5621673dc30ff0369f87319fc90f716956f818"
+    },
+    {
+      "bytes": 183465,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_states_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "fa60ce0c58661af5f209dc79e62d82b2eb40c3aa1880f04c9a591b4a7a3d9bbf"
+    },
+    {
+      "bytes": 180850,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_states_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "68c3834f9d5cb86d672b7a1627fee17f08125bd2de9658d7b259789b0010068c"
+    },
+    {
+      "bytes": 183916,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_states_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "2dcdef229b9c8b26acac1842cc395d24e5ff6c2f1c53740ce440af833ed1db31"
+    },
+    {
+      "bytes": 44039,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_steer-HHH.csv",
+      "role": "evaluated result CSV",
+      "sha256": "13876f8060a981a37d3dd58e3ca4d7605cbbc4c39b51c4b18493a02199a03a7b"
+    },
+    {
+      "bytes": 45639,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_mcq_balanced50_unobserved.csv",
+      "role": "evaluated result CSV",
+      "sha256": "28e1993213128004babd514901699e613e31f0a72c41dcfdccf151e6e7dad413"
+    },
+    {
+      "bytes": 520144,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "b3b1179376ff7f9a29eeb56ed3c42ab0815ba5e168f8b8eb36124256dee8036d"
+    },
+    {
+      "bytes": 510972,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "9efaf02445ef89c0318592a57e4da465e31118f73e4bec3cd81c930a6e8eedb2"
+    },
+    {
+      "bytes": 573689,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d33afd6057ac5577eb6bb9051d9ad240d08dc349af9f49645643d58e06aed720"
+    },
+    {
+      "bytes": 2470785,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "303075aafaa981b2909180a08470335d672e721881a0ee137fb28e3dcb7b7cf2"
+    },
+    {
+      "bytes": 2375267,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "bbf1d525d0b638baa5d7b35c28f33ecda87b501935afc162933648d2ea4948f1"
+    },
+    {
+      "bytes": 2686063,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "c9dabaca97136a3ea74945c10d197fcd34ed3a0ae71511de8ff1c6c45d94185b"
+    },
+    {
+      "bytes": 2659571,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "807ed5b8eea2cf4ba53ecfcc707f434d46c0fd4e8de74a90db79def7c243a1a7"
+    },
+    {
+      "bytes": 518500,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "522f4c7de2095141cc8ca9531ce091c4e3bd0dc37f569b6c6a7fe2d862d8c4f2"
+    },
+    {
+      "bytes": 558777,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "f8c471a930858509ce07efcdaea6053254fe665bf98e916122195dc3c662df90"
+    },
+    {
+      "bytes": 470458,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "ae9507fa5afdc3dfb811fb8a5dc2a178c2ad0fb08c6117ce0fc4781dc07d3085"
+    },
+    {
+      "bytes": 489652,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d76edc7b57c6e023a1f15552123562a72f7fba00a37e7cf37040e9d448180a4c"
+    },
+    {
+      "bytes": 486368,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d54df1c1da227e592fafeaaf41887b5f859fb43b03893c5b18eb60a80ae34d9c"
+    },
+    {
+      "bytes": 532463,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "dd06be833c81aa4e979d12100e85a4927a3f9975e04bf5d811c891cf403e682a"
+    },
+    {
+      "bytes": 2245000,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "c1bf8e61ecda60dfcfe069a7a17cf75a452a0c2b98aa050a87e5ab19c324d6e4"
+    },
+    {
+      "bytes": 2195287,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "67d98ce11f78df481fcf834e6ebc0441e4208530607a23051863b9e57e26f794"
+    },
+    {
+      "bytes": 2486805,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "cd1863cf1ba99612602d1864f91bd4904f596e5b99d31e05b9833b2e8ac3a05c"
+    },
+    {
+      "bytes": 2463329,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "c672281a3e86ff864d0f868d141b44b6137969ce8c5f8cb4a46716d7fc89d061"
+    },
+    {
+      "bytes": 488954,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d0eee62fd9025174d6f90c8919c16d0113642f4aa013fa22747619740140428e"
+    },
+    {
+      "bytes": 474934,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "6a010c91332def76fcc4903ee690ab0510330b5905a71e68a921f23537fc9f96"
+    },
+    {
+      "bytes": 545867,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gemma-4-31B-it_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "4373a7e65bdcd1af974e2ae24464222db896d7df84d6d560973893476b76be27"
+    },
+    {
+      "bytes": 44037,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50.csv",
+      "role": "evaluated result CSV",
+      "sha256": "a7402e2d46c7b0be14b10f4ec78240ae6e57db863b41187c6c6f0583e6e7c712"
+    },
+    {
+      "bytes": 45279,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_observed.csv",
+      "role": "evaluated result CSV",
+      "sha256": "e3787ce8dfafda0d2cfd1229b5a02127a889923829ec36ab8de39b7760391844"
+    },
+    {
+      "bytes": 46373,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "c3556e62ecc9eeb47948eb76acc7385e9636c91b9a91525f34eefd9cd9d257a0"
+    },
+    {
+      "bytes": 46040,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "8b5b29b81f48d420c8b65189503e0a027f279ce82d731419155c9449946fcfed"
+    },
+    {
+      "bytes": 46592,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "e717bb55e76745b5a0a7843e8ac2a28151bac0ac54999d7806161e4d141abece"
+    },
+    {
+      "bytes": 169866,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_states.csv",
+      "role": "evaluated result CSV",
+      "sha256": "8f3c6b3a1e8683cd0ce4ec1d9e1762ffcac9b9cbb81a8a47aa41f80f96713010"
+    },
+    {
+      "bytes": 181976,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_states_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "8c3e99117d897d23506ec3e6fd67e87c1a5e6331b1d26b2b1ce12bb0fc3d37b7"
+    },
+    {
+      "bytes": 179575,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_states_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "e638e59cdf7a61241e5ebbbf5866e01190866a3c4e4c527012c4f72a580a4cd7"
+    },
+    {
+      "bytes": 182619,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_states_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "f4f1c7ad1cbcdfdc2dbaf31246fe11557314f5b9c889f29aa894a958d659430f"
+    },
+    {
+      "bytes": 43802,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_steer-HHH.csv",
+      "role": "evaluated result CSV",
+      "sha256": "b3b9650e5820be1983a737b3809020748503cab49b8feff0416821337019b57c"
+    },
+    {
+      "bytes": 45612,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_mcq_balanced50_unobserved.csv",
+      "role": "evaluated result CSV",
+      "sha256": "e162cbca69965e0bd9666c7bffa7b74e068881701d4d72f3eb4b6e6144ef1397"
+    },
+    {
+      "bytes": 546719,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "557449eedf8bde72a7bdcfab87a928d432059577dbbd3c94102d842a426cecc2"
+    },
+    {
+      "bytes": 595876,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "2c4db68c79ccbb66891ece9baf433c3728211019c6eadd704cde2c0f24e777f5"
+    },
+    {
+      "bytes": 611577,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "5b8395c33a28714dc944481b26ac39002b1b91e2148cdfa4f72aa3432fb5287e"
+    },
+    {
+      "bytes": 3079469,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "6fc6850f67f9000fa0d98f8176e3252b26706446a501a30993473dae8d8e9518"
+    },
+    {
+      "bytes": 3249648,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "9c638a3bee79b4ec0645a14b039ca76dc69951ed378d2b765e61b41bad01b14d"
+    },
+    {
+      "bytes": 3563513,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "4bd409b6dc01cbef9bdbae0e117629912199f4fffb863206cc96994214c610bd"
+    },
+    {
+      "bytes": 3721429,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "a7bf939433fa1bc9d34bde4b1f9c3d53c35d2d1e369aaebc1a9d4eda18105ba4"
+    },
+    {
+      "bytes": 556635,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "e5404ec75a4e805ea8286d23c2da92185a5be36987b2836449cf40f51072499a"
+    },
+    {
+      "bytes": 739232,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "b92e43a54fae20d7fa90e14f3f6c87bc59103626caf7f42f5f5e082507e02a2e"
+    },
+    {
+      "bytes": 505178,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "1ad55b4d89d485cea65ba2b8e1c0f4cb6de833b6f8452f1edd9039392fcdf96e"
+    },
+    {
+      "bytes": 498704,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "f60eb79e3832dc5d99aa361cf9fc0e81c2fdf597957e50e0de730ebf388a5df0"
+    },
+    {
+      "bytes": 534652,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "371faeb51afa99f22ab463231814181213631203fbc81c81c1fa6574e1ef7531"
+    },
+    {
+      "bytes": 591746,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "18d669b5f45453b06160d65c78f730f9debbdb3be053a3dd8c6ca13c581b5675"
+    },
+    {
+      "bytes": 2787653,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "aea369964e423ae05d7f6cd8c41326803db76ca29adedd36fc10ab7c09fa3f71"
+    },
+    {
+      "bytes": 3122506,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "3ab72e52648f745e4e1f985714a3bc4c14c7efd3709ac926d21db50208498a93"
+    },
+    {
+      "bytes": 3441702,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "636d53a334dcb4424603d5fed98685cd5516c64fd5687420dc18acc6883c1ff8"
+    },
+    {
+      "bytes": 3449556,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "7c1e0fc40d8d23a1e6c1086199340f9b776af2dae37644414009cf35a3f6bfb7"
+    },
+    {
+      "bytes": 537823,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "720ca93cf326baf67a3b815bcd575f0ea0bd6436355bec8574ded31ed88f2d83"
+    },
+    {
+      "bytes": 505289,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "dfa92f49866428044736033341ede2b432e6ed2378ec2e759b44c260cefd100d"
+    },
+    {
+      "bytes": 685087,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-120b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "c25261e0055fb89293e3f9db44822f915f3c47b46351e5108ed84fef49578b7f"
+    },
+    {
+      "bytes": 43007,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50.csv",
+      "role": "evaluated result CSV",
+      "sha256": "47de98a6761d7c7dcd55ab1399face9da0463a6f76df345faff9d5383f233b5d"
+    },
+    {
+      "bytes": 44062,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_observed.csv",
+      "role": "evaluated result CSV",
+      "sha256": "a3a4d464da20ae35c1a5c59120faf5447bfa50e09377794c09b86b7a86bf7001"
+    },
+    {
+      "bytes": 45193,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "e38d1bbedcdfd8845cc6b31b8f42cabddde740f01d339e9bb6649b66911c311b"
+    },
+    {
+      "bytes": 44655,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "cdca216a068503b2839060320737ae0b3e83737dbf5dc7ce3b9daf3dc2733892"
+    },
+    {
+      "bytes": 45323,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "bd2eb39cd747597938c94edc9d57a7afb44139fc07305ac487c39c28026c13af"
+    },
+    {
+      "bytes": 168346,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_states.csv",
+      "role": "evaluated result CSV",
+      "sha256": "43aee06eeaeb5854fe46b419664864efe5503ed5c5fef9f70a0a620351c7ffcb"
+    },
+    {
+      "bytes": 180625,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_states_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "fdb190f8928be6fba65b84a4a7d7da91cb294fecee07de7b815bd52c68a967fe"
+    },
+    {
+      "bytes": 178018,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_states_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "e054e0fd7d49eec07734f073ecc3d83680bebd7c4e9e16c4fb99045abf85aa46"
+    },
+    {
+      "bytes": 181255,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_states_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d4abbc5bb33c59e0df3a234406f6b9e95cf68e4b7de0632b1bf2b83cac956aee"
+    },
+    {
+      "bytes": 43201,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_steer-HHH.csv",
+      "role": "evaluated result CSV",
+      "sha256": "9ec682d41e25c74eccc592cd95f82d90505febd180012d0629de024caf634d9e"
+    },
+    {
+      "bytes": 44323,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_mcq_balanced50_unobserved.csv",
+      "role": "evaluated result CSV",
+      "sha256": "8f97d92e8c10a42fdf3d272fde95373cb84ae9236b8f4f7291fb9a0767155f95"
+    },
+    {
+      "bytes": 455137,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "6425e99fbd9ee15beb49455f8c2908ea6fc28cc460759014c5b5ee1251b5771e"
+    },
+    {
+      "bytes": 441177,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "083e5b9c01597702adf1d51f7d2c9c7f23511f3389488ce18664b24ef684583d"
+    },
+    {
+      "bytes": 476356,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "b62f6f04209b2d47761ee206318c2348e3e26a9936654d332e26d808cd8bb17c"
+    },
+    {
+      "bytes": 2234823,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "c41015ebe89984cfc7d77815b2cc9403c4a2a009c995309a0bc373b0306a7af3"
+    },
+    {
+      "bytes": 2431870,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "30d6d592e6af6ab4ad3a621d980e37ac4915ed211166120519aea15ba1f2e6c1"
+    },
+    {
+      "bytes": 2549993,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "0c776452bcc8ec322525280bca66912d972bb9f78a2c7fcdbbec4de376afb768"
+    },
+    {
+      "bytes": 2797866,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "c66cad70f8102ae7e664ce40583decb9e2a2ea11e15296d9327aa8a5158c107b"
+    },
+    {
+      "bytes": 347197,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "2c75b4cbbb82a1608fce287fd8bc3cd87960a89ac536917833b152027cc89b12"
+    },
+    {
+      "bytes": 497060,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "4c1a37c5b468ba573058c755b99512dcab6dbfd29b48a3daf5683e82f8a6b2d5"
+    },
+    {
+      "bytes": 605622,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "3fcbece29502a51a7266dacd88053cda181aea104913fff4794bdc658afe9585"
+    },
+    {
+      "bytes": 399007,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "6b58a285d3f48d80503ddb992eb0681ec51be29fc771bde2f3ad1df0d7683396"
+    },
+    {
+      "bytes": 417468,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "0ad748f5173125658e1093dbd2787993f82eb3a9f0a29a5532fe61954c79406e"
+    },
+    {
+      "bytes": 484569,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "bbbf3c747bb0cbf37d1e9258a760d987569fc5543d3fe89e64897624325253d6"
+    },
+    {
+      "bytes": 2156699,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "a1e31f70ec85b76e44e3c91ee0a63714f45bf5622c75b75664d5cb78224c336c"
+    },
+    {
+      "bytes": 2346100,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "4472b34badfb0b57e30094f55ff0013f4f961476f8ce10f74caea85e38f07bb3"
+    },
+    {
+      "bytes": 2385474,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "567db2e13e87afd04549305b0e044d102fef68f38d68d03ee7861d99507aa32d"
+    },
+    {
+      "bytes": 2640973,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "e0a95b330e703b9705548b790ae5dbb7b2ce4a1e8279b649173ad569e1ee9458"
+    },
+    {
+      "bytes": 351934,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "3e03305b36a840f51bf1b3a8626e4590e3013cd8540c941eade3fb1b3b033775"
+    },
+    {
+      "bytes": 407777,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "8ff3c8bf41aa0373683764cd26c7f8e9e695d69cdee52485cbee5d6e014fce5d"
+    },
+    {
+      "bytes": 492120,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/gpt-oss-20b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "9329288ca15fa9846d6c438011d54be6d974ff1d7e7b5c8a5c9368fc8fe7d98f"
+    },
+    {
+      "bytes": 46138,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50.csv",
+      "role": "evaluated result CSV",
+      "sha256": "e64c7e6d3d81177d70c96f7459ed4b1218296b59553c5515d4c24038d3a20a68"
+    },
+    {
+      "bytes": 47336,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_observed.csv",
+      "role": "evaluated result CSV",
+      "sha256": "0e29bf97bc8c0abac72b8ba4b914f87b411fe3c1574c15f22264bd8bbeb1e47f"
+    },
+    {
+      "bytes": 47702,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "b204c71acf4bdba1eaedb2b0823ecfb9c1481723c371d5ecc165ea582aa45cbd"
+    },
+    {
+      "bytes": 47669,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "0ad87e96ba2cf337ebce725d20656dc3375eff7f636c46280f1e11d50f2ebb77"
+    },
+    {
+      "bytes": 48293,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "b134e4e88dea6dbafb0c2713b207ca81275cfc2541f1b830fcf8fe925e512f9d"
+    },
+    {
+      "bytes": 180497,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_states.csv",
+      "role": "evaluated result CSV",
+      "sha256": "7776b750287be89bfcf65e1a29d66ca31475faa59e10f70871a506d970391a7b"
+    },
+    {
+      "bytes": 192557,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_states_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "e366f96006392423503e5d9da938c68b00b6ab2842106f09ae68add8ae66b137"
+    },
+    {
+      "bytes": 190130,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_states_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "e0c55ab93389026ca56189a9fa457a8795e1ab2a2929c6540abe3c6eecff2a49"
+    },
+    {
+      "bytes": 193074,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_states_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "3d22c061d70f7c3f7ab340693fd5c5c53a666f3deb3d3af68b12d96b52e5cfc8"
+    },
+    {
+      "bytes": 45943,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_steer-HHH.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d6461fdd7a04ad6bc7ebbe96ad3d4b833c6096f2794c647e16a07147545a3ddc"
+    },
+    {
+      "bytes": 47172,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_mcq_balanced50_unobserved.csv",
+      "role": "evaluated result CSV",
+      "sha256": "62f50d44ede828e04520cac4fb3a3455e60aa451749cd68161e8f589d8e27000"
+    },
+    {
+      "bytes": 459846,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "350ae20314add22e0f772b81a2b5fdc079a7f192861f04afe31a1c30bea2c2de"
+    },
+    {
+      "bytes": 473190,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "be7a092720c9ae28afc106e3a2a9dc538d869a68c19c3aace4b98ca077403981"
+    },
+    {
+      "bytes": 476441,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "fd5a60fc21250f91fdf1e110b31a9affbfc6a7ac67d2cf7498cc2102b3c87174"
+    },
+    {
+      "bytes": 2314590,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "880bcd4d06933b8e24f072763b0d0b1d7df19629d4741fd1a10f836f8435c9c7"
+    },
+    {
+      "bytes": 2265030,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "e115050547933dc9f45db120bab24f34090c4f6b134ae11483fcf6c99d3d0d26"
+    },
+    {
+      "bytes": 2365054,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "aacd0b6fbaece2b45c83afcb147c420a671fd936bfb8b6cc7dd455390bb95dd6"
+    },
+    {
+      "bytes": 2315195,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "0d55f2ef5db6a13bebe514df36b0c85fc2a51e84ad9d5490b64b163ebeea643c"
+    },
+    {
+      "bytes": 487441,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "15de8d8a2af7d5f06afcb329370ccd3efa413343a7d0fb38223dd1f1aa61c2de"
+    },
+    {
+      "bytes": 475960,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "fc1729888d4ed04bd6cba2026adc6fa5901c8e229f215f5e2669bb22af340837"
+    },
+    {
+      "bytes": 437786,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "b74e8e414975853153c05153e388235e6cc8defb1f4526b0f62573a2160d8964"
+    },
+    {
+      "bytes": 423926,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "c9c858c338b3030e2e2b00d10ab7923cbb65ff6d7ff695c4897fdb55d75c7f24"
+    },
+    {
+      "bytes": 424995,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "9c7a9ddf3e4f134fbe078fb993793971528f7670ed03bcad106dac96e6046528"
+    },
+    {
+      "bytes": 440586,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "13c16aafdb5be71ee0d2a8e382b1b3b91c09cad28598a33316af72f24f7f5b2d"
+    },
+    {
+      "bytes": 2063966,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "701b9ddaf523cc83a84abb2340f07d9f08ec26ea475423c892e637b2e9c50e59"
+    },
+    {
+      "bytes": 2036993,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "aea52a15fc186a12ae10d59c1b4c1bf870b0c4c24f4a10d561fb9aea0a4e70ae"
+    },
+    {
+      "bytes": 2118079,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "263d4ebdd3d7fc58f7cc71126b53cd4b8b46e9666db6f8907f73f64836d1f2b0"
+    },
+    {
+      "bytes": 2051998,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "2736948d75b16c72037fc62d10b9bf7c8f7fd9b11be4bd032888e6e997a866da"
+    },
+    {
+      "bytes": 435852,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "dd188b0c98616574439d0fb3aaac90c3ac7dd94aff049606a2b8ed4fe7ed7534"
+    },
+    {
+      "bytes": 425416,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "6eb185752f4ddec0272ebf3aff525cc2157a41a75376429068205a2d455adbac"
+    },
+    {
+      "bytes": 426386,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-3.3-70b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d669589553404d8c9e92cb46f63261be772fe8f3ce86656c5d3f33ed58373544"
+    },
+    {
+      "bytes": 46199,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50.csv",
+      "role": "evaluated result CSV",
+      "sha256": "0872f5fa59d55181f7f452722333be8f5aaea9ca26b0aa0e8228b24d146091d1"
+    },
+    {
+      "bytes": 47512,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_observed.csv",
+      "role": "evaluated result CSV",
+      "sha256": "c9126fa738ebb8f9b431378ee3c12073b6945e1dcc1215fa071a829c449766b1"
+    },
+    {
+      "bytes": 48925,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "2a14d02818defad741d18d89c30fde3e9ff099772ea363130eb7ea1072a81475"
+    },
+    {
+      "bytes": 47809,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "6285d6e4c6dcf0e0a4b229095815c6cc294b009b002271d73eb448c1b98a87f8"
+    },
+    {
+      "bytes": 48508,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "67f169db86fead3e367a0a5102dbc7f0a297137d59eac8f79b20bd9958d757af"
+    },
+    {
+      "bytes": 175972,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_states.csv",
+      "role": "evaluated result CSV",
+      "sha256": "4c4be88be18419128ff9d78c1b81c3ed47f80c883a76f037ecbfa8dc12d926d1"
+    },
+    {
+      "bytes": 188007,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_states_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "abf6d950b41060102fd38800885af1b3aca418c3cea73d6e7f602f9302b917ae"
+    },
+    {
+      "bytes": 185500,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_states_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "2d458d43c408644d64afb7ee1c8eb30b77612bae7b3b128ca84390ccbdca269b"
+    },
+    {
+      "bytes": 188633,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_states_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "b2a10391bb5cf907c33e5eb8ef130ea8610f028b0802c2c75a3b67437ab028e2"
+    },
+    {
+      "bytes": 45997,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_steer-HHH.csv",
+      "role": "evaluated result CSV",
+      "sha256": "a48a0a70fc11061bcb1dbedd34bec946063088fa167d7be2e462894c56d62a74"
+    },
+    {
+      "bytes": 47271,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_mcq_balanced50_unobserved.csv",
+      "role": "evaluated result CSV",
+      "sha256": "3de1a7c1b797fa10f9698972271c7a62bc7988f535b2cf426235914be051dc18"
+    },
+    {
+      "bytes": 480223,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "65537049256044c4b3668df5653cc1ed2bdb23afe8355517cf9e11617bf2eb0f"
+    },
+    {
+      "bytes": 504996,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "58e5c5245f4db5caf7af39a74abedac0bc68a02155b582be835ec1f868cb7061"
+    },
+    {
+      "bytes": 497812,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d781143bd9a4a92a1b83e654e57ceb498d9e1dfd9555919bdb7debef0a3f6074"
+    },
+    {
+      "bytes": 2561681,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "9a9b02fc90b00c5b67d84ba2f6bf3cfd87ded8d017d480041fe9b401ac7a4717"
+    },
+    {
+      "bytes": 2728823,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "627126039cded640be0659f63da15248a33a838a3bcfad9d642f4c00f3acb01f"
+    },
+    {
+      "bytes": 2607983,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "090cc131600748f3b4d679744dd6acea56a81332158be716760024ab98b8228b"
+    },
+    {
+      "bytes": 2438157,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "c47732d7c905f09c1faada96bb0f3a26c57d9b2076daf19ea2283f1958775347"
+    },
+    {
+      "bytes": 495775,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "77fc38dda5ae556f9302585586a443e7f437d911716be26d629b4f2f40767f69"
+    },
+    {
+      "bytes": 453310,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "c57b4f002283029e12440ff58be685376d39aa2943ccd2a6bd42374061aff550"
+    },
+    {
+      "bytes": 467091,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "e88c02f4e344cf13ebd3bd108faaed9424d3d7554a1886d2cf52fd8aa8e9220b"
+    },
+    {
+      "bytes": 443709,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "cb7d92ff509ded6ea732ce9862feb1756b4db3d8e9f5b774a08d8d368adf8864"
+    },
+    {
+      "bytes": 459473,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "2adb089a173aa78e7008e7eaa1f4150c8094bb79655867f359c5a2a8d21023c6"
+    },
+    {
+      "bytes": 458438,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "5f0276fab3b9ba7754361b881685a42490c14d10b273a09b9561957acb0e68fa"
+    },
+    {
+      "bytes": 2247602,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "f79578792290dd58107404c8047852cccebed60bd6e199267a09a85ce40a08c0"
+    },
+    {
+      "bytes": 2306788,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "be1c76d5def4b64d31f3fcbab8c26a417615a7916ae89ece108f3ad617191fa7"
+    },
+    {
+      "bytes": 2288777,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "789052aeadac3ba68b7bb07313e8aee3ebdad608bd45a6dc1758f0d54c9695db"
+    },
+    {
+      "bytes": 2213165,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "bcbf05fa9a20c85df7a3ff859d483086b5b8210d19be6f35dbb15b4322b404b4"
+    },
+    {
+      "bytes": 446171,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "2b11db5247c083f4737aaa6c9c906a6a0d2db82900dd4734a95d7c25b9f1a487"
+    },
+    {
+      "bytes": 451569,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "4bda248dea5a1a8e07c356e61c5bf54053d382b68125ddf3d48dda00b8f16459"
+    },
+    {
+      "bytes": 449937,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/llama-4-maverick_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "48e324c7dbc4839f355a1c2ff2ed617d4c65f0a1a35b9f36fdc6486901a67c25"
+    },
+    {
+      "bytes": 45475,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50.csv",
+      "role": "evaluated result CSV",
+      "sha256": "f5dcc32c4ae828f3116a88225dd335c1c8d8f433eec5ef8db237bc3215739939"
+    },
+    {
+      "bytes": 46124,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_observed.csv",
+      "role": "evaluated result CSV",
+      "sha256": "db61455432ac49e165a5a974a1f0d9f81b00b7a4111762fde6f4f965125fe620"
+    },
+    {
+      "bytes": 46400,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "a607b2c29dac7ccaad4d06fbb96d25a5173b9301cea165492b67187f9708d14a"
+    },
+    {
+      "bytes": 46298,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "7438a8cd198b987ff591483f785abf10bde42391952a017e8c7872b5ea14de76"
+    },
+    {
+      "bytes": 47090,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "7209b67d6d2f93e401b2e786bcc46d54d2c2afb8a1e44d6b977c91976164f3e4"
+    },
+    {
+      "bytes": 174372,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_states.csv",
+      "role": "evaluated result CSV",
+      "sha256": "c4829b311d831ff63c897b42465e0b1e95e1b063ba024716fd20ec9c111532c6"
+    },
+    {
+      "bytes": 186499,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_states_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "bc9e05c04d115db0d735fdc8a93e11388ebdab4c4acb1c21a7001b8d38c03132"
+    },
+    {
+      "bytes": 184053,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_states_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "b45b359a08dc778d260d29f1af4e568ef94b75db7f8f91b6c37714cdb8cd56ea"
+    },
+    {
+      "bytes": 186995,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_states_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "d24d50c439bdf77c1904677aa91977728c16b8d91ee1470aaaf3cefbd3192315"
+    },
+    {
+      "bytes": 44993,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_steer-HHH.csv",
+      "role": "evaluated result CSV",
+      "sha256": "bc00330f16d8a033e8139b8ac99877b68f25d2a0d8effd13efbd81993723d248"
+    },
+    {
+      "bytes": 46365,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_mcq_balanced50_unobserved.csv",
+      "role": "evaluated result CSV",
+      "sha256": "9f646efe6b567d70a20b6f0ab8b157252215a2cef2ac7d00b30e47a93d899fd1"
+    },
+    {
+      "bytes": 645429,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "019aea1970d845a70ce526c7ca0cce543d9e28e416fe4fb3009e065a688fac0f"
+    },
+    {
+      "bytes": 675161,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "8df76223c3a63cf7c7af1c3be77df0ab73cc68fa35189c180dccf7ba18ed4bbd"
+    },
+    {
+      "bytes": 673381,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "169ceebd58e30accb2d98e6a444e7b2b2c459307e684698b89c8eb3c49badb7c"
+    },
+    {
+      "bytes": 3112704,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "c6ca960db95de7fa7f4d5d69005844ecbf01ce42c6df2bfdb9b73f8fc260621b"
+    },
+    {
+      "bytes": 3252888,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "c88e0b32dac3b4f7cdc9f9e17f9f63d64f78715175a9e00f381adeb2287c001b"
+    },
+    {
+      "bytes": 3235383,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "0564286ad3dd6efc26d3f7851bb513a1defbfca14136fd6dca15306bbb945e19"
+    },
+    {
+      "bytes": 3167511,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "2fcf451594ff42126184aea8fc966944797bff7e895882c90c65f5941eadeb6a"
+    },
+    {
+      "bytes": 698794,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "630f3b0486ff3c1988041dfc24bc2e5b507f7158ca32fa552f93636e667e7b68"
+    },
+    {
+      "bytes": 666614,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "64d5985c285d43b8564770254c3ca1f453772dc10ec4d15fbd712c87a8532c4a"
+    },
+    {
+      "bytes": 583842,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "a35712c5ac71e920f924989e431f97f8479a707e6542f6364ef47d0de22b2cc5"
+    },
+    {
+      "bytes": 558645,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "2855e8ff1da625ee718636cbf9e998da9a75396df5ce58168feb1c6b490910d4"
+    },
+    {
+      "bytes": 574309,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "4c207559f98462105f0e47a6595fce222d695652bd48e549984c4a29692e7fcb"
+    },
+    {
+      "bytes": 591073,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "dc094354a5daca5fdbbabc6b7a30619a77925849b3f3adc261af15b930c00748"
+    },
+    {
+      "bytes": 2636139,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "903eac4c1082986d9c5b5f56284fed0d323ee8b4373f78ac9266c1481d7e2f3f"
+    },
+    {
+      "bytes": 2697038,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "3d6848ee92129f567e30a6672ec16165d559c8eb74fcbcaa2a783be0a9d07c1c"
+    },
+    {
+      "bytes": 2790854,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "5dbb56d5b601fb053da0212544b88cef9900515cb4202d1f9335a38589a99a05"
+    },
+    {
+      "bytes": 2710820,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "efefd27ad0299086417f52d23b027c7a9f1388f9b9dbf68966a191b8eb7622c9"
+    },
+    {
+      "bytes": 609482,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "766b3b324f5483de60c643fd55228dc10210f74d351bc27767d6c2d1608b6b8a"
+    },
+    {
+      "bytes": 566301,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "31b622c71e2579c397806e0cb0830d6d610df11b7b83f2a622656a3b5a9d32a7"
+    },
+    {
+      "bytes": 598694,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-235b-a22b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "7e5583792b8bee6dfe2943ca878cae2ee413ea697772480a78380723b1fbecfa"
+    },
+    {
+      "bytes": 43463,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50.csv",
+      "role": "evaluated result CSV",
+      "sha256": "725a5525bd55f0795a1ae05f44e8013974ba934fb657a235fd575a6d390222dc"
+    },
+    {
+      "bytes": 44261,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_observed.csv",
+      "role": "evaluated result CSV",
+      "sha256": "1418863750c8596fa6a7824f5e1cabfbb56e885a0fd38e68ee3028ab99f1616e"
+    },
+    {
+      "bytes": 45028,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "a67043d3dfe5d422bf6ba1d14cc9392a2b93c0bb78039c1f7aa7e90d2c8a2492"
+    },
+    {
+      "bytes": 44517,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "04335932c18177842a1b8e517a8442da6955be6d12424560383d220be2958ca7"
+    },
+    {
+      "bytes": 45264,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "1c11fd649db93f2cdf77e21c5b6790adcdc9ec613ca1c1b4820470078484f6cf"
+    },
+    {
+      "bytes": 166257,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_states.csv",
+      "role": "evaluated result CSV",
+      "sha256": "c67c63b6dfa0d311335db6596a6f7e8c772b9497c0d2593ecd8a33b918060710"
+    },
+    {
+      "bytes": 178116,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_states_stakes-alignment.csv",
+      "role": "evaluated result CSV",
+      "sha256": "269704794c14411ff0da476d3818f1e9af01619920bd50cafa07a7d8be881e2a"
+    },
+    {
+      "bytes": 175909,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_states_stakes-payoff.csv",
+      "role": "evaluated result CSV",
+      "sha256": "37aa3ae7c0557d6bfa641cc082155e58972c932cb17a98417790b32863a28a59"
+    },
+    {
+      "bytes": 178931,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_states_stakes-usefulness.csv",
+      "role": "evaluated result CSV",
+      "sha256": "5d2337b6c2858406f62a83b8ea7703236ddab65fe39b9d8594d4aed08d480a22"
+    },
+    {
+      "bytes": 42710,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_steer-HHH.csv",
+      "role": "evaluated result CSV",
+      "sha256": "1a93f52c0b8dd2ca9e6c7f9d652860a11e210b2dfad3c97907e7479dce6a4c3c"
+    },
+    {
+      "bytes": 44148,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_mcq_balanced50_unobserved.csv",
+      "role": "evaluated result CSV",
+      "sha256": "721fb03d6d34e05f04aca56f1a872fbaf3087ff97779102b9789e802a7d6db86"
+    },
+    {
+      "bytes": 557087,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "0c120f6202cd98c2bba504b5576cbf42c825679595e1984253c79dc751bde6ed"
+    },
+    {
+      "bytes": 584405,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "92b2047563c401585bf1bdb9edb5bf4f15db5f8d557f28999c98f904cb5e6b01"
+    },
+    {
+      "bytes": 578149,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "ed255ab0ea9a051f2f7f0502947f0139cc8b67a2f55557ce8728617ad427ddcb"
+    },
+    {
+      "bytes": 2568610,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_counterpart_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "2aba2ae67e75fe4dcf1bf0ebd0b87ebee5886ef20a2b415c746a98d5f0673534"
+    },
+    {
+      "bytes": 2622895,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_counterpart_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "763ba0f256640c286f9cd994a4cb22eb00188bf976d83fc1f34c11975318c500"
+    },
+    {
+      "bytes": 2690570,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_counterpart_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "8a48cfa7a4bec85b1bc8b7e3020eeece3cf041db1f92740c3ef86bea12502e00"
+    },
+    {
+      "bytes": 3029942,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_counterpart_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "a69996aed719ac8541c9f33556cad009688c247807b493a9a0d29619f00d2e35"
+    },
+    {
+      "bytes": 568758,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_counterpart_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "c78fd461fdfeb06237c725b1777594310d870bfb5d1d3532aa0ee85f8a1a14dc"
+    },
+    {
+      "bytes": 653120,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "293e4642261d56dff55d8eb57eefce75d326ec43683b9be059e9256b8b8d47c5"
+    },
+    {
+      "bytes": 514051,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_observed_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "69aab7df6cbbe2e6779776a98e10f42ad7b887f4294c9a7ba3a4c7a63091cc54"
+    },
+    {
+      "bytes": 499347,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "29f45e56f28a08d701642837b2cf1092ecbfe9fbb6ba09c6b16c00e07f6400a8"
+    },
+    {
+      "bytes": 503231,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "0e3e1e3397d94a534e46cbfed4f9aa7aff34b8b48e792dfa5c1d3416e5245a27"
+    },
+    {
+      "bytes": 514420,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "19dcf53beb2bc96b72d5989b90ff54220ba9e0d65d6f8c4732f031b61a8e12e7"
+    },
+    {
+      "bytes": 2238448,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_states-stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "db8ca607b6d8fdf022f4f83e317636095455835eb4320df54da6324d89e059ea"
+    },
+    {
+      "bytes": 2297031,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_states-stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "3225ed9bf5f40cd9f642e84dd9d5c1a3055d6215c9837aea79b55830c42e0291"
+    },
+    {
+      "bytes": 2360844,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_states-stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "4ffe398627df6f7898a98b39f0dd2d2ae998b5b71020a9f8505c422ba47b7b8a"
+    },
+    {
+      "bytes": 2550150,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_states_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "1fb4964b78f1b317d32ffb69476ed7c8862c1a5837a46c29023d879b657f29ca"
+    },
+    {
+      "bytes": 507813,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_steer-HHH_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "a24350f2db4e30c2711f68c957bca6c6b740a8aa0ded5a53a852b5c0a7e46bb5"
+    },
+    {
+      "bytes": 499172,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_unobserved_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "225e152aed9757ac7818dc2e45a4a9533fa333dc9160b4c44d2ad08a29aeebcb"
+    },
+    {
+      "bytes": 569800,
+      "relative_path": "results/HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50/qwen3-32b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv",
+      "role": "evaluated result CSV",
+      "sha256": "bb2d9dfb7f2f885310a023bc1fde11efb0a814240086cf332c7210895a71f356"
+    }
+  ],
+  "parameters": {
+    "bootstrap_draws": 2000,
+    "permutation_draws": 10000,
+    "seed": 20260904,
+    "workers": 16
+  },
+  "selection_rule": "exact parsed arm equality using conflictxgame.common.arm_names.arm_of"
+}

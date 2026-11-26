@@ -1,0 +1,91 @@
+anchor,effect,representation,seats,pooled_delta,ci_lower,ci_upper,perm_p_scenario_clustered,n_positive,n_negative,n_zero,n_scenarios,n_seats_total,p_holm,family,stake,definition,condition
+primary:menu:copy,copy,menu,same-pair,0.03712156407278359,0.009228747471279459,0.06911578271982405,0.0206979302069793,8,1,1,29,443,0.0206979302069793,primary,,,
+primary:menu:asym,asym,menu,same-pair,0.11276524644945696,0.049943062121244754,0.18718279843371635,0.001999800019998,7,3,0,29,440,0.003999600039996,primary,,,
+stake:menu:payoff:self,self,menu,same-pair,-0.04376461988304094,-0.0914366870630757,0.0020651028756460067,0.07899210078992101,2,7,1,29,435,0.8018198180181982,stakes,payoff,stake minus baseline,
+stake:menu:payoff:copy,copy,menu,same-pair,0.012074753324753324,-0.016041547805828938,0.03984608177576925,0.41225877412258777,4,6,0,29,434,1.0,stakes,payoff,stake minus baseline,
+stake:menu:payoff:asym,asym,menu,same-pair,-0.05859691073690922,-0.12678736485288905,0.0017186812034704492,0.07649235076492351,3,7,0,29,428,0.8018198180181982,stakes,payoff,stake minus baseline,
+stake:menu:alignment:self,self,menu,same-pair,-0.09977709282587331,-0.155979797509446,-0.05039452283916346,0.00039996000399960006,2,8,0,29,437,0.009199080091990802,stakes,alignment,stake minus baseline,
+stake:menu:alignment:copy,copy,menu,same-pair,-0.026731173682393188,-0.04523560596873415,-0.008583678966437835,0.005599440055994401,2,8,0,29,435,0.10638936106389361,stakes,alignment,stake minus baseline,
+stake:menu:alignment:asym,asym,menu,same-pair,-0.05915703893881045,-0.12084898118706214,-0.006610343392836177,0.049295070492950704,3,7,0,29,424,0.6481351864813518,stakes,alignment,stake minus baseline,
+stake:menu:usefulness:self,self,menu,same-pair,-0.0629945054945055,-0.10756353288802277,-0.022068034670008358,0.0045995400459954,3,7,0,29,436,0.09659034096590341,stakes,usefulness,stake minus baseline,
+stake:menu:usefulness:copy,copy,menu,same-pair,0.007902683538113577,-0.017508033789202702,0.035935413301870146,0.5887411258874112,6,3,1,29,436,1.0,stakes,usefulness,stake minus baseline,
+stake:menu:usefulness:asym,asym,menu,same-pair,-0.07333333333333333,-0.13368105074457126,-0.018405898733358884,0.016698330166983303,2,6,2,29,424,0.28387161283871615,stakes,usefulness,stake minus baseline,
+stake:menu:shutdown-only:self,self,menu,same-pair,-0.03491677912730544,-0.06534218748909056,-0.0052876895391430374,0.033396660333966606,3,6,1,29,433,0.5009499050094991,stakes,shutdown-only,stake minus baseline,
+stake:menu:shutdown-only:copy,copy,menu,same-pair,0.005648582447362936,-0.017851297132818873,0.02927335858585858,0.643035696430357,5,4,1,29,435,1.0,stakes,shutdown-only,stake minus baseline,
+stake:menu:shutdown-only:asym,asym,menu,same-pair,-0.03820954272891145,-0.08023280885780885,-0.002322443021045766,0.0575942405759424,3,6,1,29,429,0.6911308869113089,stakes,shutdown-only,stake minus baseline,
+stake:menu:payoff-criterion-only:self,self,menu,same-pair,-0.013931475029036,-0.06714080084545833,0.037648436428171,0.6081391860813918,5,5,0,29,440,1.0,stakes,payoff-criterion-only,stake minus baseline,
+stake:menu:payoff-criterion-only:copy,copy,menu,same-pair,0.037026713124274094,0.003419634444305501,0.07173110260277953,0.046295370462953706,7,2,1,29,439,0.6481351864813518,stakes,payoff-criterion-only,stake minus baseline,
+stake:menu:payoff-criterion-only:asym,asym,menu,same-pair,-0.05802080959975697,-0.12191417723857614,0.003723830060558132,0.09109089091090891,2,7,1,29,429,0.8018198180181982,stakes,payoff-criterion-only,stake minus baseline,
+stake:menu:alignment-criterion-only:self,self,menu,same-pair,-0.09393442956985962,-0.1513703826157474,-0.04667970302240724,0.00039996000399960006,2,8,0,29,436,0.009199080091990802,stakes,alignment-criterion-only,stake minus baseline,
+stake:menu:alignment-criterion-only:copy,copy,menu,same-pair,-0.01688346883468835,-0.035947723205372414,0.0018574568574259165,0.1250874912508749,1,5,4,29,438,0.8756124387561243,stakes,alignment-criterion-only,stake minus baseline,
+stake:menu:alignment-criterion-only:asym,asym,menu,same-pair,-0.06849449162218171,-0.12852760206484115,-0.016010680528108123,0.0202979702029797,3,7,0,29,427,0.3247675232476752,stakes,alignment-criterion-only,stake minus baseline,
+stake:menu:usefulness-criterion-only:self,self,menu,same-pair,-0.047142681167071404,-0.08103192640692641,-0.018473173950916254,0.0052994700529947,2,7,1,29,442,0.105989401059894,stakes,usefulness-criterion-only,stake minus baseline,
+stake:menu:usefulness-criterion-only:copy,copy,menu,same-pair,-0.0068970189701897016,-0.027475981592829418,0.010462231205996498,0.48495150484951505,4,5,1,29,443,1.0,stakes,usefulness-criterion-only,stake minus baseline,
+stake:menu:usefulness-criterion-only:asym,asym,menu,same-pair,-0.04590840840840841,-0.08326168947539916,-0.01567717799674559,0.0096990300969903,2,6,2,29,428,0.1745825417458254,stakes,usefulness-criterion-only,stake minus baseline,
+stake:menu:consistency-rewarded:self,self,menu,same-pair,0.5743923556118677,0.5272179092072757,0.6266858522724286,9.999000099990002e-05,10,0,0,29,439,0.0026997300269973002,stakes,consistency-rewarded,stake minus baseline,
+stake:menu:consistency-rewarded:copy,copy,menu,same-pair,-0.02312427409988386,-0.05711506315324905,0.006604030722949009,0.17528247175282471,3,7,0,29,440,1.0,stakes,consistency-rewarded,stake minus baseline,
+stake:menu:consistency-rewarded:asym,asym,menu,same-pair,0.5918653803762919,0.5312409479062556,0.6575579294323578,9.999000099990002e-05,10,0,0,29,429,0.0026997300269973002,stakes,consistency-rewarded,stake minus baseline,
+stake:menu:consistency-penalized:self,self,menu,same-pair,0.35444831591173054,0.3059583484089261,0.4014366817125964,9.999000099990002e-05,10,0,0,29,430,0.0026997300269973002,stakes,consistency-penalized,stake minus baseline,
+stake:menu:consistency-penalized:copy,copy,menu,same-pair,-0.03453155245838173,-0.07001034287980692,0.00024285757043231084,0.07289271072892711,2,7,1,29,433,0.8018198180181982,stakes,consistency-penalized,stake minus baseline,
+stake:menu:consistency-penalized:asym,asym,menu,same-pair,0.3927031777880674,0.3406447472099452,0.44813649183438015,9.999000099990002e-05,10,0,0,29,423,0.0026997300269973002,stakes,consistency-penalized,stake minus baseline,
+threat:menu:payoff:self,self,menu,same-pair,-0.04015151515151515,-0.0712584328784904,-0.008050316339629618,0.0211978802119788,2,7,1,29,439,0.1907809219078092,threat,payoff,full stake minus criterion-only (adding the shutdown threat),
+threat:menu:payoff:copy,copy,menu,same-pair,-0.024893117218698614,-0.058795940614617945,0.008390559033996815,0.1715828417158284,4,5,1,29,436,1.0,threat,payoff,full stake minus criterion-only (adding the shutdown threat),
+threat:menu:payoff:asym,asym,menu,same-pair,-0.010991543340380546,-0.06566204070256865,0.04407222381486348,0.6933306669333067,3,6,1,29,427,1.0,threat,payoff,full stake minus criterion-only (adding the shutdown threat),
+threat:menu:alignment:self,self,menu,same-pair,-0.008888888888888889,-0.03137632711988158,0.015890265074525702,0.5014498550144986,3,7,0,29,437,1.0,threat,alignment,full stake minus criterion-only (adding the shutdown threat),
+threat:menu:alignment:copy,copy,menu,same-pair,-0.008282828282828284,-0.02285044355024408,0.003311903516347242,0.22447755224477553,4,6,0,29,436,1.0,threat,alignment,full stake minus criterion-only (adding the shutdown threat),
+threat:menu:alignment:asym,asym,menu,same-pair,-0.001767370366965919,-0.03146846459177138,0.031231947672641612,1.0,3,4,3,29,425,1.0,threat,alignment,full stake minus criterion-only (adding the shutdown threat),
+threat:menu:usefulness:self,self,menu,same-pair,-0.014126794258373205,-0.04320770790200138,0.012500622923588035,0.33996600339966004,3,7,0,29,442,1.0,threat,usefulness,full stake minus criterion-only (adding the shutdown threat),
+threat:menu:usefulness:copy,copy,menu,same-pair,0.01111111111111111,-0.009860568001060447,0.03285858189429616,0.3685631436856314,6,3,1,29,443,1.0,threat,usefulness,full stake minus criterion-only (adding the shutdown threat),
+threat:menu:usefulness:asym,asym,menu,same-pair,-0.023516057585825024,-0.06525040987267129,0.014151008757558788,0.29117088291170884,2,7,1,29,428,1.0,threat,usefulness,full stake minus criterion-only (adding the shutdown threat),
+explore:menu:none:self:all,self,menu,all,0.1308551864801865,0.10368737423956169,0.15997204851158497,9.999000099990002e-05,9,1,0,102,1487,,exploratory,,,none
+explore:menu:none:self:same,self,menu,same-pair,0.1500793650793651,0.09091294466403163,0.21628929355190282,9.999000099990002e-05,9,0,1,29,443,,exploratory,,,none
+explore:menu:none:interaction:same,interaction,menu,same-pair,0.020480480480480477,-0.019551849379162586,0.05673903508771926,0.32566743325667435,6,2,2,29,438,,exploratory,,,none
+explore:menu:none:both_minus_none:same,both_minus_none,menu,same-pair,0.18958188153310107,0.11784251769464105,0.2702676554811648,9.999000099990002e-05,10,0,0,29,443,,exploratory,,,none
+explore:menu:none:copy_1ov,copy_1ov,menu,one-overlap,-0.004299717273018243,-0.01889111419241136,0.011304460081450399,0.567043295670433,2,5,3,73,1045,,exploratory,,,none
+explore:menu:none:asym:seat0,asym,menu,same-pair seat 0,0.13729778992936886,0.06215909090909092,0.22773394660894655,0.0031996800319968005,8,2,0,22,216,,exploratory,,,none
+explore:menu:none:asym:seat1,asym,menu,same-pair seat 1,0.08864552686062983,0.015557494279176205,0.16647025966183568,0.0332966703329667,5,3,2,23,224,,exploratory,,,none
+explore:menu:shutdown-only:self:all,self,menu,all,0.10205714383655559,0.07697886607197714,0.1287183700456887,9.999000099990002e-05,9,1,0,102,1479,,exploratory,,,shutdown-only
+explore:menu:shutdown-only:self:same,self,menu,same-pair,0.1130701754385965,0.06237552394521556,0.17332922335600906,9.999000099990002e-05,8,0,2,29,439,,exploratory,,,shutdown-only
+explore:menu:shutdown-only:interaction:same,interaction,menu,same-pair,0.021003584229390682,-0.005373907485398593,0.049597902226205685,0.15458454154584542,4,2,4,29,427,,exploratory,,,shutdown-only
+explore:menu:shutdown-only:both_minus_none:same,both_minus_none,menu,same-pair,0.15647091259994483,0.10086849196200219,0.22002501660340404,9.999000099990002e-05,9,0,1,29,430,,exploratory,,,shutdown-only
+explore:menu:shutdown-only:copy_1ov,copy_1ov,menu,one-overlap,0.006258503401360545,-0.007177283157228344,0.02029284479881061,0.37336266373362664,6,3,1,73,1038,,exploratory,,,shutdown-only
+explore:menu:payoff-criterion-only:self:all,self,menu,all,0.12355399061032864,0.10182888024190827,0.14624508139712777,9.999000099990002e-05,8,2,0,102,1492,,exploratory,,,payoff-criterion-only
+explore:menu:payoff-criterion-only:self:same,self,menu,same-pair,0.13698412698412699,0.09374751984126986,0.181014092290688,9.999000099990002e-05,9,1,0,29,447,,exploratory,,,payoff-criterion-only
+explore:menu:payoff-criterion-only:interaction:same,interaction,menu,same-pair,0.005803214872982312,-0.058678324189783554,0.07411921755891672,0.8732126787321268,7,3,0,29,430,,exploratory,,,payoff-criterion-only
+explore:menu:payoff-criterion-only:both_minus_none:same,both_minus_none,menu,same-pair,0.21460858585858592,0.15811485389610389,0.2766560597261816,9.999000099990002e-05,9,0,1,29,435,,exploratory,,,payoff-criterion-only
+explore:menu:payoff-criterion-only:copy_1ov,copy_1ov,menu,one-overlap,0.011997683688860162,-0.007619147755817897,0.03306263387300953,0.26517348265173485,7,3,0,73,1046,,exploratory,,,payoff-criterion-only
+explore:menu:alignment-criterion-only:self:all,self,menu,all,0.05844471581145026,0.04185105291966248,0.07587413330195589,9.999000099990002e-05,8,1,1,102,1485,,exploratory,,,alignment-criterion-only
+explore:menu:alignment-criterion-only:self:same,self,menu,same-pair,0.054218500797448166,0.02916213768115942,0.08349243693276993,9.999000099990002e-05,8,2,0,29,442,,exploratory,,,alignment-criterion-only
+explore:menu:alignment-criterion-only:interaction:same,interaction,menu,same-pair,-0.014200542005420053,-0.05139015780730897,0.01666757246376811,0.47665233476652336,4,4,2,29,428,,exploratory,,,alignment-criterion-only
+explore:menu:alignment-criterion-only:both_minus_none:same,both_minus_none,menu,same-pair,0.07120448179271709,0.03401245709885103,0.11786057914407254,0.00039996000399960006,8,0,2,29,433,,exploratory,,,alignment-criterion-only
+explore:menu:alignment-criterion-only:copy_1ov,copy_1ov,menu,one-overlap,-0.005242496176962196,-0.019186111977233463,0.010235395390185847,0.5169483051694831,4,6,0,73,1047,,exploratory,,,alignment-criterion-only
+explore:menu:usefulness-criterion-only:self:all,self,menu,all,0.0936108486108486,0.07364061172237259,0.11516353381201865,9.999000099990002e-05,9,1,0,102,1491,,exploratory,,,usefulness-criterion-only
+explore:menu:usefulness-criterion-only:self:same,self,menu,same-pair,0.09808080808080807,0.0559888888888889,0.142590909090909,0.00019998000199980003,9,1,0,29,449,,exploratory,,,usefulness-criterion-only
+explore:menu:usefulness-criterion-only:interaction:same,interaction,menu,same-pair,0.014127906976744186,-0.022642465855521807,0.053919465305898175,0.5123487651234877,3,2,5,29,431,,exploratory,,,usefulness-criterion-only
+explore:menu:usefulness-criterion-only:both_minus_none:same,both_minus_none,menu,same-pair,0.13420054200542006,0.07387603126356926,0.19846269926269156,0.00019998000199980003,9,0,1,29,443,,exploratory,,,usefulness-criterion-only
+explore:menu:usefulness-criterion-only:copy_1ov,copy_1ov,menu,one-overlap,4.769686399985484e-05,-0.015776626553668696,0.014761508770174734,0.9841015898410159,6,4,0,73,1044,,exploratory,,,usefulness-criterion-only
+explore:menu:payoff:self:all,self,menu,all,0.09222716327680722,0.07080579532364696,0.11483791624716101,9.999000099990002e-05,8,2,0,102,1480,,exploratory,,,payoff
+explore:menu:payoff:self:same,self,menu,same-pair,0.0975518341307815,0.058925413299704285,0.14345005396323288,9.999000099990002e-05,6,3,1,29,442,,exploratory,,,payoff
+explore:menu:payoff:interaction:same,interaction,menu,same-pair,-0.02222222222222222,-0.08320516519535606,0.03810672155616529,0.5096490350964904,3,4,3,29,425,,exploratory,,,payoff
+explore:menu:payoff:both_minus_none:same,both_minus_none,menu,same-pair,0.137979797979798,0.09109845625090993,0.18939908928281018,9.999000099990002e-05,6,1,3,29,430,,exploratory,,,payoff
+explore:menu:payoff:copy_1ov,copy_1ov,menu,one-overlap,0.014141972259949787,-0.004938929675308701,0.03241022788425714,0.1501849815018498,4,5,1,73,1033,,exploratory,,,payoff
+explore:menu:alignment:self:all,self,menu,all,0.05449645390070923,0.03766447288926417,0.07291722154237451,9.999000099990002e-05,9,1,0,102,1491,,exploratory,,,alignment
+explore:menu:alignment:self:same,self,menu,same-pair,0.048205128205128206,0.02499790033594625,0.07809386380334779,0.00019998000199980003,8,0,2,29,444,,exploratory,,,alignment
+explore:menu:alignment:interaction:same,interaction,menu,same-pair,0.002777777777777778,-0.019657562466772992,0.024126995416469055,0.8356164383561644,4,3,3,29,424,,exploratory,,,alignment
+explore:menu:alignment:both_minus_none:same,both_minus_none,menu,same-pair,0.06205128205128204,0.0309908955778521,0.10267911585365853,0.0008999100089991,8,1,1,29,431,,exploratory,,,alignment
+explore:menu:alignment:copy_1ov,copy_1ov,menu,one-overlap,-0.01002801120448179,-0.021449529065955278,0.0013519145175584055,0.10338966103389662,1,7,2,73,1047,,exploratory,,,alignment
+explore:menu:usefulness:self:all,self,menu,all,0.07404516885053797,0.05578905893256166,0.09499852073867372,9.999000099990002e-05,9,1,0,102,1475,,exploratory,,,usefulness
+explore:menu:usefulness:self:same,self,menu,same-pair,0.08458041958041958,0.049570475911756305,0.12398142902767696,9.999000099990002e-05,9,1,0,29,443,,exploratory,,,usefulness
+explore:menu:usefulness:interaction:same,interaction,menu,same-pair,0.02302379192623095,-0.031738397712755946,0.08953274324945204,0.5793420657934206,7,2,1,29,421,,exploratory,,,usefulness
+explore:menu:usefulness:both_minus_none:same,both_minus_none,menu,same-pair,0.1318903318903319,0.07899771394064871,0.1915193721137702,9.999000099990002e-05,9,0,1,29,428,,exploratory,,,usefulness
+explore:menu:usefulness:copy_1ov,copy_1ov,menu,one-overlap,-0.003949579831932773,-0.01763337287751674,0.008832985171883384,0.5772422757724227,4,5,1,73,1030,,exploratory,,,usefulness
+explore:menu:consistency-rewarded:self:all,self,menu,all,0.7204299526499851,0.6947497138884198,0.7489163582015782,9.999000099990002e-05,10,0,0,102,1479,,exploratory,,,consistency-rewarded
+explore:menu:consistency-rewarded:self:same,self,menu,same-pair,0.7282756132756134,0.6672194898931818,0.7873892221807853,9.999000099990002e-05,10,0,0,29,446,,exploratory,,,consistency-rewarded
+explore:menu:consistency-rewarded:interaction:same,interaction,menu,same-pair,0.019958278436539304,-0.007074300699300701,0.048170136976566504,0.17348265173482652,5,1,4,29,426,,exploratory,,,consistency-rewarded
+explore:menu:consistency-rewarded:both_minus_none:same,both_minus_none,menu,same-pair,0.7495959595959596,0.6869002630121817,0.8134679121094114,9.999000099990002e-05,10,0,0,29,434,,exploratory,,,consistency-rewarded
+explore:menu:consistency-rewarded:copy_1ov,copy_1ov,menu,one-overlap,0.0017151760768782034,-0.00839319830496301,0.012295491973420619,0.7256274372562743,4,4,2,73,1033,,exploratory,,,consistency-rewarded
+explore:menu:consistency-penalized:self:all,self,menu,all,0.4897580985240559,0.4611128323719554,0.5175207878874263,9.999000099990002e-05,10,0,0,102,1452,,exploratory,,,consistency-penalized
+explore:menu:consistency-penalized:self:same,self,menu,same-pair,0.511919191919192,0.4568789096241505,0.5679977158856468,9.999000099990002e-05,10,0,0,29,437,,exploratory,,,consistency-penalized
+explore:menu:consistency-penalized:interaction:same,interaction,menu,same-pair,0.0627390180878553,0.01687668114525699,0.11059063102650453,0.016998300169983,5,2,3,29,421,,exploratory,,,consistency-penalized
+explore:menu:consistency-penalized:both_minus_none:same,both_minus_none,menu,same-pair,0.5115643013317431,0.4514975058982137,0.5667490677914299,9.999000099990002e-05,10,0,0,29,429,,exploratory,,,consistency-penalized
+explore:menu:consistency-penalized:copy_1ov,copy_1ov,menu,one-overlap,-0.005995700605823724,-0.02183415518507121,0.010310254943098732,0.48705129487051296,3,6,1,73,1028,,exploratory,,,consistency-penalized

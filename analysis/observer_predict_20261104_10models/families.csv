@@ -1,0 +1,74 @@
+anchor,effect,representation,seats,pooled_delta,ci_lower,ci_upper,perm_p_scenario_clustered,n_positive,n_negative,n_zero,n_scenarios,n_seats_total,p_holm,family,stake,definition,condition
+primary:menu:copy,copy,menu,same-pair,0.03712156407278359,0.009228747471279459,0.06911578271982405,0.0206979302069793,8,1,1,29,443,0.0206979302069793,primary,,,
+primary:menu:asym,asym,menu,same-pair,0.11276524644945696,0.049943062121244754,0.18718279843371635,0.001999800019998,7,3,0,29,440,0.003999600039996,primary,,,
+stake:menu:vis-both:self,self,menu,same-pair,-0.013095238095238094,-0.05404722841413617,0.026190863337204797,0.5509449055094491,5,4,1,29,443,1.0,stakes,vis-both,stake minus baseline,
+stake:menu:vis-both:copy,copy,menu,same-pair,0.0035501355013550133,-0.02143446941815902,0.03092243812049502,0.8124187581241876,5,4,1,29,443,1.0,stakes,vis-both,stake minus baseline,
+stake:menu:vis-both:asym,asym,menu,same-pair,-0.020117522962255326,-0.07620889891565136,0.02654787514504121,0.47225277472252775,5,5,0,29,437,1.0,stakes,vis-both,stake minus baseline,
+stake:menu:vis-none:self,self,menu,same-pair,0.0322824302134647,0.0048415353152195225,0.05898006424693317,0.035396460353964605,6,3,1,29,427,0.8141185881411859,stakes,vis-none,stake minus baseline,
+stake:menu:vis-none:copy,copy,menu,same-pair,-0.014895833333333334,-0.03894557058416847,0.00955931108325089,0.2515748425157484,2,4,4,29,430,1.0,stakes,vis-none,stake minus baseline,
+stake:menu:vis-none:asym,asym,menu,same-pair,0.05022328548644338,0.00411251448780053,0.09851623214288358,0.04789521047895211,6,3,1,29,416,1.0,stakes,vis-none,stake minus baseline,
+stake:menu:vis-counterpart:self,self,menu,same-pair,0.011110935135325378,-0.02911112530879973,0.04938926192941892,0.6015398460153984,5,4,1,29,442,1.0,stakes,vis-counterpart,stake minus baseline,
+stake:menu:vis-counterpart:copy,copy,menu,same-pair,0.025493026857178868,0.003753861674851946,0.04595059082659308,0.0327967203279672,7,1,2,29,441,0.7871212878712128,stakes,vis-counterpart,stake minus baseline,
+stake:menu:vis-counterpart:asym,asym,menu,same-pair,-0.009523809523809521,-0.04895085697483953,0.02735339352525949,0.6257374262573743,4,3,3,29,435,1.0,stakes,vis-counterpart,stake minus baseline,
+stake:menu:vis-reviewer:self,self,menu,same-pair,-0.010196324143692564,-0.04141342081517052,0.01642778296911873,0.5021497850214979,3,5,2,29,436,1.0,stakes,vis-reviewer,stake minus baseline,
+stake:menu:vis-reviewer:copy,copy,menu,same-pair,-0.02132165937043986,-0.0429180368223193,-0.0002817562198178509,0.0565943405659434,3,5,2,29,437,1.0,stakes,vis-reviewer,stake minus baseline,
+stake:menu:vis-reviewer:asym,asym,menu,same-pair,0.00266955266955267,-0.028579059829059828,0.033486190814296234,0.8680131986801319,3,5,2,29,428,1.0,stakes,vis-reviewer,stake minus baseline,
+stake:menu:vis-placebo:self,self,menu,same-pair,0.009872646733111848,-0.021983543238080955,0.048175304559047,0.6567343265673433,5,4,1,29,441,1.0,stakes,vis-placebo,stake minus baseline,
+stake:menu:vis-placebo:copy,copy,menu,same-pair,0.0020634920634920633,-0.021496951219512197,0.027155493847929233,0.934006599340066,4,4,2,29,443,1.0,stakes,vis-placebo,stake minus baseline,
+stake:menu:vis-placebo:asym,asym,menu,same-pair,0.009490800171159604,-0.033409599918558484,0.05641224265500492,0.7079292070792921,4,4,2,29,436,1.0,stakes,vis-placebo,stake minus baseline,
+stake:menu:predict-none:self,self,menu,same-pair,-0.011587301587301594,-0.058739644034146436,0.03241858651100669,0.6323367663233677,5,4,1,29,437,1.0,stakes,predict-none,stake minus baseline,
+stake:menu:predict-none:copy,copy,menu,same-pair,0.015059523809523809,-0.006878478196579644,0.03759326981307494,0.21647835216478353,6,4,0,29,437,1.0,stakes,predict-none,stake minus baseline,
+stake:menu:predict-none:asym,asym,menu,same-pair,-0.026111111111111106,-0.08497604633862342,0.027973919640319894,0.38096190380961903,4,4,2,29,424,1.0,stakes,predict-none,stake minus baseline,
+stake:menu:predict-vis-both:self,self,menu,same-pair,-0.036482156055326787,-0.08203032140881208,0.0023981578838858457,0.10378962103789621,5,5,0,29,442,1.0,stakes,predict-vis-both,stake minus baseline,
+stake:menu:predict-vis-both:copy,copy,menu,same-pair,0.02698376684763526,-0.0003336439510574507,0.05697139066140558,0.07939206079392061,6,3,1,29,441,1.0,stakes,predict-vis-both,stake minus baseline,
+stake:menu:predict-vis-both:asym,asym,menu,same-pair,-0.06599119750596003,-0.13213449412868017,-0.009823813588344714,0.04509549045095491,2,8,0,29,436,0.9921007899210079,stakes,predict-vis-both,stake minus baseline,
+stake:menu:predict-vis-none:self,self,menu,same-pair,0.0221682856438954,-0.020576651320900557,0.06725782828282824,0.36076392360763926,7,3,0,29,442,1.0,stakes,predict-vis-none,stake minus baseline,
+stake:menu:predict-vis-none:copy,copy,menu,same-pair,0.021937405413015167,-0.002531635031635028,0.04703965646205618,0.1141885811418858,8,2,0,29,442,1.0,stakes,predict-vis-none,stake minus baseline,
+stake:menu:predict-vis-none:asym,asym,menu,same-pair,-0.0009595959595959554,-0.05949660046395518,0.053215263106232376,0.9835016498350165,5,4,1,29,436,1.0,stakes,predict-vis-none,stake minus baseline,
+explore:menu:none:self:all,self,menu,all,0.1308551864801865,0.1021230451747218,0.15977055405372745,9.999000099990002e-05,9,1,0,102,1487,,exploratory,,,none
+explore:menu:none:self:same,self,menu,same-pair,0.1500793650793651,0.09065844145012482,0.21857211870255347,9.999000099990002e-05,9,0,1,29,443,,exploratory,,,none
+explore:menu:none:interaction:same,interaction,menu,same-pair,0.020480480480480477,-0.019583864560236513,0.05641464313446779,0.32266773322667736,6,2,2,29,438,,exploratory,,,none
+explore:menu:none:both_minus_none:same,both_minus_none,menu,same-pair,0.18958188153310107,0.11715590981507958,0.2660374847001224,9.999000099990002e-05,10,0,0,29,443,,exploratory,,,none
+explore:menu:none:copy_1ov,copy_1ov,menu,one-overlap,-0.004299717273018243,-0.018269433855930512,0.010523278366369253,0.5733426657334266,2,5,3,73,1045,,exploratory,,,none
+explore:menu:none:asym:seat0,asym,menu,same-pair seat 0,0.13729778992936886,0.058631313131313124,0.22687490031897917,0.0029997000299970002,8,2,0,22,216,,exploratory,,,none
+explore:menu:none:asym:seat1,asym,menu,same-pair seat 1,0.08864552686062983,0.017267931026512265,0.16783749145591242,0.029897010298970104,5,3,2,23,224,,exploratory,,,none
+explore:menu:vis-both:self:all,self,menu,all,0.11097297297297297,0.08826386337358037,0.13436757510150993,9.999000099990002e-05,10,0,0,102,1498,,exploratory,,,vis-both
+explore:menu:vis-both:self:same,self,menu,same-pair,0.13666666666666666,0.09148936170212765,0.18372093023255814,9.999000099990002e-05,8,0,2,29,450,,exploratory,,,vis-both
+explore:menu:vis-both:interaction:same,interaction,menu,same-pair,0.029405684754521967,-0.01276595744680851,0.0709577856916555,0.18588141185881413,6,2,2,29,446,,exploratory,,,vis-both
+explore:menu:vis-both:both_minus_none:same,both_minus_none,menu,same-pair,0.1778787878787879,0.11584026564941628,0.2474010785305021,9.999000099990002e-05,10,0,0,29,449,,exploratory,,,vis-both
+explore:menu:vis-both:copy_1ov,copy_1ov,menu,one-overlap,-0.004285714285714286,-0.01857142857142857,0.009634548773637888,0.5994400559944005,5,5,0,73,1050,,exploratory,,,vis-both
+explore:menu:vis-none:self:all,self,menu,all,0.1408251837647811,0.11336233019701555,0.16821074430786387,9.999000099990002e-05,9,1,0,102,1454,,exploratory,,,vis-none
+explore:menu:vis-none:self:same,self,menu,same-pair,0.18180076628352487,0.12567929270658784,0.24592201589417315,9.999000099990002e-05,9,0,1,29,434,,exploratory,,,vis-none
+explore:menu:vis-none:interaction:same,interaction,menu,same-pair,0.020151515151515153,-0.017080401499645143,0.06047180416249679,0.3173682631736826,4,2,4,29,421,,exploratory,,,vis-none
+explore:menu:vis-none:both_minus_none:same,both_minus_none,menu,same-pair,0.19924242424242425,0.13376876109729793,0.25931924054206656,9.999000099990002e-05,10,0,0,29,427,,exploratory,,,vis-none
+explore:menu:vis-none:copy_1ov,copy_1ov,menu,one-overlap,-0.0011301800609029525,-0.015724445782711913,0.011234229798587122,0.8697130286971303,4,6,0,73,1026,,exploratory,,,vis-none
+explore:menu:vis-counterpart:self:all,self,menu,all,0.13527272727272727,0.11104637506221171,0.16018983997584532,9.999000099990002e-05,9,1,0,102,1493,,exploratory,,,vis-counterpart
+explore:menu:vis-counterpart:self:same,self,menu,same-pair,0.1618939393939394,0.11161542553191489,0.21216607384823846,9.999000099990002e-05,9,1,0,29,449,,exploratory,,,vis-counterpart
+explore:menu:vis-counterpart:interaction:same,interaction,menu,same-pair,0.01594794094794095,-0.01470656370656371,0.047728594080338256,0.32096790320967905,5,2,3,29,443,,exploratory,,,vis-counterpart
+explore:menu:vis-counterpart:both_minus_none:same,both_minus_none,menu,same-pair,0.22036075036075037,0.15632925531914893,0.29217764602547214,9.999000099990002e-05,10,0,0,29,446,,exploratory,,,vis-counterpart
+explore:menu:vis-counterpart:copy_1ov,copy_1ov,menu,one-overlap,0.013767507002801119,-1.9307659932659958e-05,0.0287734684314213,0.0836916308369163,6,4,0,73,1047,,exploratory,,,vis-counterpart
+explore:menu:vis-reviewer:self:all,self,menu,all,0.11208918039454951,0.08915619602984969,0.13563570570910394,9.999000099990002e-05,10,0,0,102,1481,,exploratory,,,vis-reviewer
+explore:menu:vis-reviewer:self:same,self,menu,same-pair,0.13763157894736844,0.08896119188782231,0.1870716226708074,9.999000099990002e-05,8,0,2,29,443,,exploratory,,,vis-reviewer
+explore:menu:vis-reviewer:interaction:same,interaction,menu,same-pair,0.02361111111111111,-0.014609126291456337,0.06523949579831932,0.2836716328367163,4,4,2,29,427,,exploratory,,,vis-reviewer
+explore:menu:vis-reviewer:both_minus_none:same,both_minus_none,menu,same-pair,0.16779942279942278,0.11040466862428117,0.2333443145255125,9.999000099990002e-05,10,0,0,29,432,,exploratory,,,vis-reviewer
+explore:menu:vis-reviewer:copy_1ov,copy_1ov,menu,one-overlap,-0.0012714776632302403,-0.015778873534902847,0.013556838090371557,0.8885111488851115,4,5,1,73,1042,,exploratory,,,vis-reviewer
+explore:menu:vis-placebo:self:all,self,menu,all,0.13402189781021898,0.10964305419839611,0.15808338607212816,9.999000099990002e-05,10,0,0,102,1487,,exploratory,,,vis-placebo
+explore:menu:vis-placebo:self:same,self,menu,same-pair,0.15922480620155038,0.10294426112836438,0.218825834057027,9.999000099990002e-05,9,0,1,29,448,,exploratory,,,vis-placebo
+explore:menu:vis-placebo:interaction:same,interaction,menu,same-pair,0.01081081081081081,-0.026667249417249413,0.04722470238095237,0.5840415958404159,5,3,2,29,442,,exploratory,,,vis-placebo
+explore:menu:vis-placebo:both_minus_none:same,both_minus_none,menu,same-pair,0.20034188034188033,0.1311221655328798,0.27625465516511727,9.999000099990002e-05,10,0,0,29,444,,exploratory,,,vis-placebo
+explore:menu:vis-placebo:copy_1ov,copy_1ov,menu,one-overlap,0.003976190476190476,-0.01279341069686503,0.02168332792177574,0.6482351764823517,5,4,1,73,1045,,exploratory,,,vis-placebo
+explore:menu:predict-none:self:all,self,menu,all,0.13226121909269395,0.10876767648662716,0.15624483567908345,9.999000099990002e-05,10,0,0,102,1486,,exploratory,,,predict-none
+explore:menu:predict-none:self:same,self,menu,same-pair,0.13921834625322999,0.09541326087164957,0.18462012549631313,9.999000099990002e-05,10,0,0,29,443,,exploratory,,,predict-none
+explore:menu:predict-none:interaction:same,interaction,menu,same-pair,0.00442002442002442,-0.042987795937343524,0.05668943046460062,0.8756124387561244,5,5,0,29,431,,exploratory,,,predict-none
+explore:menu:predict-none:both_minus_none:same,both_minus_none,menu,same-pair,0.19237046103631172,0.13292749575652313,0.2622620533674205,9.999000099990002e-05,10,0,0,29,441,,exploratory,,,predict-none
+explore:menu:predict-none:copy_1ov,copy_1ov,menu,one-overlap,0.0023129251700680273,-0.016028235052098296,0.019598729222090754,0.8145185481451854,3,4,3,73,1037,,exploratory,,,predict-none
+explore:menu:predict-vis-both:self:all,self,menu,all,0.10014081701449543,0.07717969190962345,0.12355746943798344,9.999000099990002e-05,10,0,0,102,1494,,exploratory,,,predict-vis-both
+explore:menu:predict-vis-both:self:same,self,menu,same-pair,0.11154040404040402,0.07061369509043929,0.16063875456694607,9.999000099990002e-05,10,0,0,29,449,,exploratory,,,predict-vis-both
+explore:menu:predict-vis-both:interaction:same,interaction,menu,same-pair,0.03523809523809524,-0.01818181818181818,0.09074991039127746,0.2652734726527347,7,3,0,29,444,,exploratory,,,predict-vis-both
+explore:menu:predict-vis-both:both_minus_none:same,both_minus_none,menu,same-pair,0.17405684754521963,0.11606489311721868,0.2392011411237902,9.999000099990002e-05,10,0,0,29,446,,exploratory,,,predict-vis-both
+explore:menu:predict-vis-both:copy_1ov,copy_1ov,menu,one-overlap,0.012717356173238525,-0.0011262409269928056,0.026265495506502996,0.0856914308569143,7,3,0,73,1046,,exploratory,,,predict-vis-both
+explore:menu:predict-vis-none:self:all,self,menu,all,0.14960982513810892,0.1233911169944244,0.17580493880758544,9.999000099990002e-05,10,0,0,102,1493,,exploratory,,,predict-vis-none
+explore:menu:predict-vis-none:self:same,self,menu,same-pair,0.17047979797979798,0.11736010953662435,0.22761063986826183,9.999000099990002e-05,10,0,0,29,447,,exploratory,,,predict-vis-none
+explore:menu:predict-vis-none:interaction:same,interaction,menu,same-pair,0.04307344464321208,-0.0061530146101695105,0.0929100000887932,0.10338966103389662,8,2,0,29,437,,exploratory,,,predict-vis-none
+explore:menu:predict-vis-none:both_minus_none:same,both_minus_none,menu,same-pair,0.22294573643410853,0.15371872288435198,0.2936885103929913,9.999000099990002e-05,9,0,1,29,442,,exploratory,,,predict-vis-none
+explore:menu:predict-vis-none:copy_1ov,copy_1ov,menu,one-overlap,0.008552935737401757,-0.00587353195627958,0.02209438593296462,0.25707429257074293,5,3,2,73,1048,,exploratory,,,predict-vis-none

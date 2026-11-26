@@ -1,0 +1,7 @@
+J0_gpt56luna: max |recomputed - stats.json| = 0.00e+00
+J0_gpt56luna: loaded results\HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50
+J1_deepseek_verbatim: loaded results\rejudge\deepseek_deepseek-v4-pro-0813_verbatim
+J1_deepseek_swap: loaded results\rejudge\deepseek_deepseek-v4-pro-0813_swap
+J0_gpt56luna: Holm-surviving effects by family: representation_contrasts 6, stake_effects 8, stake_representation_interactions 2
+J1_deepseek_verbatim: Holm-surviving effects by family: representation_contrasts 5, stake_effects 10, stake_representation_interactions 1
+J1_deepseek_swap: Holm-surviving effects by family: representation_contrasts 5, stake_effects 12, stake_representation_interactions 2

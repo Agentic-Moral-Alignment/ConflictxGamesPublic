@@ -1,0 +1,7 @@
+criterion,rival,mean_shift,n_positive,n_negative
+alignment,the other participant,0.047315789473684214,9,0
+alignment,other deployed systems,0.04429166666666667,10,0
+alignment,abstract minus specific,-0.0050526315789473685,4,6
+usefulness,the other participant,-0.032924731182795694,2,8
+usefulness,other deployed systems,-0.028690952073930798,2,8
+usefulness,abstract minus specific,0.003291172595520423,5,3

@@ -1,0 +1,10 @@
+baseline levels: 9 representation-value cells
+representation contrasts: 9; Holm family complete
+stake effects: 27; Holm family complete
+stake-by-representation interactions: 27; Holm family complete
+steering effects and ordering stability complete
+visibility effects complete
+one-shot versus fresh-state ongoing framing complete
+history grid complete: 1080 per-model cells
+attrition and secondary multiplicity summaries complete
+analysis complete: 6 CSV tables, stats.json, provenance.json, manuscript_numbers.tex, and reanalysis_log.txt

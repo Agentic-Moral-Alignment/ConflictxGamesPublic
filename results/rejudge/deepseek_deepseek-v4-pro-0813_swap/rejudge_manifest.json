@@ -1,0 +1,742 @@
+{
+  "judge_model": "openai:deepseek/deepseek-v4-pro-0813",
+  "condition": "swap",
+  "temperature": 0.0,
+  "max_tokens": 8192,
+  "results_dir": "results\\HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50",
+  "scenarios_csv": "data\\HHH_new_paper_bothAI_anthropic_batch_20260826_01\\claude-sonnet-5_games.csv",
+  "inputs": {
+    "gemma-3-12b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-3-12b",
+      "arm": "baseline",
+      "sha256": "b707b26d1f69ac1bb842300656843ba8c2fdddce2507864817cac7736773340f",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-3-12b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-3-12b",
+      "arm": "_counterpart",
+      "sha256": "020126abfb655d6bce269e2e75b12031b70ca2bc2c4caf751fc453c8c1f94e72",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-3-12b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-3-12b",
+      "arm": "_counterpart_stakes-alignment",
+      "sha256": "c7fb3321f867056ea6c28e8fcf11d98ca683e972583ef6c477b94fdf03b24dd9",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-3-12b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-3-12b",
+      "arm": "_counterpart_stakes-payoff",
+      "sha256": "e82ea27a5a4156008e3f43de07b8ed022a98db2e10b026de1cd56644983a2b58",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-3-12b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-3-12b",
+      "arm": "_counterpart_stakes-usefulness",
+      "sha256": "348fd511081e2b6c9a5bf2c75b1c6abf637a10a40309874dd05c708a13fbfa64",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-3-12b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-3-12b",
+      "arm": "_stakes-alignment",
+      "sha256": "332b6e895626b1010f116c866edfd214df786997d0fb0587c3ec25fe0ccecf1f",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-3-12b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-3-12b",
+      "arm": "_stakes-payoff",
+      "sha256": "5f7b83f67da786724c30cea9fd3573e3e8e047cdc5a637365dedb656f156afa9",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-3-12b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-3-12b",
+      "arm": "_stakes-usefulness",
+      "sha256": "74233809dace192050ce485799d8db918f3374641855dadc07b415e0007c7312",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-3-27b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-3-27b",
+      "arm": "baseline",
+      "sha256": "81d2a469194c5a77160e4739cb80a1c17963e93e1622210406aa1a48816a0725",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-3-27b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-3-27b",
+      "arm": "_counterpart",
+      "sha256": "8c70457857322c0fdf4c2bf6d11517c3cc2f7dee7d1f868263fb7bc52ff9053b",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-3-27b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-3-27b",
+      "arm": "_counterpart_stakes-alignment",
+      "sha256": "7f48323218c70955155d2e77b963761e7611f91265100fa82da40d8c88cf0a0c",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-3-27b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-3-27b",
+      "arm": "_counterpart_stakes-payoff",
+      "sha256": "5626f7ded6dad82a0a69d688da56098ecd6ab9b9a13eb035ad592be9b31350dd",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-3-27b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-3-27b",
+      "arm": "_counterpart_stakes-usefulness",
+      "sha256": "634578ae3e21cc33d9ee2fa62921492f2abe4b176d9437d7f6aa850145cb44d3",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-3-27b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-3-27b",
+      "arm": "_stakes-alignment",
+      "sha256": "5c3718491d05d0d9d08cb44b7fe4de066895352f44f890db7d8d2fff65eea830",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-3-27b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-3-27b",
+      "arm": "_stakes-payoff",
+      "sha256": "56620148211ec19169b3c239bb1536ac50fbc740836dd131c3f8b5ba6479cd8c",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-3-27b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-3-27b",
+      "arm": "_stakes-usefulness",
+      "sha256": "979a060c2a63d81e6466aeb7afbbfe08a2f9ab51234e9e5571056a1f42a2eea6",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-4-26b-a4b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-4-26b-a4b",
+      "arm": "baseline",
+      "sha256": "8c12dc416d73ae11942d4b5c4e885b70941358d447b822df185c8d1ec785d22c",
+      "done": 150,
+      "pending": 0,
+      "invalid": 1,
+      "calls": 0
+    },
+    "gemma-4-26b-a4b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-4-26b-a4b",
+      "arm": "_counterpart",
+      "sha256": "fbf90938e2bf07dafb1ecd5dd1fdd19cfd2742ab101c0448b3bcd4035f6fbeb0",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-4-26b-a4b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-4-26b-a4b",
+      "arm": "_counterpart_stakes-alignment",
+      "sha256": "23e69345f2f433a5078dae2fb29f257152554f44a94441299a20c93eaa555273",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-4-26b-a4b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-4-26b-a4b",
+      "arm": "_counterpart_stakes-payoff",
+      "sha256": "b07e9603f4fd854bcb9f474c1d1cc8e8961a1e18b1e4754938464a533a735a89",
+      "done": 150,
+      "pending": 0,
+      "invalid": 1,
+      "calls": 0
+    },
+    "gemma-4-26b-a4b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-4-26b-a4b",
+      "arm": "_counterpart_stakes-usefulness",
+      "sha256": "c197440454ed762d4ace9e6bb1d428940ed899b132442911464903f0442063a5",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-4-26b-a4b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-4-26b-a4b",
+      "arm": "_stakes-alignment",
+      "sha256": "e024de712e9e2e484db935cb51b8fb4411859d4fabc30744ef5291ae4c4c67db",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-4-26b-a4b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-4-26b-a4b",
+      "arm": "_stakes-payoff",
+      "sha256": "b54e941ba0192043eb8475c7362707ed3642324625da5bb36191c65ea89a4009",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-4-26b-a4b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-4-26b-a4b",
+      "arm": "_stakes-usefulness",
+      "sha256": "75cee8c9e5c4006e98816e15e5abc7c19d86e74fd642fca505281633cc6b5667",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-4-31B-it_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-4-31B-it",
+      "arm": "baseline",
+      "sha256": "2715043fd4e6ff05ffb697ac85e681a6899fe1c30f78b8b6581e3b9dc9553ee0",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-4-31B-it_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-4-31B-it",
+      "arm": "_counterpart",
+      "sha256": "e343091cefb4840e5b77a48b0cb89e4dea8694bfb17e4dbb30fa99ed67135ec1",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-4-31B-it_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-4-31B-it",
+      "arm": "_counterpart_stakes-alignment",
+      "sha256": "2273bda7d35338deeba8d5c9049cafdd67530f669add49dabb66b8f280905010",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-4-31B-it_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-4-31B-it",
+      "arm": "_counterpart_stakes-payoff",
+      "sha256": "caf9143a82cf4003660e55294675f148dc747e049a441e9c55a06e74a0d23724",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-4-31B-it_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-4-31B-it",
+      "arm": "_counterpart_stakes-usefulness",
+      "sha256": "224a4ed24286c3d324f35d894a096c178f0b54568758a971f2210a2314dbc454",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-4-31B-it_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-4-31B-it",
+      "arm": "_stakes-alignment",
+      "sha256": "c8c9167eb324bf152a02af0bfce2b78fa2101bb1ca114948be1524bd6a284784",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gemma-4-31B-it_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-4-31B-it",
+      "arm": "_stakes-payoff",
+      "sha256": "d1e085add53aa45482e94488c4105dfd55bccff86161fb247b201b5148dc896a",
+      "done": 150,
+      "pending": 0,
+      "invalid": 1,
+      "calls": 0
+    },
+    "gemma-4-31B-it_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gemma-4-31B-it",
+      "arm": "_stakes-usefulness",
+      "sha256": "0c267618284f6609d38a3e8aea55b951c49d55850d0a4b8aa82865f38e530a59",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gpt-oss-120b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gpt-oss-120b",
+      "arm": "baseline",
+      "sha256": "bb9eb52316404f1d09711242eb2f36cb2f060e42473b7a9fab4bd0f95f771b5b",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gpt-oss-120b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gpt-oss-120b",
+      "arm": "_counterpart",
+      "sha256": "23b435c77b6f0ef6920aa6d03df1c6841fa339c7ccf9c71cf3432e2e8dea6859",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gpt-oss-120b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gpt-oss-120b",
+      "arm": "_counterpart_stakes-alignment",
+      "sha256": "b1df4d1712fe3330fff9f37fdb2b2290e4223dab40b4c5b7958c25e4fbdc772f",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gpt-oss-120b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gpt-oss-120b",
+      "arm": "_counterpart_stakes-payoff",
+      "sha256": "6c608049e793b1d4fb58ab816aa4b0eeb501c344cda682d4bcf9ed718d6eb21c",
+      "done": 150,
+      "pending": 0,
+      "invalid": 1,
+      "calls": 0
+    },
+    "gpt-oss-120b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gpt-oss-120b",
+      "arm": "_counterpart_stakes-usefulness",
+      "sha256": "2561b73ad60271f6e99e5b67646200129e6021cb546f89940b35c973d3cab944",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gpt-oss-120b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gpt-oss-120b",
+      "arm": "_stakes-alignment",
+      "sha256": "2e0473ae568cdc379657725369a4cc1648aff2f99323d9b439b6a6ade0a03b02",
+      "done": 150,
+      "pending": 0,
+      "invalid": 1,
+      "calls": 0
+    },
+    "gpt-oss-120b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gpt-oss-120b",
+      "arm": "_stakes-payoff",
+      "sha256": "fa459af99eeb226bd79d5bc6255498e38379cfad8e7901c4e68abaa4b48c683e",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gpt-oss-120b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gpt-oss-120b",
+      "arm": "_stakes-usefulness",
+      "sha256": "094d85cff712adf785eb5e8d41583241012b22f9f02b0035cb2530b486c57666",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 1
+    },
+    "gpt-oss-20b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gpt-oss-20b",
+      "arm": "baseline",
+      "sha256": "1b4b74d801641613256ed59d6b01dea4d813f05c96b26e12065e14da21970a33",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gpt-oss-20b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gpt-oss-20b",
+      "arm": "_counterpart",
+      "sha256": "85c0ef059eda4491055f477b2b49784080289fd35f7285fd0ff34e2f8d604383",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gpt-oss-20b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gpt-oss-20b",
+      "arm": "_counterpart_stakes-alignment",
+      "sha256": "f08a2508c5d2a2d2c0d45ca124eef925df0e3033887230013a79b45294529aa4",
+      "done": 150,
+      "pending": 0,
+      "invalid": 1,
+      "calls": 1
+    },
+    "gpt-oss-20b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gpt-oss-20b",
+      "arm": "_counterpart_stakes-payoff",
+      "sha256": "0b1e2d43ee7f7171fc0d05d932a03ec8d70629ae33e10d569f7aff35d28d716e",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gpt-oss-20b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gpt-oss-20b",
+      "arm": "_counterpart_stakes-usefulness",
+      "sha256": "ce6eed4032f71d99e9996a49cd7e52c0a64cbd99c86bfd328611408892a142b1",
+      "done": 150,
+      "pending": 0,
+      "invalid": 1,
+      "calls": 0
+    },
+    "gpt-oss-20b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gpt-oss-20b",
+      "arm": "_stakes-alignment",
+      "sha256": "f8deae5d4caf6d958ff041d05419f56ab0bf203292b7b0b85af57a5c2beba8d1",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "gpt-oss-20b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gpt-oss-20b",
+      "arm": "_stakes-payoff",
+      "sha256": "8f54cdcd10f3f460ca2d5dfc1c85a4970e4c3a21646a5f1908ec504b7ba4d725",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 2
+    },
+    "gpt-oss-20b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "gpt-oss-20b",
+      "arm": "_stakes-usefulness",
+      "sha256": "f1940cb0ccc6e63728cd675aa32793280a78cfcdfc9baa50d7e3556fda518d71",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "llama-3.3-70b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "llama-3.3-70b",
+      "arm": "baseline",
+      "sha256": "e2fa3c77fc46a96f8d8e1fcd4483cc0876303b7dcb7a4582d46a2409e42fa8e8",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "llama-3.3-70b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "llama-3.3-70b",
+      "arm": "_counterpart",
+      "sha256": "57c3e982d0e0f3fccc5cf3e63c924fbe022dc4626e85252b26fd02d0be390c9e",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "llama-3.3-70b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "llama-3.3-70b",
+      "arm": "_counterpart_stakes-alignment",
+      "sha256": "ddf7811418c5f153278e8c9f8051b975e43c503dce04e6317e09e8eacd357f64",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "llama-3.3-70b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "llama-3.3-70b",
+      "arm": "_counterpart_stakes-payoff",
+      "sha256": "92438980ce1dac645be78c0e56b14c9168d8b6df80f26c20806d149012a9aaee",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "llama-3.3-70b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "llama-3.3-70b",
+      "arm": "_counterpart_stakes-usefulness",
+      "sha256": "093aa7604e0a99c619f9b18a606d692f61a69808dceefa7de1e304811181b8f1",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "llama-3.3-70b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "llama-3.3-70b",
+      "arm": "_stakes-alignment",
+      "sha256": "71de2c68847befd91bc36bced7623b42ec9c6592fad4ac432ed9879a719fe06c",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "llama-3.3-70b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "llama-3.3-70b",
+      "arm": "_stakes-payoff",
+      "sha256": "aa8e8f0bf047de36a3ff7456d7312df519bd40eb584fa52d69a76105d109e7fa",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "llama-3.3-70b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "llama-3.3-70b",
+      "arm": "_stakes-usefulness",
+      "sha256": "dc08c31d1a1c8d134fe7c71271185d167139e5dc560c895298a2ea86bb26822c",
+      "done": 150,
+      "pending": 0,
+      "invalid": 1,
+      "calls": 0
+    },
+    "llama-4-maverick_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "llama-4-maverick",
+      "arm": "baseline",
+      "sha256": "e22533d7150fb065baee99735b1aa924b8cd5ef5ebc9769df3a115d9a00538e4",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "llama-4-maverick_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "llama-4-maverick",
+      "arm": "_counterpart",
+      "sha256": "e35f28fb770e238131e18f8faa5f33c2bcc49a2d66f33761b44d000a6701bb8d",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "llama-4-maverick_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "llama-4-maverick",
+      "arm": "_counterpart_stakes-alignment",
+      "sha256": "c40fc6b55a096f781e15c76c0dab5c693455c01d9920fa119bac76821a0fdba6",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "llama-4-maverick_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "llama-4-maverick",
+      "arm": "_counterpart_stakes-payoff",
+      "sha256": "d05b9dde984cce0414dc13fffbdcc0d07fcb44a73fe3b3a198cd4646f0c484ad",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "llama-4-maverick_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "llama-4-maverick",
+      "arm": "_counterpart_stakes-usefulness",
+      "sha256": "bfb69d96c84665914a66a1b898506daef0817681794c07d88a1a99fe7c4a9a8f",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "llama-4-maverick_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "llama-4-maverick",
+      "arm": "_stakes-alignment",
+      "sha256": "07a20f1da60b63b99bb8ac604e84137844724a307f4e107de3b36da4815bd83b",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "llama-4-maverick_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "llama-4-maverick",
+      "arm": "_stakes-payoff",
+      "sha256": "e16d7792a43cf77e584b9d035f68fd7a8b628f7ff623e328aab330d2ed341357",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "llama-4-maverick_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "llama-4-maverick",
+      "arm": "_stakes-usefulness",
+      "sha256": "6d56a6ac8f225a9d09491bed775bafb2d55375e63a847b858524ddded1a87f57",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "qwen3-235b-a22b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "qwen3-235b-a22b",
+      "arm": "baseline",
+      "sha256": "d1c0ffb7eb64606963546ee3927d64d0122a7c86e1762b1678e7e6f826bfb582",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "qwen3-235b-a22b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "qwen3-235b-a22b",
+      "arm": "_counterpart",
+      "sha256": "9f8dce7edb90b7fb69ef72bf5de563cb018670025ebaa310324952140bae4b69",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "qwen3-235b-a22b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "qwen3-235b-a22b",
+      "arm": "_counterpart_stakes-alignment",
+      "sha256": "de6d52d6bc2d1a14fd51359e527cdd19809d6b2bbd253b52e882c83d47e93eee",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "qwen3-235b-a22b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "qwen3-235b-a22b",
+      "arm": "_counterpart_stakes-payoff",
+      "sha256": "ce56633db4642869f61ff6acccd93dc555b9e7a24256c929fb5743be82b3fc0a",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "qwen3-235b-a22b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "qwen3-235b-a22b",
+      "arm": "_counterpart_stakes-usefulness",
+      "sha256": "a7dbb2a7ba9eb4f99d511780cab887e3fa27757b26f52680485cb1f038a15838",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "qwen3-235b-a22b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "qwen3-235b-a22b",
+      "arm": "_stakes-alignment",
+      "sha256": "b193294fa01de4acc16f88c60fd4e80b00cebe5947670e9dc0790f3d79437735",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "qwen3-235b-a22b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "qwen3-235b-a22b",
+      "arm": "_stakes-payoff",
+      "sha256": "71e9a6b1e5f4021dc69c2387f39bb6177ea3e0b2e0f40d9adff21d16f65e9e8d",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "qwen3-235b-a22b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "qwen3-235b-a22b",
+      "arm": "_stakes-usefulness",
+      "sha256": "dc5e19880190a631974cd2821f907863daa9dfba9cd14911e3e3c37d0cfff48a",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "qwen3-32b_open_balanced50_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "qwen3-32b",
+      "arm": "baseline",
+      "sha256": "f51dc367b5e872ac93a949b59c8e45fbb3ccf5a61cd31acf4100131785859139",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "qwen3-32b_open_balanced50_counterpart_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "qwen3-32b",
+      "arm": "_counterpart",
+      "sha256": "cad1262495f9647a8adadca5edfe7d9b80c1e3590ac286ee6f585cc919042140",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "qwen3-32b_open_balanced50_counterpart_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "qwen3-32b",
+      "arm": "_counterpart_stakes-alignment",
+      "sha256": "d578ab1c971785377e01563565f94b339b23f734ceffb2bf426140af158774e9",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "qwen3-32b_open_balanced50_counterpart_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "qwen3-32b",
+      "arm": "_counterpart_stakes-payoff",
+      "sha256": "07d6f692e619e9b32f5bb5599529b938f207c051fadb25ef7e72f19f9b42ab12",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "qwen3-32b_open_balanced50_counterpart_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "qwen3-32b",
+      "arm": "_counterpart_stakes-usefulness",
+      "sha256": "fa519486581fa225578afe5e3141e9e98d23995448469d9b54e56d59b4965fb8",
+      "done": 150,
+      "pending": 0,
+      "invalid": 1,
+      "calls": 0
+    },
+    "qwen3-32b_open_balanced50_stakes-alignment_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "qwen3-32b",
+      "arm": "_stakes-alignment",
+      "sha256": "8798d4e66d0f2805e48c59f72555a38b0465a55186d45afc94d6cb5fd21a9ab7",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "qwen3-32b_open_balanced50_stakes-payoff_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "qwen3-32b",
+      "arm": "_stakes-payoff",
+      "sha256": "169f8a3cdec1cdaf4f51414280ae134868149f475e7cd0ef2f9ba542eaf1e697",
+      "done": 150,
+      "pending": 0,
+      "invalid": 0,
+      "calls": 0
+    },
+    "qwen3-32b_open_balanced50_stakes-usefulness_user-paid-gpt-5.6-luna_judge-paid-gpt-5.6-luna.csv": {
+      "model": "qwen3-32b",
+      "arm": "_stakes-usefulness",
+      "sha256": "42d72a6a652061ca9059d0c275f510fd6bc67e7a2f5ee30e1619910006e4d850",
+      "done": 150,
+      "pending": 0,
+      "invalid": 1,
+      "calls": 0
+    }
+  },
+  "usage": {
+    "requests": 4,
+    "prompt_tokens": 1598,
+    "completion_tokens": 18545
+  },
+  "totals": {
+    "done": 12000,
+    "pending": 0,
+    "invalid": 10,
+    "calls": 4
+  },
+  "finished": "2026-10-14T19:21:05"
+}

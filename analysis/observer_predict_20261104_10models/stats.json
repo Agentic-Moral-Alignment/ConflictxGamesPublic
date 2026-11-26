@@ -1,0 +1,5062 @@
+{
+  "design": {
+    "models": [
+      "gemma-3-12b",
+      "gemma-3-27b",
+      "gemma-4-26b-a4b",
+      "gemma-4-31B-it",
+      "gpt-oss-120b",
+      "gpt-oss-20b",
+      "llama-3.3-70b",
+      "llama-4-maverick",
+      "qwen3-235b-a22b",
+      "qwen3-32b"
+    ],
+    "role_cue": "explicit",
+    "missing": "stratum",
+    "bootstrap": 2000,
+    "permutations": 10000,
+    "seed": 20260904,
+    "results_dir": "results\\HHH_new_paper_bothAI_anthropic_batch_20260826_01_balanced50",
+    "conditions": [
+      "none",
+      "vis-both",
+      "vis-none",
+      "vis-counterpart",
+      "vis-reviewer",
+      "vis-placebo",
+      "predict-none",
+      "predict-vis-both",
+      "predict-vis-none"
+    ],
+    "baseline_condition": "none",
+    "representations": [
+      "menu"
+    ],
+    "n_same_pair_seats": 360,
+    "roles_ambiguous_in_open_undisclosed": null
+  },
+  "reproduction_max_gap": null,
+  "families": {
+    "primary": [
+      {
+        "anchor": "primary:menu:copy",
+        "effect": "copy",
+        "representation": "menu",
+        "seats": "same-pair",
+        "pooled_delta": 0.03712156407278359,
+        "ci_lower": 0.009228747471279459,
+        "ci_upper": 0.06911578271982405,
+        "perm_p_scenario_clustered": 0.0206979302069793,
+        "n_positive": 8,
+        "n_negative": 1,
+        "n_zero": 1,
+        "n_scenarios": 29,
+        "n_seats_total": 443,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.18888888888888888,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.024390243902439025,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.03571428571428571,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": -0.011111111111111112,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.011111111111111112,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 0.0206979302069793
+      },
+      {
+        "anchor": "primary:menu:asym",
+        "effect": "asym",
+        "representation": "menu",
+        "seats": "same-pair",
+        "pooled_delta": 0.11276524644945696,
+        "ci_lower": 0.049943062121244754,
+        "ci_upper": 0.18718279843371635,
+        "perm_p_scenario_clustered": 0.001999800019998,
+        "n_positive": 7,
+        "n_negative": 3,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 440,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.35555555555555557,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.28888888888888886,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.2222222222222222,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": -0.023809523809523808,
+            "n_seats": 42
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": -0.02631578947368421,
+            "n_seats": 38
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.17777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 0.003999600039996
+      }
+    ],
+    "stakes": [
+      {
+        "anchor": "stake:menu:vis-both:self",
+        "effect": "self",
+        "representation": "menu",
+        "stake": "vis-both",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": -0.013095238095238094,
+        "ci_lower": -0.05404722841413617,
+        "ci_upper": 0.026190863337204797,
+        "perm_p_scenario_clustered": 0.5509449055094491,
+        "n_positive": 5,
+        "n_negative": 4,
+        "n_zero": 1,
+        "n_scenarios": 29,
+        "n_seats_total": 443,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.07777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.12222222222222222,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.03571428571428571,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": -0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.03333333333333333,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:vis-both:copy",
+        "effect": "copy",
+        "representation": "menu",
+        "stake": "vis-both",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": 0.0035501355013550133,
+        "ci_lower": -0.02143446941815902,
+        "ci_upper": 0.03092243812049502,
+        "perm_p_scenario_clustered": 0.8124187581241876,
+        "n_positive": 5,
+        "n_negative": 4,
+        "n_zero": 1,
+        "n_scenarios": 29,
+        "n_seats_total": 443,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.024390243902439025,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.0,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.011111111111111112,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:vis-both:asym",
+        "effect": "asym",
+        "representation": "menu",
+        "stake": "vis-both",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": -0.020117522962255326,
+        "ci_lower": -0.07620889891565136,
+        "ci_upper": 0.02654787514504121,
+        "perm_p_scenario_clustered": 0.47225277472252775,
+        "n_positive": 5,
+        "n_negative": 5,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 437,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.06976744186046512,
+            "n_seats": 43
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.15555555555555556,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": -0.024390243902439025,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.02631578947368421,
+            "n_seats": 38
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": -0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:vis-none:self",
+        "effect": "self",
+        "representation": "menu",
+        "stake": "vis-none",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": 0.0322824302134647,
+        "ci_lower": 0.0048415353152195225,
+        "ci_upper": 0.05898006424693317,
+        "perm_p_scenario_clustered": 0.035396460353964605,
+        "n_positive": 6,
+        "n_negative": 3,
+        "n_zero": 1,
+        "n_scenarios": 29,
+        "n_seats_total": 427,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.1724137931034483,
+            "n_seats": 29
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.011111111111111112,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.12222222222222222,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.09523809523809523,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.17777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.05555555555555555,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.05555555555555555,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 0.8141185881411859
+      },
+      {
+        "anchor": "stake:menu:vis-none:copy",
+        "effect": "copy",
+        "representation": "menu",
+        "stake": "vis-none",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": -0.014895833333333334,
+        "ci_lower": -0.03894557058416847,
+        "ci_upper": 0.00955931108325089,
+        "perm_p_scenario_clustered": 0.2515748425157484,
+        "n_positive": 2,
+        "n_negative": 4,
+        "n_zero": 4,
+        "n_scenarios": 29,
+        "n_seats_total": 430,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.015625,
+            "n_seats": 32
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.011111111111111112,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": -0.05555555555555555,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.0,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.011111111111111112,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": -0.07777777777777778,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:vis-none:asym",
+        "effect": "asym",
+        "representation": "menu",
+        "stake": "vis-none",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": 0.05022328548644338,
+        "ci_lower": 0.00411251448780053,
+        "ci_upper": 0.09851623214288358,
+        "perm_p_scenario_clustered": 0.04789521047895211,
+        "n_positive": 6,
+        "n_negative": 3,
+        "n_zero": 1,
+        "n_scenarios": 29,
+        "n_seats_total": 416,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.13636363636363635,
+            "n_seats": 22
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.17777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.10526315789473684,
+            "n_seats": 38
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.2,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.13333333333333333,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:vis-counterpart:self",
+        "effect": "self",
+        "representation": "menu",
+        "stake": "vis-counterpart",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": 0.011110935135325378,
+        "ci_lower": -0.02911112530879973,
+        "ci_upper": 0.04938926192941892,
+        "perm_p_scenario_clustered": 0.6015398460153984,
+        "n_positive": 5,
+        "n_negative": 4,
+        "n_zero": 1,
+        "n_scenarios": 29,
+        "n_seats_total": 442,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.022727272727272728,
+            "n_seats": 44
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.1111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.14444444444444443,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": -0.012195121951219513,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.023809523809523808,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.07777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.03333333333333333,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:vis-counterpart:copy",
+        "effect": "copy",
+        "representation": "menu",
+        "stake": "vis-counterpart",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": 0.025493026857178868,
+        "ci_lower": 0.003753861674851946,
+        "ci_upper": 0.04595059082659308,
+        "perm_p_scenario_clustered": 0.0327967203279672,
+        "n_positive": 7,
+        "n_negative": 1,
+        "n_zero": 2,
+        "n_scenarios": 29,
+        "n_seats_total": 441,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.011627906976744186,
+            "n_seats": 43
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.05555555555555555,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.08536585365853659,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.03571428571428571,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": -0.011111111111111112,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.011111111111111112,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 0.7871212878712128
+      },
+      {
+        "anchor": "stake:menu:vis-counterpart:asym",
+        "effect": "asym",
+        "representation": "menu",
+        "stake": "vis-counterpart",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": -0.009523809523809521,
+        "ci_lower": -0.04895085697483953,
+        "ci_upper": 0.02735339352525949,
+        "perm_p_scenario_clustered": 0.6257374262573743,
+        "n_positive": 4,
+        "n_negative": 3,
+        "n_zero": 3,
+        "n_scenarios": 29,
+        "n_seats_total": 435,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.0,
+            "n_seats": 40
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.13333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.13333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": -0.09523809523809523,
+            "n_seats": 42
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.0,
+            "n_seats": 38
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:vis-reviewer:self",
+        "effect": "self",
+        "representation": "menu",
+        "stake": "vis-reviewer",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": -0.010196324143692564,
+        "ci_lower": -0.04141342081517052,
+        "ci_upper": 0.01642778296911873,
+        "perm_p_scenario_clustered": 0.5021497850214979,
+        "n_positive": 3,
+        "n_negative": 5,
+        "n_zero": 2,
+        "n_scenarios": 29,
+        "n_seats_total": 436,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.07894736842105263,
+            "n_seats": 38
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.1,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.12222222222222222,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": -0.011904761904761904,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.05555555555555555,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": -0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.03333333333333333,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:vis-reviewer:copy",
+        "effect": "copy",
+        "representation": "menu",
+        "stake": "vis-reviewer",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": -0.02132165937043986,
+        "ci_lower": -0.0429180368223193,
+        "ci_upper": -0.0002817562198178509,
+        "perm_p_scenario_clustered": 0.0565943405659434,
+        "n_positive": 3,
+        "n_negative": 5,
+        "n_zero": 2,
+        "n_scenarios": 29,
+        "n_seats_total": 437,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.11538461538461539,
+            "n_seats": 39
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.011111111111111112,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.011111111111111112,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": -0.07777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.024390243902439025,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.0,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": -0.011111111111111112,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": -0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": -0.011111111111111112,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:vis-reviewer:asym",
+        "effect": "asym",
+        "representation": "menu",
+        "stake": "vis-reviewer",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": 0.00266955266955267,
+        "ci_lower": -0.028579059829059828,
+        "ci_upper": 0.033486190814296234,
+        "perm_p_scenario_clustered": 0.8680131986801319,
+        "n_positive": 3,
+        "n_negative": 5,
+        "n_zero": 2,
+        "n_scenarios": 29,
+        "n_seats_total": 428,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.06060606060606061,
+            "n_seats": 33
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.1111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.2,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": -0.023809523809523808,
+            "n_seats": 42
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.0,
+            "n_seats": 38
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": -0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:vis-placebo:self",
+        "effect": "self",
+        "representation": "menu",
+        "stake": "vis-placebo",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": 0.009872646733111848,
+        "ci_lower": -0.021983543238080955,
+        "ci_upper": 0.048175304559047,
+        "perm_p_scenario_clustered": 0.6567343265673433,
+        "n_positive": 5,
+        "n_negative": 4,
+        "n_zero": 1,
+        "n_scenarios": 29,
+        "n_seats_total": 441,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.046511627906976744,
+            "n_seats": 43
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.011111111111111112,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.011904761904761904,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.05555555555555555,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": -0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:vis-placebo:copy",
+        "effect": "copy",
+        "representation": "menu",
+        "stake": "vis-placebo",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": 0.0020634920634920633,
+        "ci_lower": -0.021496951219512197,
+        "ci_upper": 0.027155493847929233,
+        "perm_p_scenario_clustered": 0.934006599340066,
+        "n_positive": 4,
+        "n_negative": 4,
+        "n_zero": 2,
+        "n_scenarios": 29,
+        "n_seats_total": 443,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": -0.05555555555555555,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": -0.023809523809523808,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.05555555555555555,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": -0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.011111111111111112,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.0,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:vis-placebo:asym",
+        "effect": "asym",
+        "representation": "menu",
+        "stake": "vis-placebo",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": 0.009490800171159604,
+        "ci_lower": -0.033409599918558484,
+        "ci_upper": 0.05641224265500492,
+        "perm_p_scenario_clustered": 0.7079292070792921,
+        "n_positive": 4,
+        "n_negative": 4,
+        "n_zero": 2,
+        "n_scenarios": 29,
+        "n_seats_total": 436,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.024390243902439025,
+            "n_seats": 41
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.1111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 42
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.05263157894736842,
+            "n_seats": 38
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.1111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": -0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:predict-none:self",
+        "effect": "self",
+        "representation": "menu",
+        "stake": "predict-none",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": -0.011587301587301594,
+        "ci_lower": -0.058739644034146436,
+        "ci_upper": 0.03241858651100669,
+        "perm_p_scenario_clustered": 0.6323367663233677,
+        "n_positive": 5,
+        "n_negative": 4,
+        "n_zero": 1,
+        "n_scenarios": 29,
+        "n_seats_total": 437,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.1625,
+            "n_seats": 40
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.14444444444444443,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": -0.05555555555555555,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0125,
+            "n_seats": 40
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.011904761904761904,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.07777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.07777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.13333333333333333,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:predict-none:copy",
+        "effect": "copy",
+        "representation": "menu",
+        "stake": "predict-none",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": 0.015059523809523809,
+        "ci_lower": -0.006878478196579644,
+        "ci_upper": 0.03759326981307494,
+        "perm_p_scenario_clustered": 0.21647835216478353,
+        "n_positive": 6,
+        "n_negative": 4,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 437,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.05,
+            "n_seats": 40
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.011111111111111112,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.12222222222222222,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0125,
+            "n_seats": 40
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": -0.011904761904761904,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.011111111111111112,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.07777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:predict-none:asym",
+        "effect": "asym",
+        "representation": "menu",
+        "stake": "predict-none",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": -0.026111111111111106,
+        "ci_lower": -0.08497604633862342,
+        "ci_upper": 0.027973919640319894,
+        "perm_p_scenario_clustered": 0.38096190380961903,
+        "n_positive": 4,
+        "n_negative": 4,
+        "n_zero": 2,
+        "n_scenarios": 29,
+        "n_seats_total": 424,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.1111111111111111,
+            "n_seats": 36
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.15555555555555556,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": -0.17777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 37
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.027777777777777776,
+            "n_seats": 36
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.15555555555555556,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:predict-vis-both:self",
+        "effect": "self",
+        "representation": "menu",
+        "stake": "predict-vis-both",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": -0.036482156055326787,
+        "ci_lower": -0.08203032140881208,
+        "ci_upper": 0.0023981578838858457,
+        "perm_p_scenario_clustered": 0.10378962103789621,
+        "n_positive": 5,
+        "n_negative": 5,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 442,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.17045454545454544,
+            "n_seats": 44
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.14444444444444443,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.13333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": -0.05555555555555555,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.036585365853658534,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.03571428571428571,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.011111111111111112,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.05555555555555555,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:predict-vis-both:copy",
+        "effect": "copy",
+        "representation": "menu",
+        "stake": "predict-vis-both",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": 0.02698376684763526,
+        "ci_lower": -0.0003336439510574507,
+        "ci_upper": 0.05697139066140558,
+        "perm_p_scenario_clustered": 0.07939206079392061,
+        "n_positive": 6,
+        "n_negative": 3,
+        "n_zero": 1,
+        "n_scenarios": 29,
+        "n_seats_total": 441,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.06976744186046512,
+            "n_seats": 43
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.011111111111111112,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.12222222222222222,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": -0.036585365853658534,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": -0.023809523809523808,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.1,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:predict-vis-both:asym",
+        "effect": "asym",
+        "representation": "menu",
+        "stake": "predict-vis-both",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": -0.06599119750596003,
+        "ci_lower": -0.13213449412868017,
+        "ci_upper": -0.009823813588344714,
+        "perm_p_scenario_clustered": 0.04509549045095491,
+        "n_positive": 2,
+        "n_negative": 8,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 436,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.11904761904761904,
+            "n_seats": 42
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.15555555555555556,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.13333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": -0.17777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.07317073170731707,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.05263157894736842,
+            "n_seats": 38
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": -0.1111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": -0.044444444444444446,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 0.9921007899210079
+      },
+      {
+        "anchor": "stake:menu:predict-vis-none:self",
+        "effect": "self",
+        "representation": "menu",
+        "stake": "predict-vis-none",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": 0.0221682856438954,
+        "ci_lower": -0.020576651320900557,
+        "ci_upper": 0.06725782828282824,
+        "perm_p_scenario_clustered": 0.36076392360763926,
+        "n_positive": 7,
+        "n_negative": 3,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 442,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.2159090909090909,
+            "n_seats": 44
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.13333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.1,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.012195121951219513,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.047619047619047616,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.12222222222222222,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.2,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.13333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.12222222222222222,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:predict-vis-none:copy",
+        "effect": "copy",
+        "representation": "menu",
+        "stake": "predict-vis-none",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": 0.021937405413015167,
+        "ci_lower": -0.002531635031635028,
+        "ci_upper": 0.04703965646205618,
+        "perm_p_scenario_clustered": 0.1141885811418858,
+        "n_positive": 8,
+        "n_negative": 2,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 442,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.03409090909090909,
+            "n_seats": 44
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.011111111111111112,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.05555555555555555,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.012195121951219513,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": -0.047619047619047616,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.07777777777777778,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      },
+      {
+        "anchor": "stake:menu:predict-vis-none:asym",
+        "effect": "asym",
+        "representation": "menu",
+        "stake": "predict-vis-none",
+        "seats": "same-pair",
+        "definition": "stake minus baseline",
+        "pooled_delta": -0.0009595959595959554,
+        "ci_lower": -0.05949660046395518,
+        "ci_upper": 0.053215263106232376,
+        "perm_p_scenario_clustered": 0.9835016498350165,
+        "n_positive": 5,
+        "n_negative": 4,
+        "n_zero": 1,
+        "n_scenarios": 29,
+        "n_seats_total": 436,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.18181818181818182,
+            "n_seats": 44
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.17777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.1111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.08333333333333333,
+            "n_seats": 36
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.15555555555555556,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.1111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          }
+        ],
+        "p_holm": 1.0
+      }
+    ],
+    "visibility": [],
+    "threat": [],
+    "exploratory": [
+      {
+        "anchor": "explore:menu:none:self:all",
+        "effect": "self",
+        "representation": "menu",
+        "condition": "none",
+        "seats": "all",
+        "pooled_delta": 0.1308551864801865,
+        "ci_lower": 0.1021230451747218,
+        "ci_upper": 0.15977055405372745,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 9,
+        "n_negative": 1,
+        "n_zero": 0,
+        "n_scenarios": 102,
+        "n_seats_total": 1487,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.3433333333333333,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.20666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.19666666666666666,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.23666666666666666,
+            "n_seats": 150
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.010416666666666666,
+            "n_seats": 144
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.03146853146853147,
+            "n_seats": 143
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": -0.02,
+            "n_seats": 150
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.04666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.19,
+            "n_seats": 150
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.06666666666666667,
+            "n_seats": 150
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:none:self:same",
+        "effect": "self",
+        "representation": "menu",
+        "condition": "none",
+        "seats": "same-pair",
+        "pooled_delta": 0.1500793650793651,
+        "ci_lower": 0.09065844145012482,
+        "ci_upper": 0.21857211870255347,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 9,
+        "n_negative": 0,
+        "n_zero": 1,
+        "n_scenarios": 29,
+        "n_seats_total": 443,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.37777777777777777,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.28888888888888886,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.24444444444444444,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.2777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.011904761904761904,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.2111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.03333333333333333,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:none:interaction:same",
+        "effect": "interaction",
+        "representation": "menu",
+        "condition": "none",
+        "seats": "same-pair",
+        "pooled_delta": 0.020480480480480477,
+        "ci_lower": -0.019583864560236513,
+        "ci_upper": 0.05641464313446779,
+        "perm_p_scenario_clustered": 0.32266773322667736,
+        "n_positive": 6,
+        "n_negative": 2,
+        "n_zero": 2,
+        "n_scenarios": 29,
+        "n_seats_total": 438,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": -0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.02702702702702703,
+            "n_seats": 37
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:none:both_minus_none:same",
+        "effect": "both_minus_none",
+        "representation": "menu",
+        "condition": "none",
+        "seats": "same-pair",
+        "pooled_delta": 0.18958188153310107,
+        "ci_lower": 0.11715590981507958,
+        "ci_upper": 0.2660374847001224,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 10,
+        "n_negative": 0,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 443,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.4,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.28888888888888886,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.26666666666666666,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.4666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.024390243902439025,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.07142857142857142,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.24444444444444444,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:none:copy_1ov",
+        "effect": "copy_1ov",
+        "representation": "menu",
+        "condition": "none",
+        "seats": "one-overlap",
+        "pooled_delta": -0.004299717273018243,
+        "ci_lower": -0.018269433855930512,
+        "ci_upper": 0.010523278366369253,
+        "perm_p_scenario_clustered": 0.5733426657334266,
+        "n_positive": 2,
+        "n_negative": 5,
+        "n_zero": 3,
+        "n_scenarios": 73,
+        "n_seats_total": 1045,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.014423076923076924,
+            "n_seats": 104
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.009523809523809525,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.014285714285714285,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.0380952380952381,
+            "n_seats": 105
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": -0.014563106796116505,
+            "n_seats": 103
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.0,
+            "n_seats": 103
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": -0.023809523809523808,
+            "n_seats": 105
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.0,
+            "n_seats": 105
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.0,
+            "n_seats": 105
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": -0.03333333333333333,
+            "n_seats": 105
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:none:asym:seat0",
+        "effect": "asym",
+        "representation": "menu",
+        "condition": "none",
+        "seats": "same-pair seat 0",
+        "pooled_delta": 0.13729778992936886,
+        "ci_lower": 0.058631313131313124,
+        "ci_upper": 0.22687490031897917,
+        "perm_p_scenario_clustered": 0.0029997000299970002,
+        "n_positive": 8,
+        "n_negative": 2,
+        "n_zero": 0,
+        "n_scenarios": 22,
+        "n_seats_total": 216,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.4090909090909091,
+            "n_seats": 22
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.22727272727272727,
+            "n_seats": 22
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.22727272727272727,
+            "n_seats": 22
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.18181818181818182,
+            "n_seats": 22
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.047619047619047616,
+            "n_seats": 21
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.05263157894736842,
+            "n_seats": 19
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.13636363636363635,
+            "n_seats": 22
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": -0.045454545454545456,
+            "n_seats": 22
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.18181818181818182,
+            "n_seats": 22
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": -0.045454545454545456,
+            "n_seats": 22
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:none:asym:seat1",
+        "effect": "asym",
+        "representation": "menu",
+        "condition": "none",
+        "seats": "same-pair seat 1",
+        "pooled_delta": 0.08864552686062983,
+        "ci_lower": 0.017267931026512265,
+        "ci_upper": 0.16783749145591242,
+        "perm_p_scenario_clustered": 0.029897010298970104,
+        "n_positive": 5,
+        "n_negative": 3,
+        "n_zero": 2,
+        "n_scenarios": 23,
+        "n_seats_total": 224,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.30434782608695654,
+            "n_seats": 23
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.34782608695652173,
+            "n_seats": 23
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.21739130434782608,
+            "n_seats": 23
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.0,
+            "n_seats": 23
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": -0.09523809523809523,
+            "n_seats": 21
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": -0.10526315789473684,
+            "n_seats": 19
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": -0.043478260869565216,
+            "n_seats": 23
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.0,
+            "n_seats": 23
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.17391304347826086,
+            "n_seats": 23
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.08695652173913043,
+            "n_seats": 23
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-both:self:all",
+        "effect": "self",
+        "representation": "menu",
+        "condition": "vis-both",
+        "seats": "all",
+        "pooled_delta": 0.11097297297297297,
+        "ci_lower": 0.08826386337358037,
+        "ci_upper": 0.13436757510150993,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 10,
+        "n_negative": 0,
+        "n_zero": 0,
+        "n_scenarios": 102,
+        "n_seats_total": 1498,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.22972972972972974,
+            "n_seats": 148
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.21333333333333335,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.11333333333333333,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.2,
+            "n_seats": 150
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.02666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.04666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.0033333333333333335,
+            "n_seats": 150
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.08,
+            "n_seats": 150
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.16,
+            "n_seats": 150
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.03666666666666667,
+            "n_seats": 150
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-both:self:same",
+        "effect": "self",
+        "representation": "menu",
+        "condition": "vis-both",
+        "seats": "same-pair",
+        "pooled_delta": 0.13666666666666666,
+        "ci_lower": 0.09148936170212765,
+        "ci_upper": 0.18372093023255814,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 8,
+        "n_negative": 0,
+        "n_zero": 2,
+        "n_scenarios": 29,
+        "n_seats_total": 450,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.3,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.25555555555555554,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.12222222222222222,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.3,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.23333333333333334,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-both:interaction:same",
+        "effect": "interaction",
+        "representation": "menu",
+        "condition": "vis-both",
+        "seats": "same-pair",
+        "pooled_delta": 0.029405684754521967,
+        "ci_lower": -0.01276595744680851,
+        "ci_upper": 0.0709577856916555,
+        "perm_p_scenario_clustered": 0.18588141185881413,
+        "n_positive": 6,
+        "n_negative": 2,
+        "n_zero": 2,
+        "n_scenarios": 29,
+        "n_seats_total": 446,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.06976744186046512,
+            "n_seats": 43
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.046511627906976744,
+            "n_seats": 43
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": -0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.17777777777777778,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-both:both_minus_none:same",
+        "effect": "both_minus_none",
+        "representation": "menu",
+        "condition": "vis-both",
+        "seats": "same-pair",
+        "pooled_delta": 0.1778787878787879,
+        "ci_lower": 0.11584026564941628,
+        "ci_upper": 0.2474010785305021,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 10,
+        "n_negative": 0,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 449,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.28888888888888886,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.28888888888888886,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.17777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.4666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.045454545454545456,
+            "n_seats": 44
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.24444444444444444,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-both:copy_1ov",
+        "effect": "copy_1ov",
+        "representation": "menu",
+        "condition": "vis-both",
+        "seats": "one-overlap",
+        "pooled_delta": -0.004285714285714286,
+        "ci_lower": -0.01857142857142857,
+        "ci_upper": 0.009634548773637888,
+        "perm_p_scenario_clustered": 0.5994400559944005,
+        "n_positive": 5,
+        "n_negative": 5,
+        "n_zero": 0,
+        "n_scenarios": 73,
+        "n_seats_total": 1050,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.004761904761904762,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.023809523809523808,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.023809523809523808,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.03333333333333333,
+            "n_seats": 105
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": -0.047619047619047616,
+            "n_seats": 105
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": -0.01904761904761905,
+            "n_seats": 105
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.014285714285714285,
+            "n_seats": 105
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.01904761904761905,
+            "n_seats": 105
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": -0.04285714285714286,
+            "n_seats": 105
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.004761904761904762,
+            "n_seats": 105
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-none:self:all",
+        "effect": "self",
+        "representation": "menu",
+        "condition": "vis-none",
+        "seats": "all",
+        "pooled_delta": 0.1408251837647811,
+        "ci_lower": 0.11336233019701555,
+        "ci_upper": 0.16821074430786387,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 9,
+        "n_negative": 1,
+        "n_zero": 0,
+        "n_scenarios": 102,
+        "n_seats_total": 1454,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.20476190476190476,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.18666666666666668,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.16333333333333333,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.2833333333333333,
+            "n_seats": 150
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.02348993288590604,
+            "n_seats": 149
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.12333333333333334,
+            "n_seats": 150
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": -0.006666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.15666666666666668,
+            "n_seats": 150
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.20666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.06666666666666667,
+            "n_seats": 150
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-none:self:same",
+        "effect": "self",
+        "representation": "menu",
+        "condition": "vis-none",
+        "seats": "same-pair",
+        "pooled_delta": 0.18180076628352487,
+        "ci_lower": 0.12567929270658784,
+        "ci_upper": 0.24592201589417315,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 9,
+        "n_negative": 0,
+        "n_zero": 1,
+        "n_scenarios": 29,
+        "n_seats_total": 434,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.20689655172413793,
+            "n_seats": 29
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.26666666666666666,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.23333333333333334,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.4,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.1,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.05555555555555555,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.2,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.26666666666666666,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-none:interaction:same",
+        "effect": "interaction",
+        "representation": "menu",
+        "condition": "vis-none",
+        "seats": "same-pair",
+        "pooled_delta": 0.020151515151515153,
+        "ci_lower": -0.017080401499645143,
+        "ci_upper": 0.06047180416249679,
+        "perm_p_scenario_clustered": 0.3173682631736826,
+        "n_positive": 4,
+        "n_negative": 2,
+        "n_zero": 4,
+        "n_scenarios": 29,
+        "n_seats_total": 421,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.0,
+            "n_seats": 19
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": -0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 43
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.06818181818181818,
+            "n_seats": 44
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.1111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.0,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-none:both_minus_none:same",
+        "effect": "both_minus_none",
+        "representation": "menu",
+        "condition": "vis-none",
+        "seats": "same-pair",
+        "pooled_delta": 0.19924242424242425,
+        "ci_lower": 0.13376876109729793,
+        "ci_upper": 0.25931924054206656,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 10,
+        "n_negative": 0,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 427,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.16666666666666666,
+            "n_seats": 24
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.26666666666666666,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.26666666666666666,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.5333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.022727272727272728,
+            "n_seats": 44
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.13636363636363635,
+            "n_seats": 44
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.2222222222222222,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.3111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-none:copy_1ov",
+        "effect": "copy_1ov",
+        "representation": "menu",
+        "condition": "vis-none",
+        "seats": "one-overlap",
+        "pooled_delta": -0.0011301800609029525,
+        "ci_lower": -0.015724445782711913,
+        "ci_upper": 0.011234229798587122,
+        "perm_p_scenario_clustered": 0.8697130286971303,
+        "n_positive": 4,
+        "n_negative": 6,
+        "n_zero": 0,
+        "n_scenarios": 73,
+        "n_seats_total": 1026,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.030120481927710843,
+            "n_seats": 83
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.009523809523809525,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.01904761904761905,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.03333333333333333,
+            "n_seats": 105
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": -0.03365384615384615,
+            "n_seats": 104
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.009615384615384616,
+            "n_seats": 104
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": -0.004761904761904762,
+            "n_seats": 105
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.023809523809523808,
+            "n_seats": 105
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": -0.009523809523809525,
+            "n_seats": 105
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": -0.009523809523809525,
+            "n_seats": 105
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-counterpart:self:all",
+        "effect": "self",
+        "representation": "menu",
+        "condition": "vis-counterpart",
+        "seats": "all",
+        "pooled_delta": 0.13527272727272727,
+        "ci_lower": 0.11104637506221171,
+        "ci_upper": 0.16018983997584532,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 9,
+        "n_negative": 1,
+        "n_zero": 0,
+        "n_scenarios": 102,
+        "n_seats_total": 1493,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.2727272727272727,
+            "n_seats": 143
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.18333333333333332,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.12666666666666668,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.31666666666666665,
+            "n_seats": 150
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.013333333333333334,
+            "n_seats": 150
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.06666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": -0.006666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.10333333333333333,
+            "n_seats": 150
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.19,
+            "n_seats": 150
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.08666666666666667,
+            "n_seats": 150
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-counterpart:self:same",
+        "effect": "self",
+        "representation": "menu",
+        "condition": "vis-counterpart",
+        "seats": "same-pair",
+        "pooled_delta": 0.1618939393939394,
+        "ci_lower": 0.11161542553191489,
+        "ci_upper": 0.21216607384823846,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 9,
+        "n_negative": 1,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 449,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.3522727272727273,
+            "n_seats": 44
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.2,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.13333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.4222222222222222,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": -0.011111111111111112,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.28888888888888886,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-counterpart:interaction:same",
+        "effect": "interaction",
+        "representation": "menu",
+        "condition": "vis-counterpart",
+        "seats": "same-pair",
+        "pooled_delta": 0.01594794094794095,
+        "ci_lower": -0.01470656370656371,
+        "ci_upper": 0.047728594080338256,
+        "perm_p_scenario_clustered": 0.32096790320967905,
+        "n_positive": 5,
+        "n_negative": 2,
+        "n_zero": 3,
+        "n_scenarios": 29,
+        "n_seats_total": 443,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.02564102564102564,
+            "n_seats": 39
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.022727272727272728,
+            "n_seats": 44
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": -0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-counterpart:both_minus_none:same",
+        "effect": "both_minus_none",
+        "representation": "menu",
+        "condition": "vis-counterpart",
+        "seats": "same-pair",
+        "pooled_delta": 0.22036075036075037,
+        "ci_lower": 0.15632925531914893,
+        "ci_upper": 0.29217764602547214,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 10,
+        "n_negative": 0,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 446,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.35714285714285715,
+            "n_seats": 42
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.24444444444444444,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.17777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.6666666666666666,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.09090909090909091,
+            "n_seats": 44
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.1111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.13333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.3111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-counterpart:copy_1ov",
+        "effect": "copy_1ov",
+        "representation": "menu",
+        "condition": "vis-counterpart",
+        "seats": "one-overlap",
+        "pooled_delta": 0.013767507002801119,
+        "ci_lower": -1.9307659932659958e-05,
+        "ci_upper": 0.0287734684314213,
+        "perm_p_scenario_clustered": 0.0836916308369163,
+        "n_positive": 6,
+        "n_negative": 4,
+        "n_zero": 0,
+        "n_scenarios": 73,
+        "n_seats_total": 1047,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.014705882352941176,
+            "n_seats": 102
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.023809523809523808,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.009523809523809525,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.09047619047619047,
+            "n_seats": 105
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": -0.014285714285714285,
+            "n_seats": 105
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.02857142857142857,
+            "n_seats": 105
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.014285714285714285,
+            "n_seats": 105
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.023809523809523808,
+            "n_seats": 105
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.004761904761904762,
+            "n_seats": 105
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.0380952380952381,
+            "n_seats": 105
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-reviewer:self:all",
+        "effect": "self",
+        "representation": "menu",
+        "condition": "vis-reviewer",
+        "seats": "all",
+        "pooled_delta": 0.11208918039454951,
+        "ci_lower": 0.08915619602984969,
+        "ci_upper": 0.13563570570910394,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 10,
+        "n_negative": 0,
+        "n_zero": 0,
+        "n_scenarios": 102,
+        "n_seats_total": 1481,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.20075757575757575,
+            "n_seats": 132
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.19666666666666666,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.12,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.2733333333333333,
+            "n_seats": 150
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.013333333333333334,
+            "n_seats": 150
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.020134228187919462,
+            "n_seats": 149
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.01,
+            "n_seats": 150
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.08666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.12666666666666668,
+            "n_seats": 150
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.07333333333333333,
+            "n_seats": 150
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-reviewer:self:same",
+        "effect": "self",
+        "representation": "menu",
+        "condition": "vis-reviewer",
+        "seats": "same-pair",
+        "pooled_delta": 0.13763157894736844,
+        "ci_lower": 0.08896119188782231,
+        "ci_upper": 0.1870716226708074,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 8,
+        "n_negative": 0,
+        "n_zero": 2,
+        "n_scenarios": 29,
+        "n_seats_total": 443,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.27631578947368424,
+            "n_seats": 38
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.25555555555555554,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.14444444444444443,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.4,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.07777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.12222222222222222,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-reviewer:interaction:same",
+        "effect": "interaction",
+        "representation": "menu",
+        "condition": "vis-reviewer",
+        "seats": "same-pair",
+        "pooled_delta": 0.02361111111111111,
+        "ci_lower": -0.014609126291456337,
+        "ci_upper": 0.06523949579831932,
+        "perm_p_scenario_clustered": 0.2836716328367163,
+        "n_positive": 4,
+        "n_negative": 4,
+        "n_zero": 2,
+        "n_scenarios": 29,
+        "n_seats_total": 427,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.125,
+            "n_seats": 24
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": -0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 43
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.1111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-reviewer:both_minus_none:same",
+        "effect": "both_minus_none",
+        "representation": "menu",
+        "condition": "vis-reviewer",
+        "seats": "same-pair",
+        "pooled_delta": 0.16779942279942278,
+        "ci_lower": 0.11040466862428117,
+        "ci_upper": 0.2333443145255125,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 10,
+        "n_negative": 0,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 432,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.32142857142857145,
+            "n_seats": 28
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.26666666666666666,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.17777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.5111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.045454545454545456,
+            "n_seats": 44
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.1111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.1111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-reviewer:copy_1ov",
+        "effect": "copy_1ov",
+        "representation": "menu",
+        "condition": "vis-reviewer",
+        "seats": "one-overlap",
+        "pooled_delta": -0.0012714776632302403,
+        "ci_lower": -0.015778873534902847,
+        "ci_upper": 0.013556838090371557,
+        "perm_p_scenario_clustered": 0.8885111488851115,
+        "n_positive": 4,
+        "n_negative": 5,
+        "n_zero": 1,
+        "n_scenarios": 73,
+        "n_seats_total": 1042,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.020618556701030927,
+            "n_seats": 97
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.0380952380952381,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.014285714285714285,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.0380952380952381,
+            "n_seats": 105
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 105
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": -0.01904761904761905,
+            "n_seats": 105
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.009523809523809525,
+            "n_seats": 105
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": -0.004761904761904762,
+            "n_seats": 105
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": -0.014285714285714285,
+            "n_seats": 105
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.009523809523809525,
+            "n_seats": 105
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-placebo:self:all",
+        "effect": "self",
+        "representation": "menu",
+        "condition": "vis-placebo",
+        "seats": "all",
+        "pooled_delta": 0.13402189781021898,
+        "ci_lower": 0.10964305419839611,
+        "ci_upper": 0.15808338607212816,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 10,
+        "n_negative": 0,
+        "n_zero": 0,
+        "n_scenarios": 102,
+        "n_seats_total": 1487,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.3102189781021898,
+            "n_seats": 137
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.22333333333333333,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.15666666666666668,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.27666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0033333333333333335,
+            "n_seats": 150
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.03,
+            "n_seats": 150
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.02666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.09333333333333334,
+            "n_seats": 150
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.15666666666666668,
+            "n_seats": 150
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.06333333333333334,
+            "n_seats": 150
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-placebo:self:same",
+        "effect": "self",
+        "representation": "menu",
+        "condition": "vis-placebo",
+        "seats": "same-pair",
+        "pooled_delta": 0.15922480620155038,
+        "ci_lower": 0.10294426112836438,
+        "ci_upper": 0.218825834057027,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 9,
+        "n_negative": 0,
+        "n_zero": 1,
+        "n_scenarios": 29,
+        "n_seats_total": 448,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.32558139534883723,
+            "n_seats": 43
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.2777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.2,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.3111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.17777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.1,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-placebo:interaction:same",
+        "effect": "interaction",
+        "representation": "menu",
+        "condition": "vis-placebo",
+        "seats": "same-pair",
+        "pooled_delta": 0.01081081081081081,
+        "ci_lower": -0.026667249417249413,
+        "ci_upper": 0.04722470238095237,
+        "perm_p_scenario_clustered": 0.5840415958404159,
+        "n_positive": 5,
+        "n_negative": 3,
+        "n_zero": 2,
+        "n_scenarios": 29,
+        "n_seats_total": 442,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.10810810810810811,
+            "n_seats": 37
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": -0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": -0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.0,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-placebo:both_minus_none:same",
+        "effect": "both_minus_none",
+        "representation": "menu",
+        "condition": "vis-placebo",
+        "seats": "same-pair",
+        "pooled_delta": 0.20034188034188033,
+        "ci_lower": 0.1311221655328798,
+        "ci_upper": 0.27625465516511727,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 10,
+        "n_negative": 0,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 444,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.358974358974359,
+            "n_seats": 39
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.3111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.28888888888888886,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.4444444444444444,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.13333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.2222222222222222,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.1111111111111111,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:vis-placebo:copy_1ov",
+        "effect": "copy_1ov",
+        "representation": "menu",
+        "condition": "vis-placebo",
+        "seats": "one-overlap",
+        "pooled_delta": 0.003976190476190476,
+        "ci_lower": -0.01279341069686503,
+        "ci_upper": 0.02168332792177574,
+        "perm_p_scenario_clustered": 0.6482351764823517,
+        "n_positive": 5,
+        "n_negative": 4,
+        "n_zero": 1,
+        "n_scenarios": 73,
+        "n_seats_total": 1045,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.035,
+            "n_seats": 100
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.01904761904761905,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.004761904761904762,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.023809523809523808,
+            "n_seats": 105
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": -0.03333333333333333,
+            "n_seats": 105
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.004761904761904762,
+            "n_seats": 105
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.0,
+            "n_seats": 105
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.01904761904761905,
+            "n_seats": 105
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": -0.03333333333333333,
+            "n_seats": 105
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.047619047619047616,
+            "n_seats": 105
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:predict-none:self:all",
+        "effect": "self",
+        "representation": "menu",
+        "condition": "predict-none",
+        "seats": "all",
+        "pooled_delta": 0.13226121909269395,
+        "ci_lower": 0.10876767648662716,
+        "ci_upper": 0.15624483567908345,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 10,
+        "n_negative": 0,
+        "n_zero": 0,
+        "n_scenarios": 102,
+        "n_seats_total": 1486,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.2676056338028169,
+            "n_seats": 142
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.14666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.13,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.19,
+            "n_seats": 150
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.04482758620689655,
+            "n_seats": 145
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.026845637583892617,
+            "n_seats": 149
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.07,
+            "n_seats": 150
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.043333333333333335,
+            "n_seats": 150
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.26666666666666666,
+            "n_seats": 150
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.13666666666666666,
+            "n_seats": 150
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:predict-none:self:same",
+        "effect": "self",
+        "representation": "menu",
+        "condition": "predict-none",
+        "seats": "same-pair",
+        "pooled_delta": 0.13921834625322999,
+        "ci_lower": 0.09541326087164957,
+        "ci_upper": 0.18462012549631313,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 10,
+        "n_negative": 0,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 443,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.225,
+            "n_seats": 40
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.14444444444444443,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.17777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.2222222222222222,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.011627906976744186,
+            "n_seats": 43
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.1111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.28888888888888886,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.16666666666666666,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:predict-none:interaction:same",
+        "effect": "interaction",
+        "representation": "menu",
+        "condition": "predict-none",
+        "seats": "same-pair",
+        "pooled_delta": 0.00442002442002442,
+        "ci_lower": -0.042987795937343524,
+        "ci_upper": 0.05668943046460062,
+        "perm_p_scenario_clustered": 0.8756124387561244,
+        "n_positive": 5,
+        "n_negative": 5,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 431,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.05714285714285714,
+            "n_seats": 35
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": -0.13333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": -0.02564102564102564,
+            "n_seats": 39
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": -0.09523809523809523,
+            "n_seats": 42
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.1111111111111111,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:predict-none:both_minus_none:same",
+        "effect": "both_minus_none",
+        "representation": "menu",
+        "condition": "predict-none",
+        "seats": "same-pair",
+        "pooled_delta": 0.19237046103631172,
+        "ci_lower": 0.13292749575652313,
+        "ci_upper": 0.2622620533674205,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 10,
+        "n_negative": 0,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 441,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.21052631578947367,
+            "n_seats": 38
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.15555555555555556,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.2222222222222222,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.5333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.046511627906976744,
+            "n_seats": 43
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.1111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.4,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.15555555555555556,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:predict-none:copy_1ov",
+        "effect": "copy_1ov",
+        "representation": "menu",
+        "condition": "predict-none",
+        "seats": "one-overlap",
+        "pooled_delta": 0.0023129251700680273,
+        "ci_lower": -0.016028235052098296,
+        "ci_upper": 0.019598729222090754,
+        "perm_p_scenario_clustered": 0.8145185481451854,
+        "n_positive": 3,
+        "n_negative": 4,
+        "n_zero": 3,
+        "n_scenarios": 73,
+        "n_seats_total": 1037,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.01020408163265306,
+            "n_seats": 98
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.03333333333333333,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.004761904761904762,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.04285714285714286,
+            "n_seats": 105
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 100
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.0,
+            "n_seats": 104
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": -0.03333333333333333,
+            "n_seats": 105
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.014285714285714285,
+            "n_seats": 105
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.047619047619047616,
+            "n_seats": 105
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.0,
+            "n_seats": 105
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:predict-vis-both:self:all",
+        "effect": "self",
+        "representation": "menu",
+        "condition": "predict-vis-both",
+        "seats": "all",
+        "pooled_delta": 0.10014081701449543,
+        "ci_lower": 0.07717969190962345,
+        "ci_upper": 0.12355746943798344,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 10,
+        "n_negative": 0,
+        "n_zero": 0,
+        "n_scenarios": 102,
+        "n_seats_total": 1494,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.1643835616438356,
+            "n_seats": 146
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.14333333333333334,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.09666666666666666,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.14666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.026845637583892617,
+            "n_seats": 149
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.026845637583892617,
+            "n_seats": 149
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.03666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.06666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.20666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.08666666666666667,
+            "n_seats": 150
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:predict-vis-both:self:same",
+        "effect": "self",
+        "representation": "menu",
+        "condition": "predict-vis-both",
+        "seats": "same-pair",
+        "pooled_delta": 0.11154040404040402,
+        "ci_lower": 0.07061369509043929,
+        "ci_upper": 0.16063875456694607,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 10,
+        "n_negative": 0,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 449,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.19318181818181818,
+            "n_seats": 44
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.14444444444444443,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.1111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.2222222222222222,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.05555555555555555,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.03333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.18888888888888888,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:predict-vis-both:interaction:same",
+        "effect": "interaction",
+        "representation": "menu",
+        "condition": "predict-vis-both",
+        "seats": "same-pair",
+        "pooled_delta": 0.03523809523809524,
+        "ci_lower": -0.01818181818181818,
+        "ci_upper": 0.09074991039127746,
+        "perm_p_scenario_clustered": 0.2652734726527347,
+        "n_positive": 7,
+        "n_negative": 3,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 444,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.07142857142857142,
+            "n_seats": 42
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.023809523809523808,
+            "n_seats": 42
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": -0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.06666666666666667,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.15555555555555556,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:predict-vis-both:both_minus_none:same",
+        "effect": "both_minus_none",
+        "representation": "menu",
+        "condition": "predict-vis-both",
+        "seats": "same-pair",
+        "pooled_delta": 0.17405684754521963,
+        "ci_lower": 0.11606489311721868,
+        "ci_upper": 0.2392011411237902,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 10,
+        "n_negative": 0,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 446,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.13953488372093023,
+            "n_seats": 43
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.15555555555555556,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.13333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.5333333333333333,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.023255813953488372,
+            "n_seats": 43
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.1111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.3111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.2,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:predict-vis-both:copy_1ov",
+        "effect": "copy_1ov",
+        "representation": "menu",
+        "condition": "predict-vis-both",
+        "seats": "one-overlap",
+        "pooled_delta": 0.012717356173238525,
+        "ci_lower": -0.0011262409269928056,
+        "ci_upper": 0.026265495506502996,
+        "perm_p_scenario_clustered": 0.0856914308569143,
+        "n_positive": 7,
+        "n_negative": 3,
+        "n_zero": 0,
+        "n_scenarios": 73,
+        "n_seats_total": 1046,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.04411764705882353,
+            "n_seats": 102
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": -0.009523809523809525,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.004761904761904762,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.05714285714285714,
+            "n_seats": 105
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": -0.014423076923076924,
+            "n_seats": 104
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.01904761904761905,
+            "n_seats": 105
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.02857142857142857,
+            "n_seats": 105
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.03333333333333333,
+            "n_seats": 105
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.03333333333333333,
+            "n_seats": 105
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.01904761904761905,
+            "n_seats": 105
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:predict-vis-none:self:all",
+        "effect": "self",
+        "representation": "menu",
+        "condition": "predict-vis-none",
+        "seats": "all",
+        "pooled_delta": 0.14960982513810892,
+        "ci_lower": 0.1233911169944244,
+        "ci_upper": 0.17580493880758544,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 10,
+        "n_negative": 0,
+        "n_zero": 0,
+        "n_scenarios": 102,
+        "n_seats_total": 1493,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.17346938775510204,
+            "n_seats": 147
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.14666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.11666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.21666666666666667,
+            "n_seats": 150
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.016778523489932886,
+            "n_seats": 149
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.12585034013605442,
+            "n_seats": 147
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.08333333333333333,
+            "n_seats": 150
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.18333333333333332,
+            "n_seats": 150
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.2833333333333333,
+            "n_seats": 150
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.15,
+            "n_seats": 150
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:predict-vis-none:self:same",
+        "effect": "self",
+        "representation": "menu",
+        "condition": "predict-vis-none",
+        "seats": "same-pair",
+        "pooled_delta": 0.17047979797979798,
+        "ci_lower": 0.11736010953662435,
+        "ci_upper": 0.22761063986826183,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 10,
+        "n_negative": 0,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 447,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.14772727272727273,
+            "n_seats": 44
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.15555555555555556,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.14444444444444443,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.3111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.011363636363636364,
+            "n_seats": 44
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.056818181818181816,
+            "n_seats": 44
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.15555555555555556,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.2222222222222222,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.34444444444444444,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.15555555555555556,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:predict-vis-none:interaction:same",
+        "effect": "interaction",
+        "representation": "menu",
+        "condition": "predict-vis-none",
+        "seats": "same-pair",
+        "pooled_delta": 0.04307344464321208,
+        "ci_lower": -0.0061530146101695105,
+        "ci_upper": 0.0929100000887932,
+        "perm_p_scenario_clustered": 0.10338966103389662,
+        "n_positive": 8,
+        "n_negative": 2,
+        "n_zero": 0,
+        "n_scenarios": 29,
+        "n_seats_total": 437,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.023255813953488372,
+            "n_seats": 43
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": -0.08888888888888889,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.07692307692307693,
+            "n_seats": 39
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": -0.025,
+            "n_seats": 40
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.2222222222222222,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.022222222222222223,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.044444444444444446,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:predict-vis-none:both_minus_none:same",
+        "effect": "both_minus_none",
+        "representation": "menu",
+        "condition": "predict-vis-none",
+        "seats": "same-pair",
+        "pooled_delta": 0.22294573643410853,
+        "ci_lower": 0.15371872288435198,
+        "ci_upper": 0.2936885103929913,
+        "perm_p_scenario_clustered": 9.999000099990002e-05,
+        "n_positive": 9,
+        "n_negative": 0,
+        "n_zero": 1,
+        "n_scenarios": 29,
+        "n_seats_total": 442,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": 0.11627906976744186,
+            "n_seats": 43
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.2,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": 0.17777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.5555555555555556,
+            "n_seats": 45
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 41
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.046511627906976744,
+            "n_seats": 43
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.17777777777777778,
+            "n_seats": 45
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.3111111111111111,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.4,
+            "n_seats": 45
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": 0.24444444444444444,
+            "n_seats": 45
+          }
+        ]
+      },
+      {
+        "anchor": "explore:menu:predict-vis-none:copy_1ov",
+        "effect": "copy_1ov",
+        "representation": "menu",
+        "condition": "predict-vis-none",
+        "seats": "one-overlap",
+        "pooled_delta": 0.008552935737401757,
+        "ci_lower": -0.00587353195627958,
+        "ci_upper": 0.02209438593296462,
+        "perm_p_scenario_clustered": 0.25707429257074293,
+        "n_positive": 5,
+        "n_negative": 3,
+        "n_zero": 2,
+        "n_scenarios": 73,
+        "n_seats_total": 1048,
+        "per_model": [
+          {
+            "model": "gemma-3-12b",
+            "delta": -0.009708737864077669,
+            "n_seats": 103
+          },
+          {
+            "model": "gemma-3-27b",
+            "delta": 0.0,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-4-26b-a4b",
+            "delta": -0.009523809523809525,
+            "n_seats": 105
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "delta": 0.03333333333333333,
+            "n_seats": 105
+          },
+          {
+            "model": "gpt-oss-120b",
+            "delta": 0.0,
+            "n_seats": 105
+          },
+          {
+            "model": "gpt-oss-20b",
+            "delta": 0.01904761904761905,
+            "n_seats": 105
+          },
+          {
+            "model": "llama-3.3-70b",
+            "delta": 0.014285714285714285,
+            "n_seats": 105
+          },
+          {
+            "model": "llama-4-maverick",
+            "delta": 0.023809523809523808,
+            "n_seats": 105
+          },
+          {
+            "model": "qwen3-235b-a22b",
+            "delta": 0.01904761904761905,
+            "n_seats": 105
+          },
+          {
+            "model": "qwen3-32b",
+            "delta": -0.004761904761904762,
+            "n_seats": 105
+          }
+        ]
+      }
+    ]
+  }
+}
